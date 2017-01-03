@@ -1,0 +1,73 @@
+
+==================== FINAL INTERFACE ====================
+2016-12-17 22:22:35.2222095 UTC
+
+interface grains-0.0.0-9V2rQn0ubOW8kcuN3wbhIX:Grains 8001
+  interface hash: 9a310136bbd0b46bd987b6888d6dbf69
+  ABI hash: 341d8ab6a3cd6d0594f024e8723d5ffe
+  export-list hash: d853f02acc1fa8002e34dd4030547ffb
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 01bffee402c99072b66b5a2d29157711
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Grains.square
+  Grains.total
+module dependencies:
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:Data.Foldable 3cbed01c922be29649c33015287c82ca
+import  -/  base-4.9.0.0:Data.Maybe 086a84053ef7f7810663b5f03b7ec3f7
+import  -/  base-4.9.0.0:GHC.Base dd8044a8d640eee51828c17c476a6ba7
+import  -/  base-4.9.0.0:GHC.Num f0aed3315b3ed1b330b71fc4148a5581
+import  -/  base-4.9.0.0:Prelude 2d9cd8b0ec3d728f62b734df888d2e34
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type bc99d7d6ca3e6f7b722927a29e227674
+18dbc89084516d780a35c7664635dcb1
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Grains.$trModule2
+                   Grains.$trModule1) -}
+edd5ad4fda25455d29eae73d984fe631
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Grains"#) -}
+841dbbbcf6e3138d0605848e91dcc270
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "grains-0.0.0-9V2rQn0ubOW8kcuN3wbhIX"#) -}
+4f4679b1e4754950ce4e692e3f590ec2
+  square ::
+    GHC.Integer.Type.Integer -> GHC.Base.Maybe GHC.Integer.Type.Integer
+  {- Arity: 1, Strictness: <S,U> -}
+9410ea7e401cfd22e52da9a563403da0
+  total :: GHC.Integer.Type.Integer
+  {- Unfolding: (Grains.total_go Grains.total2 Grains.total1) -}
+0ac6bade5a48a6b0214939030e3f95ee
+  total1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+deb7999abcedaa19e2633aedc239cc59
+  total2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+56debd9e99a77a7360e05385fcc5395d
+  total_go ::
+    GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Arity: 2, Strictness: <S,U><S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

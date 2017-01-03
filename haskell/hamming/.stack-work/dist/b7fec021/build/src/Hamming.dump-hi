@@ -1,0 +1,84 @@
+
+==================== FINAL INTERFACE ====================
+2016-12-18 04:11:19.8114999 UTC
+
+interface hamming-0.0.0-HpID8gVWjp5JznYos4062n:Hamming 8001
+  interface hash: a177a6b640079bfd388dcd9dddc28144
+  ABI hash: 88171c6150cbad1355c0914da28c41ee
+  export-list hash: f971678ba52bc35a5cb5e61ac8ca0ec0
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 01bffee402c99072b66b5a2d29157711
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Hamming.distance
+module dependencies:
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:Data.Foldable 3cbed01c922be29649c33015287c82ca
+import  -/  base-4.9.0.0:GHC.Base dd8044a8d640eee51828c17c476a6ba7
+import  -/  base-4.9.0.0:GHC.List 47d436dfb7454bb1883fb4d943e3f389
+import  -/  base-4.9.0.0:GHC.Real 011de9ca3282ad24a84e4e15f974f98e
+import  -/  base-4.9.0.0:Prelude 2d9cd8b0ec3d728f62b734df888d2e34
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type bc99d7d6ca3e6f7b722927a29e227674
+48728d767fb7c752e0b0738bcd905c87
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Hamming.$trModule2
+                   Hamming.$trModule1) -}
+8974956b6e5ec242eb6c97bceaa1540c
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Hamming"#) -}
+0e5021e43be43cdcb25a27453853fc93
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "hamming-0.0.0-HpID8gVWjp5JznYos4062n"#) -}
+1dce5fa11047e57c83756a6dbb616a23
+  $wgo ::
+    [GHC.Types.Char]
+    -> [GHC.Types.Char] -> GHC.Prim.Int# -> GHC.Prim.Int#
+  {- Arity: 3, HasNoCafRefs, Strictness: <S,1*U><L,1*U><L,U>,
+     Inline: [0] -}
+a8e22cbead30042325b7795bfa9d3781
+  distance ::
+    GHC.Base.String
+    -> GHC.Base.String -> GHC.Base.Maybe GHC.Integer.Type.Integer
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: (\ (strand1 :: GHC.Base.String)
+                   (strand2 :: GHC.Base.String) ->
+                 case GHC.List.$wlenAcc
+                        @ GHC.Types.Char
+                        strand1
+                        0# of ww2 { DEFAULT ->
+                 case GHC.List.$wlenAcc
+                        @ GHC.Types.Char
+                        strand2
+                        0# of ww1 { DEFAULT ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==# ww2 ww1) of wild {
+                   GHC.Types.False -> GHC.Base.Nothing @ GHC.Integer.Type.Integer
+                   GHC.Types.True
+                   -> GHC.Base.Just
+                        @ GHC.Integer.Type.Integer
+                        (case Hamming.$wgo strand1 strand2 0# of ww { DEFAULT ->
+                         GHC.Integer.Type.smallInteger ww }) } } }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

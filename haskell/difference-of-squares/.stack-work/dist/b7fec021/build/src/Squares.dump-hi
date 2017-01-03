@@ -1,0 +1,141 @@
+
+==================== FINAL INTERFACE ====================
+2016-12-18 02:20:56.3523695 UTC
+
+interface difference-of-squares-0.0.0-i6De56LKW04sg4yY7d7KT:Squares 8001
+  interface hash: 6cd5f885a1e767a317e446ba949c74fe
+  ABI hash: 63fc27624bbc2896f44e88bf26975057
+  export-list hash: 66cc5acaa0d289ff0131c866bd2e8d41
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 01bffee402c99072b66b5a2d29157711
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Squares.difference
+  Squares.squareOfSums
+  Squares.sumOfSquares
+module dependencies:
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:Data.Foldable 3cbed01c922be29649c33015287c82ca
+import  -/  base-4.9.0.0:GHC.Base dd8044a8d640eee51828c17c476a6ba7
+import  -/  base-4.9.0.0:GHC.Num f0aed3315b3ed1b330b71fc4148a5581
+import  -/  base-4.9.0.0:GHC.Real 011de9ca3282ad24a84e4e15f974f98e
+import  -/  base-4.9.0.0:Prelude 2d9cd8b0ec3d728f62b734df888d2e34
+b54f6edb811c91d053dce7ba8c64e430
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Squares.$trModule2
+                   Squares.$trModule1) -}
+711f0776c928a7d311bc8fd598467d7b
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Squares"#) -}
+cfa9adeb62341ee77d0d76243d7b0db3
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "difference-of-squares-0.0.0-i6De56LKW04sg4yY7d7KT"#) -}
+249e4791dbe6b039bd5216039f4c49d0
+  difference :: GHC.Real.Integral a => a -> a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLLLLLLLL),U(U,U(A,A,A,A,A,A,C(C1(U)),A),A,A,A,A,A,A,A)><L,U>,
+     Unfolding: (\ @ a ($dIntegral :: GHC.Real.Integral a) (eta :: a) ->
+                 let {
+                   $dReal :: GHC.Real.Real a = GHC.Real.$p1Integral @ a $dIntegral
+                 } in
+                 let {
+                   $dNum :: GHC.Num.Num a = GHC.Real.$p1Real @ a $dReal
+                 } in
+                 case GHC.Classes.==
+                        @ a
+                        (GHC.Classes.$p1Ord @ a (GHC.Real.$p2Real @ a $dReal))
+                        eta
+                        (GHC.Num.fromInteger @ a $dNum Squares.sumOfSquares1) of wild {
+                   GHC.Types.False
+                   -> GHC.Num.-
+                        @ a
+                        $dNum
+                        (Squares.squareOfSums @ a $dIntegral eta)
+                        (Squares.sumOfSquares @ a $dIntegral eta)
+                   GHC.Types.True
+                   -> GHC.Num.fromInteger @ a $dNum Squares.sumOfSquares1 }) -}
+1f34777535eef85e16913dd81b3e2471
+  squareOfSums :: GHC.Real.Integral a => a -> a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLLLLLLLL),U(1*U,1*U(A,A,A,A,A,A,1*C1(C1(U)),A),A,A,A,A,A,A,A)><L,U>,
+     Unfolding: (\ @ a ($dIntegral :: GHC.Real.Integral a) (eta :: a) ->
+                 let {
+                   $dReal :: GHC.Real.Real a = GHC.Real.$p1Integral @ a $dIntegral
+                 } in
+                 let {
+                   $dNum :: GHC.Num.Num a = GHC.Real.$p1Real @ a $dReal
+                 } in
+                 let {
+                   x :: a
+                   = let {
+                       k :: a -> a -> a = GHC.Num.+ @ a $dNum
+                     } in
+                     letrec {
+                       go :: [a] -> a -> a {- Arity: 2, Strictness: <S,1*U><L,U> -}
+                       = \ (ds :: [a]) (eta1 :: a) ->
+                         case ds of wild { [] -> eta1 : y ys -> go ys (k eta1 y) }
+                     } in
+                     go
+                       (GHC.Enum.enumFromTo
+                          @ a
+                          (GHC.Real.$p2Integral @ a $dIntegral)
+                          (GHC.Num.fromInteger @ a $dNum Squares.sumOfSquares2)
+                          eta)
+                       (GHC.Num.fromInteger @ a $dNum Squares.sumOfSquares1)
+                 } in
+                 GHC.Num.* @ a $dNum x x) -}
+fa59d5e87344423657a3193308ac70aa
+  sumOfSquares :: GHC.Real.Integral a => a -> a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LS(LLLLLLC(C(S))L)LLLLLLL),U(1*U,1*U(A,A,A,A,A,A,1*C1(C1(U)),A),A,A,A,A,A,A,A)><L,U>,
+     Unfolding: (\ @ a ($dIntegral :: GHC.Real.Integral a) (eta :: a) ->
+                 let {
+                   $dReal :: GHC.Real.Real a = GHC.Real.$p1Integral @ a $dIntegral
+                 } in
+                 let {
+                   $dNum :: GHC.Num.Num a = GHC.Real.$p1Real @ a $dReal
+                 } in
+                 let {
+                   k :: a -> a -> a = GHC.Num.+ @ a $dNum
+                 } in
+                 letrec {
+                   go :: [a] -> a -> a {- Arity: 2, Strictness: <S,1*U><L,U> -}
+                   = \ (ds :: [a]) (eta1 :: a) ->
+                     case ds of wild {
+                       [] -> eta1 : y ys -> go ys (k eta1 (GHC.Num.* @ a $dNum y y)) }
+                 } in
+                 go
+                   (GHC.Enum.enumFromTo
+                      @ a
+                      (GHC.Real.$p2Integral @ a $dIntegral)
+                      (GHC.Num.fromInteger @ a $dNum Squares.sumOfSquares2)
+                      eta)
+                   (GHC.Num.fromInteger @ a $dNum Squares.sumOfSquares1)) -}
+99d37ff23cc2d99ac106ed47947bc4e7
+  sumOfSquares1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+e10cfa0d1b25e7706c5ad84311921b4a
+  sumOfSquares2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

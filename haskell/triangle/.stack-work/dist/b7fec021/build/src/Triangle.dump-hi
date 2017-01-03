@@ -1,0 +1,375 @@
+
+==================== FINAL INTERFACE ====================
+2016-12-28 20:07:57.0573493 UTC
+
+interface triangle-0.0.0-DH7frLsryKjJecHAi2g93L:Triangle 8001
+  interface hash: 2e9370af25ae89d2ddc8ed8db88ef694
+  ABI hash: bc9542966345cbdc3ba668de9a9fbb97
+  export-list hash: ed30b90b5b512ad4aab77205045222d5
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 01bffee402c99072b66b5a2d29157711
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Triangle.triangleType
+  Triangle.TriangleType{Triangle.Degenerate Triangle.Equilateral Triangle.Illegal Triangle.Isosceles Triangle.Scalene}
+module dependencies:
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:Data.List d711f98b49ef5d33e5b3d404631ed073
+import  -/  base-4.9.0.0:Data.OldList 3c899c6d8e6204063769214449ac0954
+import  -/  base-4.9.0.0:GHC.Num f0aed3315b3ed1b330b71fc4148a5581
+import  -/  base-4.9.0.0:GHC.Show 0b5845243cb2ec62b57dd6963d276ec6
+import  -/  base-4.9.0.0:Prelude 2d9cd8b0ec3d728f62b734df888d2e34
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+1be680b5577ffc325575b8efca2864db
+  $fEqTriangleType :: GHC.Classes.Eq Triangle.TriangleType
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Triangle.TriangleType
+                  Triangle.$fEqTriangleType_$c==
+                  Triangle.$fEqTriangleType_$c/= -}
+1be680b5577ffc325575b8efca2864db
+  $fEqTriangleType_$c/= ::
+    Triangle.TriangleType -> Triangle.TriangleType -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Triangle.TriangleType)
+                   (b :: Triangle.TriangleType) ->
+                 case a of wild {
+                   Triangle.Equilateral
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Triangle.Equilateral -> GHC.Types.False }
+                   Triangle.Isosceles
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Triangle.Isosceles -> GHC.Types.False }
+                   Triangle.Scalene
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Triangle.Scalene -> GHC.Types.False }
+                   Triangle.Degenerate
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Triangle.Degenerate -> GHC.Types.False }
+                   Triangle.Illegal
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Triangle.Illegal -> GHC.Types.False } }) -}
+1be680b5577ffc325575b8efca2864db
+  $fEqTriangleType_$c== ::
+    Triangle.TriangleType -> Triangle.TriangleType -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Triangle.TriangleType)
+                   (ds1 :: Triangle.TriangleType) ->
+                 case ds of wild {
+                   Triangle.Equilateral
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Triangle.Equilateral -> GHC.Types.True }
+                   Triangle.Isosceles
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Triangle.Isosceles -> GHC.Types.True }
+                   Triangle.Scalene
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Triangle.Scalene -> GHC.Types.True }
+                   Triangle.Degenerate
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Triangle.Degenerate -> GHC.Types.True }
+                   Triangle.Illegal
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Triangle.Illegal -> GHC.Types.True } }) -}
+1be680b5577ffc325575b8efca2864db
+  $fShowTriangleType :: GHC.Show.Show Triangle.TriangleType
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Triangle.TriangleType
+                  Triangle.$fShowTriangleType_$cshowsPrec
+                  Triangle.$fShowTriangleType_$cshow
+                  Triangle.$fShowTriangleType_$cshowList -}
+9959e6480c9698d89b43c003b67e49e0
+  $fShowTriangleType1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Illegal"#) -}
+62d35722a216fe3dbf47c76bef422791
+  $fShowTriangleType2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Degenerate"#) -}
+93ee9201fc56098ab5f07b95871627b7
+  $fShowTriangleType3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Scalene"#) -}
+d8b12ab59bb5e0033acf914e0eb814eb
+  $fShowTriangleType4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Isosceles"#) -}
+dbbf0fe3962789aedb33eee0436e95d8
+  $fShowTriangleType5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Equilateral"#) -}
+1be680b5577ffc325575b8efca2864db
+  $fShowTriangleType_$cshow ::
+    Triangle.TriangleType -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Triangle.TriangleType) ->
+                 Triangle.$fShowTriangleType_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+1be680b5577ffc325575b8efca2864db
+  $fShowTriangleType_$cshowList ::
+    [Triangle.TriangleType] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Triangle.TriangleType
+                   Triangle.$w$cshowsPrec) -}
+1be680b5577ffc325575b8efca2864db
+  $fShowTriangleType_$cshowsPrec ::
+    GHC.Types.Int -> Triangle.TriangleType -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Triangle.TriangleType)
+                   (w2 :: GHC.Base.String) ->
+                 Triangle.$w$cshowsPrec w1 w2) -}
+5950d5c7942e0bf3f7e3acc36cccd438
+  $tc'Degenerate :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15540859567352642127##
+                   8621411761316189866##
+                   Triangle.$trModule
+                   Triangle.$tc'Degenerate1) -}
+17dc4dc75571c990e08b558ef8a94ae4
+  $tc'Degenerate1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Degenerate"#) -}
+6bd986aa8ed048647b3902f40c3c071b
+  $tc'Equilateral :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4135397985671264880##
+                   15778044159642520675##
+                   Triangle.$trModule
+                   Triangle.$tc'Equilateral1) -}
+214d91268d7d5ea5a7324abb5c35555b
+  $tc'Equilateral1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Equilateral"#) -}
+cf87f2e6988df1bc3040f291402c2ba8
+  $tc'Illegal :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   407978186189123638##
+                   3368852176585822427##
+                   Triangle.$trModule
+                   Triangle.$tc'Illegal1) -}
+aff5e8d1b463453428f9d64d29bd9c4a
+  $tc'Illegal1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Illegal"#) -}
+5e4d1301b4e612756601e310a440c9ef
+  $tc'Isosceles :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13065645055679316349##
+                   10029868708001718647##
+                   Triangle.$trModule
+                   Triangle.$tc'Isosceles1) -}
+8e7340852b235a3928b78a3a6eeba370
+  $tc'Isosceles1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Isosceles"#) -}
+6282ca07eaf9378cb00769e5f33adfb4
+  $tc'Scalene :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13746051196381042797##
+                   16848334686247385206##
+                   Triangle.$trModule
+                   Triangle.$tc'Scalene1) -}
+76519aac45c248192b8e40d757311ad1
+  $tc'Scalene1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Scalene"#) -}
+686ac71714fdac29be24deac3f40ff75
+  $tcTriangleType :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6144772297081050118##
+                   10157654460498160813##
+                   Triangle.$trModule
+                   Triangle.$tcTriangleType1) -}
+d063d7eb93e6e78f6764f011c3c3118c
+  $tcTriangleType1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "TriangleType"#) -}
+f8ec141a8958259dc78bff70921ea2e8
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Triangle.$trModule2
+                   Triangle.$trModule1) -}
+fa13893eeb3d77c11b89646d6a50b612
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Triangle"#) -}
+0a857e90d919ee57aa4a6d178a302b95
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "triangle-0.0.0-DH7frLsryKjJecHAi2g93L"#) -}
+1be680b5577ffc325575b8efca2864db
+  $w$cshowsPrec ::
+    Triangle.TriangleType -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Triangle.TriangleType)
+                   (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Triangle.Equilateral
+                   -> GHC.Base.++ @ GHC.Types.Char Triangle.$fShowTriangleType5 w1
+                   Triangle.Isosceles
+                   -> GHC.Base.++ @ GHC.Types.Char Triangle.$fShowTriangleType4 w1
+                   Triangle.Scalene
+                   -> GHC.Base.++ @ GHC.Types.Char Triangle.$fShowTriangleType3 w1
+                   Triangle.Degenerate
+                   -> GHC.Base.++ @ GHC.Types.Char Triangle.$fShowTriangleType2 w1
+                   Triangle.Illegal
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Triangle.$fShowTriangleType1
+                        w1 }) -}
+1be680b5577ffc325575b8efca2864db
+  data TriangleType
+    = Equilateral | Isosceles | Scalene | Degenerate | Illegal
+afd82df59dbad531266e33c2eb944f3c
+  triangleType ::
+    GHC.Types.Float
+    -> GHC.Types.Float -> GHC.Types.Float -> Triangle.TriangleType
+  {- Arity: 3, Strictness: <L,U><L,U><L,U>,
+     Unfolding: (\ (x :: GHC.Types.Float)
+                   (y :: GHC.Types.Float)
+                   (z :: GHC.Types.Float) ->
+                 case Data.OldList.sortBy
+                        @ GHC.Types.Float
+                        GHC.Classes.$fOrdFloat_$ccompare
+                        (GHC.Types.:
+                           @ GHC.Types.Float
+                           x
+                           (GHC.Types.:
+                              @ GHC.Types.Float
+                              y
+                              (GHC.Types.:
+                                 @ GHC.Types.Float
+                                 z
+                                 (GHC.Types.[] @ GHC.Types.Float)))) of wild {
+                   []
+                   -> case Triangle.triangleType1 ret_ty Triangle.TriangleType of {}
+                   : s1 ds
+                   -> case ds of wild1 {
+                        []
+                        -> case Triangle.triangleType1 ret_ty Triangle.TriangleType of {}
+                        : s2 ds1
+                        -> case ds1 of wild2 {
+                             []
+                             -> case Triangle.triangleType1 ret_ty Triangle.TriangleType of {}
+                             : s3 ds2
+                             -> case ds2 of wild3 {
+                                  []
+                                  -> case s1 of ww { GHC.Types.F# ww1 ->
+                                     case s2 of ww2 { GHC.Types.F# ww3 ->
+                                     case s3 of ww4 { GHC.Types.F# ww5 ->
+                                     let {
+                                       $w$j :: GHC.Prim.Void# -> Triangle.TriangleType
+                                         {- Arity: 1, Strictness: <L,U>, Inline: [0] -}
+                                       = \ (void :: GHC.Prim.Void#)[OneShot] ->
+                                         case GHC.Prim.tagToEnum#
+                                                @ GHC.Types.Bool
+                                                (GHC.Prim.ltFloat#
+                                                   ww5
+                                                   (GHC.Prim.plusFloat# ww1 ww3)) of wild4 {
+                                           GHC.Types.False -> Triangle.Illegal
+                                           GHC.Types.True
+                                           -> case GHC.Prim.tagToEnum#
+                                                     @ GHC.Types.Bool
+                                                     (GHC.Prim.eqFloat# ww1 ww3) of wild5 {
+                                                GHC.Types.False
+                                                -> case GHC.Prim.tagToEnum#
+                                                          @ GHC.Types.Bool
+                                                          (GHC.Prim.eqFloat# ww1 ww3) of wild6 {
+                                                     GHC.Types.False
+                                                     -> case GHC.Prim.tagToEnum#
+                                                               @ GHC.Types.Bool
+                                                               (GHC.Prim.eqFloat#
+                                                                  ww3
+                                                                  ww5) of wild7 {
+                                                          GHC.Types.False -> Triangle.Scalene
+                                                          GHC.Types.True -> Triangle.Isosceles }
+                                                     GHC.Types.True -> Triangle.Isosceles }
+                                                GHC.Types.True
+                                                -> case GHC.Prim.tagToEnum#
+                                                          @ GHC.Types.Bool
+                                                          (GHC.Prim.eqFloat# ww3 ww5) of wild6 {
+                                                     GHC.Types.False
+                                                     -> case GHC.Prim.tagToEnum#
+                                                               @ GHC.Types.Bool
+                                                               (GHC.Prim.eqFloat#
+                                                                  ww1
+                                                                  ww3) of wild7 {
+                                                          GHC.Types.False
+                                                          -> case GHC.Prim.tagToEnum#
+                                                                    @ GHC.Types.Bool
+                                                                    (GHC.Prim.eqFloat#
+                                                                       ww3
+                                                                       ww5) of wild8 {
+                                                               GHC.Types.False -> Triangle.Scalene
+                                                               GHC.Types.True
+                                                               -> Triangle.Isosceles }
+                                                          GHC.Types.True -> Triangle.Isosceles }
+                                                     GHC.Types.True -> Triangle.Equilateral } } }
+                                     } in
+                                     case GHC.Prim.tagToEnum#
+                                            @ GHC.Types.Bool
+                                            (GHC.Prim.eqFloat# ww1 0.0#) of wild4 {
+                                       GHC.Types.False
+                                       -> case GHC.Prim.tagToEnum#
+                                                 @ GHC.Types.Bool
+                                                 (GHC.Prim.eqFloat# ww3 0.0#) of wild5 {
+                                            GHC.Types.False
+                                            -> case GHC.Prim.tagToEnum#
+                                                      @ GHC.Types.Bool
+                                                      (GHC.Prim.eqFloat# ww5 0.0#) of wild6 {
+                                                 GHC.Types.False
+                                                 -> case GHC.Prim.tagToEnum#
+                                                           @ GHC.Types.Bool
+                                                           (GHC.Prim.eqFloat#
+                                                              ww5
+                                                              (GHC.Prim.plusFloat#
+                                                                 ww1
+                                                                 ww3)) of wild7 {
+                                                      GHC.Types.False -> $w$j GHC.Prim.void#
+                                                      GHC.Types.True -> Triangle.Degenerate }
+                                                 GHC.Types.True -> $w$j GHC.Prim.void# }
+                                            GHC.Types.True -> $w$j GHC.Prim.void# }
+                                       GHC.Types.True -> $w$j GHC.Prim.void# } } } }
+                                  : ipv ipv1
+                                  -> case Triangle.triangleType1
+                                     ret_ty Triangle.TriangleType
+                                     of {} } } } }) -}
+559b5925bd986523aa3304417a5fe7a5
+  triangleType1 ::
+    (GHC.Types.Float, GHC.Types.Float, GHC.Types.Float)
+  {- Strictness: x -}
+instance [safe] GHC.Classes.Eq [Triangle.TriangleType]
+  = Triangle.$fEqTriangleType
+instance [safe] GHC.Show.Show [Triangle.TriangleType]
+  = Triangle.$fShowTriangleType
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

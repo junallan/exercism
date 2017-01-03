@@ -1,0 +1,618 @@
+
+==================== FINAL INTERFACE ====================
+2016-12-30 02:20:51.5964899 UTC
+
+interface kindergarten-garden-0.0.0-9X21LWslLKWFKzho6YprQ2:Garden 8001
+  interface hash: 7be25ca83a605fe5adf8580aced0be33
+  ABI hash: e864a993f2ecfa1c61a7e3e4c9cf37ee
+  export-list hash: 07af0366193b35cf3c2a86529b0d3c9e
+  orphan hash: fe3bc6329f5bd76b43931815fab59694
+  flag hash: 01bffee402c99072b66b5a2d29157711
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Garden.defaultGarden
+  Garden.garden
+  Garden.lookupPlants
+  Garden.Plant{Garden.Clover Garden.Grass Garden.Radishes Garden.Violets}
+module dependencies:
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.0.0*
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Complex base-4.9.0.0:Data.Either
+                         base-4.9.0.0:Data.Functor.Const base-4.9.0.0:Data.Functor.Identity
+                         base-4.9.0.0:Data.List.NonEmpty base-4.9.0.0:Data.Monoid
+                         base-4.9.0.0:Data.Semigroup base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:Data.Version base-4.9.0.0:Data.Void
+                         base-4.9.0.0:GHC.Exts base-4.9.0.0:GHC.Generics
+                         base-4.9.0.0:GHC.IO.Exception base-4.9.0.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+import  -/  base-4.9.0.0:Data.Foldable 3cbed01c922be29649c33015287c82ca
+import  -/  base-4.9.0.0:Data.List d711f98b49ef5d33e5b3d404631ed073
+import  -/  base-4.9.0.0:Data.Maybe 086a84053ef7f7810663b5f03b7ec3f7
+import  -/  base-4.9.0.0:Data.OldList 3c899c6d8e6204063769214449ac0954
+import  -/  base-4.9.0.0:GHC.Base dd8044a8d640eee51828c17c476a6ba7
+import  -/  base-4.9.0.0:GHC.List 47d436dfb7454bb1883fb4d943e3f389
+import  -/  base-4.9.0.0:GHC.Num f0aed3315b3ed1b330b71fc4148a5581
+import  -/  base-4.9.0.0:GHC.Show 0b5845243cb2ec62b57dd6963d276ec6
+import  -/  base-4.9.0.0:Prelude 2d9cd8b0ec3d728f62b734df888d2e34
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map 59ba4f128d7d19046010538c416f3875
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base d6db6ac95571c976686f97c64548b060
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+e1e91b3deded1838d1993bb97629bd32
+  $fEqPlant :: GHC.Classes.Eq Garden.Plant
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Garden.Plant Garden.$fEqPlant_$c== Garden.$fEqPlant_$c/= -}
+e1e91b3deded1838d1993bb97629bd32
+  $fEqPlant_$c/= :: Garden.Plant -> Garden.Plant -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Garden.Plant) (b :: Garden.Plant) ->
+                 case a of wild {
+                   Garden.Clover
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Garden.Clover -> GHC.Types.False }
+                   Garden.Grass
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Garden.Grass -> GHC.Types.False }
+                   Garden.Radishes
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Garden.Radishes -> GHC.Types.False }
+                   Garden.Violets
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Garden.Violets -> GHC.Types.False } }) -}
+e1e91b3deded1838d1993bb97629bd32
+  $fEqPlant_$c== :: Garden.Plant -> Garden.Plant -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Garden.Plant) (ds1 :: Garden.Plant) ->
+                 case ds of wild {
+                   Garden.Clover
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Garden.Clover -> GHC.Types.True }
+                   Garden.Grass
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Garden.Grass -> GHC.Types.True }
+                   Garden.Radishes
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Garden.Radishes -> GHC.Types.True }
+                   Garden.Violets
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Garden.Violets -> GHC.Types.True } }) -}
+e1e91b3deded1838d1993bb97629bd32
+  $fShowPlant :: GHC.Show.Show Garden.Plant
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Garden.Plant
+                  Garden.$fShowPlant_$cshowsPrec
+                  Garden.$fShowPlant_$cshow
+                  Garden.$fShowPlant_$cshowList -}
+9c47f71c3f177ce0c66b24769116a700
+  $fShowPlant1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Violets"#) -}
+096b74b6f5f47a49f8d05c62ae3d2052
+  $fShowPlant2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Radishes"#) -}
+715fcc7b7073c2b33a93d8b14bab4bd1
+  $fShowPlant3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Grass"#) -}
+9fbeb6f0ba1f8d307e53879b09985258
+  $fShowPlant4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Clover"#) -}
+e1e91b3deded1838d1993bb97629bd32
+  $fShowPlant_$cshow :: Garden.Plant -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Garden.Plant) ->
+                 Garden.$fShowPlant_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+e1e91b3deded1838d1993bb97629bd32
+  $fShowPlant_$cshowList :: [Garden.Plant] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Garden.Plant
+                   Garden.$w$cshowsPrec) -}
+e1e91b3deded1838d1993bb97629bd32
+  $fShowPlant_$cshowsPrec ::
+    GHC.Types.Int -> Garden.Plant -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Garden.Plant)
+                   (w2 :: GHC.Base.String) ->
+                 Garden.$w$cshowsPrec w1 w2) -}
+c40422686a6394b33f95755c04ff33b1
+  $sfromList ::
+    [(GHC.Types.Char, a)] -> Data.Map.Base.Map GHC.Types.Char a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a (ds :: [(GHC.Types.Char, a)]) ->
+                 case ds of wild {
+                   [] -> Data.Map.Base.Tip @ GHC.Types.Char @ a
+                   : ds1 ds2
+                   -> case ds1 of wild1 { (,) kx x ->
+                      case ds2 of wild2 {
+                        []
+                        -> case kx of dt { GHC.Types.C# ipv ->
+                           Data.Map.Base.Bin
+                             @ GHC.Types.Char
+                             @ a
+                             1#
+                             dt
+                             x
+                             (Data.Map.Base.Tip @ GHC.Types.Char @ a)
+                             (Data.Map.Base.Tip @ GHC.Types.Char @ a) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds3 ->
+                           case kx of wild4 { GHC.Types.C# c1 ->
+                           case ky of wild5 { GHC.Types.C# c2 ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.geChar# c1 c2) of wild6 {
+                             GHC.Types.False
+                             -> Garden.$wpoly_go10
+                                  @ a
+                                  1#
+                                  (Data.Map.Base.Bin
+                                     @ GHC.Types.Char
+                                     @ a
+                                     1#
+                                     wild4
+                                     x
+                                     (Data.Map.Base.Tip @ GHC.Types.Char @ a)
+                                     (Data.Map.Base.Tip @ GHC.Types.Char @ a))
+                                  wild2
+                             GHC.Types.True
+                             -> Garden.$sfromList1
+                                  @ a
+                                  (Data.Map.Base.Bin
+                                     @ GHC.Types.Char
+                                     @ a
+                                     1#
+                                     wild4
+                                     x
+                                     (Data.Map.Base.Tip @ GHC.Types.Char @ a)
+                                     (Data.Map.Base.Tip @ GHC.Types.Char @ a))
+                                  wild2 } } } } } } }) -}
+0823f8fb614d7de03c3097c7fc60b79a
+  $sfromList1 ::
+    Data.Map.Base.Map GHC.Types.Char a1
+    -> [(GHC.Types.Char, a1)] -> Data.Map.Base.Map GHC.Types.Char a1
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+d713cf3137202ca0681fd0bb009f1026
+  $sfromList2 ::
+    [(GHC.Base.String, a)] -> Data.Map.Base.Map GHC.Base.String a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a (ds :: [(GHC.Base.String, a)]) ->
+                 case ds of wild {
+                   [] -> Data.Map.Base.Tip @ GHC.Base.String @ a
+                   : ds1 ds2
+                   -> case ds1 of wild1 { (,) kx x ->
+                      case ds2 of wild2 {
+                        []
+                        -> case kx of dt { DEFAULT ->
+                           Data.Map.Base.Bin
+                             @ GHC.Base.String
+                             @ a
+                             1#
+                             dt
+                             x
+                             (Data.Map.Base.Tip @ GHC.Base.String @ a)
+                             (Data.Map.Base.Tip @ GHC.Base.String @ a) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds3 ->
+                           case GHC.Classes.$fOrd[]_$s$ccompare1 kx ky of wild4 {
+                             DEFAULT
+                             -> case kx of dt { DEFAULT ->
+                                Garden.$sfromList3
+                                  @ a
+                                  (Data.Map.Base.Bin
+                                     @ GHC.Base.String
+                                     @ a
+                                     1#
+                                     dt
+                                     x
+                                     (Data.Map.Base.Tip @ GHC.Base.String @ a)
+                                     (Data.Map.Base.Tip @ GHC.Base.String @ a))
+                                  wild2 }
+                             GHC.Types.LT
+                             -> case kx of dt { DEFAULT ->
+                                Garden.$wpoly_go1
+                                  @ a
+                                  1#
+                                  (Data.Map.Base.Bin
+                                     @ GHC.Base.String
+                                     @ a
+                                     1#
+                                     dt
+                                     x
+                                     (Data.Map.Base.Tip @ GHC.Base.String @ a)
+                                     (Data.Map.Base.Tip @ GHC.Base.String @ a))
+                                  wild2 } } } } } }) -}
+23797ad998f1294e7c7a21e5ce3b825d
+  $sfromList3 ::
+    Data.Map.Base.Map GHC.Base.String a1
+    -> [(GHC.Base.String, a1)] -> Data.Map.Base.Map GHC.Base.String a1
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+50cc8b8b24211220fdcd0808e022d35c
+  $sinsert_$sgo10 ::
+    GHC.Base.String
+    -> a1
+    -> Data.Map.Base.Map GHC.Base.String a1
+    -> Data.Map.Base.Map GHC.Base.String a1
+  {- Arity: 3, Strictness: <S,1*U><L,U><S,1*U> -}
+b8d7b96ce1ce2d41b02af9417628593e
+  $slookup3 ::
+    GHC.Base.String
+    -> Data.Map.Base.Map GHC.Base.String a -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+a69732275ba5e2df5eff4ebacf7959ca
+  $tc'Clover :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16913184200916260375##
+                   4356485893923079216##
+                   Garden.$trModule
+                   Garden.$tc'Clover1) -}
+19c6e97f12ad0fe2ca529ceb86bc7786
+  $tc'Clover1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Clover"#) -}
+f89075ed8fdafc30ae986c6e13cc47c9
+  $tc'Grass :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17590369365585546380##
+                   900900141561039326##
+                   Garden.$trModule
+                   Garden.$tc'Grass1) -}
+be2b2dde5c2d38407b51d4d42b430064
+  $tc'Grass1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Grass"#) -}
+057dff908ce926161ecbead7aaef7835
+  $tc'Radishes :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14954129581905815881##
+                   15195730871374212691##
+                   Garden.$trModule
+                   Garden.$tc'Radishes1) -}
+ca56cece3252e413711aee8606e57574
+  $tc'Radishes1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Radishes"#) -}
+f6e0106a8e15c0ae5a45e23bd075e3e3
+  $tc'Violets :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16605699729271713776##
+                   4164831115696759378##
+                   Garden.$trModule
+                   Garden.$tc'Violets1) -}
+d871aee670980a6701d6bcfc91f4dfad
+  $tc'Violets1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Violets"#) -}
+433e658505109a4bc9d1839d6aec4622
+  $tcPlant :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17249971048457865095##
+                   17960795771634628594##
+                   Garden.$trModule
+                   Garden.$tcPlant1) -}
+634a059d1c07cb22f7e68e6813564b3c
+  $tcPlant1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Plant"#) -}
+3c6a5c63c33ffe4ba68ddebb838d9d6c
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Garden.$trModule2
+                   Garden.$trModule1) -}
+4d195178111b5ddf458a572067f80b18
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Garden"#) -}
+9fc398a9565792328b0aee10e4345c44
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "kindergarten-garden-0.0.0-9X21LWslLKWFKzho6YprQ2"#) -}
+e1e91b3deded1838d1993bb97629bd32
+  $w$cshowsPrec :: Garden.Plant -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Garden.Plant) (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Garden.Clover
+                   -> GHC.Base.++ @ GHC.Types.Char Garden.$fShowPlant4 w1
+                   Garden.Grass -> GHC.Base.++ @ GHC.Types.Char Garden.$fShowPlant3 w1
+                   Garden.Radishes
+                   -> GHC.Base.++ @ GHC.Types.Char Garden.$fShowPlant2 w1
+                   Garden.Violets
+                   -> GHC.Base.++ @ GHC.Types.Char Garden.$fShowPlant1 w1 }) -}
+ed52c33831361193565192dd2ad90cc4
+  $w$sgo10 ::
+    GHC.Prim.Char#
+    -> a1
+    -> Data.Map.Base.Map GHC.Types.Char a1
+    -> Data.Map.Base.Map GHC.Types.Char a1
+  {- Arity: 3, Strictness: <L,U><L,U><S,1*U>, Inline: [0] -}
+71b8c8a75143953a898edb2b2d607dd6
+  $wpoly_go1 ::
+    GHC.Prim.Int#
+    -> Data.Map.Base.Map GHC.Base.String a
+    -> [(GHC.Base.String, a)]
+    -> Data.Map.Base.Map GHC.Base.String a
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U>, Inline: [0] -}
+337f507a8140f2f7a87387c1904ab3b1
+  $wpoly_go10 ::
+    GHC.Prim.Int#
+    -> Data.Map.Base.Map GHC.Types.Char a
+    -> [(GHC.Types.Char, a)]
+    -> Data.Map.Base.Map GHC.Types.Char a
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U>, Inline: [0] -}
+7ffdc8a63e5051684136a23569d3729c
+  $wpoly_go2 ::
+    GHC.Prim.Char#
+    -> Data.Map.Base.Map GHC.Types.Char a -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>, Inline: [0] -}
+e1e91b3deded1838d1993bb97629bd32
+  data Plant = Clover | Grass | Radishes | Violets
+d5866b78e1d5fbece7a2591ff9735154
+  defaultGarden ::
+    GHC.Base.String -> Data.Map.Base.Map GHC.Base.String [Garden.Plant]
+  {- Arity: 1, Strictness: <L,1*U>,
+     Unfolding: (\ (plants :: GHC.Base.String) ->
+                 let {
+                   ds :: (GHC.Base.String, GHC.Base.String)
+                   = case Data.OldList.lines plants of wild {
+                       [] -> Garden.defaultGarden27
+                       : fstRow ds1
+                       -> case ds1 of wild1 {
+                            [] -> Garden.defaultGarden27
+                            : sndRow ds2
+                            -> case ds2 of wild2 {
+                                 [] -> (fstRow, sndRow) : ipv ipv1 -> Garden.defaultGarden27 } } }
+                 } in
+                 Garden.$sfromList2
+                   @ [Garden.Plant]
+                   (Garden.studentPlantMapping
+                      Garden.defaultGarden1
+                      (case ds of ds1 { (,) fstRow sndRow -> fstRow })
+                      (case ds of ds1 { (,) fstRow sndRow -> sndRow }))) -}
+70c74f2d04b5c850286acb913a3d593b
+  defaultGarden1 :: Data.Map.Base.Map GHC.Base.String GHC.Types.Int
+  {- Unfolding: (Garden.setupStudentGardenPosition
+                   Garden.defaultGarden2) -}
+dddccbe8b53d9d76854f2c164acfe459
+  defaultGarden10 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Garden.defaultGarden17
+                   Garden.defaultGarden11) -}
+1a4e42f58583669d197360eee2bc1342
+  defaultGarden11 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Garden.defaultGarden16
+                   Garden.defaultGarden12) -}
+a68c1f5f84ed937c1a841c1562845cc2
+  defaultGarden12 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Garden.defaultGarden15
+                   Garden.defaultGarden13) -}
+ab16c1473cf88c4ad4db9708c51f5fc7
+  defaultGarden13 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Garden.defaultGarden14
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+54f1e2268e9e81ff3568767a2aeec8a4
+  defaultGarden14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Larry"#) -}
+3014d5cb5ea6cfa0c1c03983077b221e
+  defaultGarden15 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Kincaid"#) -}
+056ba6d97c07690caf4e7f2476bb840a
+  defaultGarden16 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Joseph"#) -}
+0818300cf71b30d0a80a097970a4c792
+  defaultGarden17 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Ileana"#) -}
+74ef4d04977d0e6b73eff56a572e8d4d
+  defaultGarden18 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Harriet"#) -}
+4211c59a388bcf95485cf234d2135a29
+  defaultGarden19 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Ginny"#) -}
+fe891f15cfbe52cd1eb62bf86595f894
+  defaultGarden2 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Garden.defaultGarden25
+                   Garden.defaultGarden3) -}
+36a2deb04a516387ffb736eed22fe7ef
+  defaultGarden20 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Fred"#) -}
+4d25a9203469df0bd0e65b9986f8adf4
+  defaultGarden21 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Eve"#) -}
+7bdbfce0da0b496560ef125d02138ed0
+  defaultGarden22 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "David"#) -}
+8ec4917aa65305d8aa97cafa73b6bce1
+  defaultGarden23 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Charlie"#) -}
+c0ed53f8991a3b2ceaff21373a79b8c8
+  defaultGarden24 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Bob"#) -}
+5a403daaf4bd5ee9648f87f13d11bcd5
+  defaultGarden25 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Alice"#) -}
+ba78a1decca5a0798ec3221f82c7496a
+  defaultGarden26 :: Data.Map.Base.Map GHC.Base.String GHC.Types.Int
+  {- Unfolding: (Garden.$sfromList2
+                   @ GHC.Types.Int
+                   (GHC.Types.[] @ (GHC.Base.String, GHC.Types.Int))) -}
+0b5b15814208e9310a4bfae86959e4ca
+  defaultGarden27 :: (GHC.Base.String, GHC.Base.String)
+  {- Strictness: x -}
+c80c2feab290cd0abb2f3f003cdb0abc
+  defaultGarden3 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Garden.defaultGarden24
+                   Garden.defaultGarden4) -}
+52721a56bcf675733cd890f3d51a7881
+  defaultGarden4 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Garden.defaultGarden23
+                   Garden.defaultGarden5) -}
+bbd9037209f42599f48c1b849f1ae38c
+  defaultGarden5 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Garden.defaultGarden22
+                   Garden.defaultGarden6) -}
+83bc2ba3f73c3feeb34ef928afc1c3ab
+  defaultGarden6 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Garden.defaultGarden21
+                   Garden.defaultGarden7) -}
+fc7cd6ab3e49d41ab1c08bffa7e8524b
+  defaultGarden7 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Garden.defaultGarden20
+                   Garden.defaultGarden8) -}
+8ded6b056562e07e73827fa99de35e59
+  defaultGarden8 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Garden.defaultGarden19
+                   Garden.defaultGarden9) -}
+0e28f377eede497292d59691cdc05fef
+  defaultGarden9 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Garden.defaultGarden18
+                   Garden.defaultGarden10) -}
+039edcb752b8b0307b0d81992a2b6e3a
+  garden ::
+    [GHC.Base.String]
+    -> GHC.Base.String
+    -> Data.Map.Base.Map GHC.Base.String [Garden.Plant]
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>,
+     Unfolding: (\ (students :: [GHC.Base.String])
+                   (plants :: GHC.Base.String) ->
+                 let {
+                   ds :: (GHC.Base.String, GHC.Base.String)
+                   = case Data.OldList.lines plants of wild {
+                       [] -> Garden.garden1
+                       : fstRow ds1
+                       -> case ds1 of wild1 {
+                            [] -> Garden.garden1
+                            : sndRow ds2
+                            -> case ds2 of wild2 {
+                                 [] -> (fstRow, sndRow) : ipv ipv1 -> Garden.garden1 } } }
+                 } in
+                 Garden.$sfromList2
+                   @ [Garden.Plant]
+                   (Garden.studentPlantMapping
+                      (Garden.setupStudentGardenPosition
+                         (Data.OldList.sortBy
+                            @ GHC.Base.String
+                            GHC.Classes.$fOrd[]_$s$ccompare1
+                            students))
+                      (case ds of ds1 { (,) fstRow sndRow -> fstRow })
+                      (case ds of ds1 { (,) fstRow sndRow -> sndRow }))) -}
+3dba7c2d1d4d4a675c922330836b5098
+  garden1 :: (GHC.Base.String, GHC.Base.String)
+  {- Strictness: x -}
+96953b51fac3ecdc25573b3c9f9add6d
+  lookupPlants ::
+    GHC.Base.String
+    -> Data.Map.Base.Map GHC.Base.String [Garden.Plant]
+    -> [Garden.Plant]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (studentName :: GHC.Base.String)
+                   (garden2 :: Data.Map.Base.Map GHC.Base.String [Garden.Plant]) ->
+                 case Garden.$slookup3
+                        @ [Garden.Plant]
+                        studentName
+                        garden2 of wild {
+                   GHC.Base.Nothing -> GHC.Types.[] @ Garden.Plant
+                   GHC.Base.Just ipv -> ipv }) -}
+de5f6c340ef5273629bc34ce4afe18ff
+  setupStudentGardenPosition ::
+    [GHC.Base.String]
+    -> Data.Map.Base.Map GHC.Base.String GHC.Types.Int
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (students :: [GHC.Base.String]) ->
+                 case GHC.List.$wlenAcc
+                        @ [GHC.Types.Char]
+                        students
+                        0# of ww2 { DEFAULT ->
+                 let {
+                   y :: GHC.Prim.Int# = GHC.Prim.-# ww2 1#
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.># 0# y) of wild {
+                   GHC.Types.False
+                   -> letrec {
+                        go :: GHC.Prim.Int# -> [(GHC.Base.String, GHC.Types.Int)]
+                          {- Arity: 1, Strictness: <L,U> -}
+                        = \ (x :: GHC.Prim.Int#) ->
+                          GHC.Types.:
+                            @ (GHC.Base.String, GHC.Types.Int)
+                            (GHC.List.$w!! @ GHC.Base.String students x,
+                             GHC.Types.I# (GHC.Prim.*# x 2#))
+                            (case GHC.Prim.tagToEnum#
+                                    @ GHC.Types.Bool
+                                    (GHC.Prim.==# x y) of wild1 {
+                               GHC.Types.False -> go (GHC.Prim.+# x 1#)
+                               GHC.Types.True
+                               -> GHC.Types.[] @ (GHC.Base.String, GHC.Types.Int) })
+                      } in
+                      Garden.$sfromList2 @ GHC.Types.Int (go 0#)
+                   GHC.Types.True -> Garden.defaultGarden26 } }) -}
+0da51bf847c3f42c5b096f8841569bbb
+  studentPlantMapping ::
+    Data.Map.Base.Map GHC.Base.String GHC.Types.Int
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> [(GHC.Base.String, [Garden.Plant])]
+  {- Arity: 3, Strictness: <S,U><L,U><L,U> -}
+instance [safe] GHC.Classes.Eq [Garden.Plant] = Garden.$fEqPlant
+instance [safe] GHC.Show.Show [Garden.Plant] = Garden.$fShowPlant
+"SPEC/Garden fromList @ Char _" [ALWAYS] forall @ a
+                                                ($dOrd :: GHC.Classes.Ord GHC.Types.Char)
+  Data.Map.Base.fromList @ GHC.Types.Char @ a $dOrd
+  = Garden.$sfromList @ a
+"SPEC/Garden fromList @ String _" [ALWAYS] forall @ a
+                                                  ($dOrd :: GHC.Classes.Ord GHC.Base.String)
+  Data.Map.Base.fromList @ [GHC.Types.Char] @ a $dOrd
+  = Garden.$sfromList2 @ a
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

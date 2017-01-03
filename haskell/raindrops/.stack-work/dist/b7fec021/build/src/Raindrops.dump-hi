@@ -1,0 +1,124 @@
+
+==================== FINAL INTERFACE ====================
+2016-12-25 21:19:18.6483049 UTC
+
+interface raindrops-0.0.0-2WrW8yfWhOMEyccwhWv2qL:Raindrops 8001
+  interface hash: 782dbbcc9f57204ed317810a7f6c1e3c
+  ABI hash: 9e84cd6fab9533530390d7b1016d9a80
+  export-list hash: 160f9d38ce64c8e39adfe5c81d6e447a
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 01bffee402c99072b66b5a2d29157711
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Raindrops.convert
+module dependencies:
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:Data.Foldable 3cbed01c922be29649c33015287c82ca
+import  -/  base-4.9.0.0:GHC.Base dd8044a8d640eee51828c17c476a6ba7
+import  -/  base-4.9.0.0:GHC.Real 011de9ca3282ad24a84e4e15f974f98e
+import  -/  base-4.9.0.0:GHC.Show 0b5845243cb2ec62b57dd6963d276ec6
+import  -/  base-4.9.0.0:Prelude 2d9cd8b0ec3d728f62b734df888d2e34
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+30c84a7ea986a25f6b16f6a986dc2835
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Raindrops.$trModule2
+                   Raindrops.$trModule1) -}
+46c16848385aba0bc166d745327036f0
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Raindrops"#) -}
+b0b738d766d949fb5feb5e98225460e0
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "raindrops-0.0.0-2WrW8yfWhOMEyccwhWv2qL"#) -}
+0bfef1c1db2899aa0baf7cda83998ebe
+  $wconvert :: GHC.Prim.Int# -> [GHC.Types.Char]
+  {- Arity: 1, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 let {
+                   karg :: [GHC.Types.Char]
+                   = case GHC.Classes.modInt# ww 5# of ww2 {
+                       DEFAULT
+                       -> GHC.Base.++
+                            @ GHC.Types.Char
+                            (GHC.Types.[] @ GHC.Types.Char)
+                            (case GHC.Classes.modInt# ww 7# of ww1 {
+                               DEFAULT -> Raindrops.convert5 0# -> Raindrops.convert3 })
+                       0#
+                       -> GHC.Base.++
+                            @ GHC.Types.Char
+                            Raindrops.convert2
+                            (case GHC.Classes.modInt# ww 7# of ww1 {
+                               DEFAULT -> Raindrops.convert5 0# -> Raindrops.convert3 }) }
+                 } in
+                 let {
+                   result :: [GHC.Types.Char]
+                   = case GHC.Classes.modInt# ww 3# of ww2 {
+                       DEFAULT
+                       -> GHC.Base.++
+                            @ GHC.Types.Char
+                            (GHC.Types.[] @ GHC.Types.Char)
+                            karg
+                       0# -> GHC.Base.++ @ GHC.Types.Char Raindrops.convert1 karg }
+                 } in
+                 case GHC.List.$wlenAcc
+                        @ GHC.Types.Char
+                        result
+                        0# of ww2 { DEFAULT ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.># ww2 0#) of wild {
+                   GHC.Types.False
+                   -> case GHC.Show.$wshowSignedInt
+                             0#
+                             ww
+                             (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                      GHC.Types.: @ GHC.Types.Char ww5 ww6 }
+                   GHC.Types.True -> result } }) -}
+89746d9a1d3643445396a2445f4c6626
+  convert :: GHC.Types.Int -> GHC.Base.String
+  {- Arity: 1, Strictness: <S(S),U(U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 -> Raindrops.$wconvert ww1 }) -}
+6e45e087570f793608d02f52b8b41b1d
+  convert1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Pling"#) -}
+a0930f9b3768413c29df07f5741db43b
+  convert2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Plang"#) -}
+e538b9742ccbfe34102819251949ba9b
+  convert3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Raindrops.convert4
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+777b000e505a25708b0a0dada205f7f6
+  convert4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Plong"#) -}
+361eb104e6c2585bde1ac3f7d853c53d
+  convert5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

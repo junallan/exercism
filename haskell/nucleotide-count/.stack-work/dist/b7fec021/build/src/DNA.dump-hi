@@ -1,0 +1,249 @@
+
+==================== FINAL INTERFACE ====================
+2016-12-24 00:20:03.3683349 UTC
+
+interface nucleotide-count-0.0.0-LnIjeFZp0SF6K8oWePf1A:DNA 8001
+  interface hash: 52fd0c9aa1d36e5edaeffdceefceb380
+  ABI hash: 1e717922b95622671a5b73af809bc256
+  export-list hash: 3480ff7c1b9779aa39dfa731060be445
+  orphan hash: 7089d7846287fb4a512da4187e04f9da
+  flag hash: 01bffee402c99072b66b5a2d29157711
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  DNA.count
+  DNA.nucleotideCounts
+module dependencies:
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.0.0*
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Complex base-4.9.0.0:Data.Either
+                         base-4.9.0.0:Data.Functor.Const base-4.9.0.0:Data.Functor.Identity
+                         base-4.9.0.0:Data.List.NonEmpty base-4.9.0.0:Data.Monoid
+                         base-4.9.0.0:Data.Semigroup base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:Data.Version base-4.9.0.0:Data.Void
+                         base-4.9.0.0:GHC.Exts base-4.9.0.0:GHC.Generics
+                         base-4.9.0.0:GHC.IO.Exception base-4.9.0.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+import  -/  base-4.9.0.0:Data.Either 4cef602ce360a0155ac0dd580a5b4863
+import  -/  base-4.9.0.0:Data.Foldable 3cbed01c922be29649c33015287c82ca
+import  -/  base-4.9.0.0:GHC.Base dd8044a8d640eee51828c17c476a6ba7
+import  -/  base-4.9.0.0:GHC.Err 20faef8829fd13c027d0ee2213637534
+import  -/  base-4.9.0.0:GHC.Num f0aed3315b3ed1b330b71fc4148a5581
+import  -/  base-4.9.0.0:Prelude 2d9cd8b0ec3d728f62b734df888d2e34
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map 59ba4f128d7d19046010538c416f3875
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base d6db6ac95571c976686f97c64548b060
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+61580b57143685aa217fa296a53b1b8c
+  $sfromList ::
+    [(GHC.Types.Char, a)] -> Data.Map.Base.Map GHC.Types.Char a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a (ds :: [(GHC.Types.Char, a)]) ->
+                 case ds of wild {
+                   [] -> Data.Map.Base.Tip @ GHC.Types.Char @ a
+                   : ds1 ds2
+                   -> case ds1 of wild1 { (,) kx x ->
+                      case ds2 of wild2 {
+                        []
+                        -> case kx of dt { GHC.Types.C# ipv ->
+                           Data.Map.Base.Bin
+                             @ GHC.Types.Char
+                             @ a
+                             1#
+                             dt
+                             x
+                             (Data.Map.Base.Tip @ GHC.Types.Char @ a)
+                             (Data.Map.Base.Tip @ GHC.Types.Char @ a) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds3 ->
+                           case kx of wild4 { GHC.Types.C# c1 ->
+                           case ky of wild5 { GHC.Types.C# c2 ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.geChar# c1 c2) of wild6 {
+                             GHC.Types.False
+                             -> DNA.$wpoly_go10
+                                  @ a
+                                  1#
+                                  (Data.Map.Base.Bin
+                                     @ GHC.Types.Char
+                                     @ a
+                                     1#
+                                     wild4
+                                     x
+                                     (Data.Map.Base.Tip @ GHC.Types.Char @ a)
+                                     (Data.Map.Base.Tip @ GHC.Types.Char @ a))
+                                  wild2
+                             GHC.Types.True
+                             -> DNA.$sfromList1
+                                  @ a
+                                  (Data.Map.Base.Bin
+                                     @ GHC.Types.Char
+                                     @ a
+                                     1#
+                                     wild4
+                                     x
+                                     (Data.Map.Base.Tip @ GHC.Types.Char @ a)
+                                     (Data.Map.Base.Tip @ GHC.Types.Char @ a))
+                                  wild2 } } } } } } }) -}
+07d578c2da82891e59d39a1e6c4383c3
+  $sfromList1 ::
+    Data.Map.Base.Map GHC.Types.Char a1
+    -> [(GHC.Types.Char, a1)] -> Data.Map.Base.Map GHC.Types.Char a1
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+a0d6af9ffd13265c23d8aff74bf6c65b
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module DNA.$trModule2 DNA.$trModule1) -}
+296d9ff70864ee80e6ec1edf8e05d555
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "DNA"#) -}
+73646d82a8155943ce422a1498ead56b
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "nucleotide-count-0.0.0-LnIjeFZp0SF6K8oWePf1A"#) -}
+a35b45107084034a67c542faeb185105
+  $w$sgo10 ::
+    GHC.Prim.Char#
+    -> a1
+    -> Data.Map.Base.Map GHC.Types.Char a1
+    -> Data.Map.Base.Map GHC.Types.Char a1
+  {- Arity: 3, Strictness: <L,U><L,U><S,1*U>, Inline: [0] -}
+5ce459bd281909399e10b5b66ce3a48f
+  $wcount ::
+    GHC.Prim.Char#
+    -> GHC.Base.String
+    -> Data.Either.Either GHC.Base.String GHC.Types.Int
+  {- Arity: 2, Strictness: <S,U><L,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Char#) (w :: GHC.Base.String) ->
+                 let {
+                   $j :: GHC.Prim.Void#
+                         -> Data.Either.Either GHC.Base.String GHC.Types.Int
+                     {- Arity: 1, Strictness: <L,A> -}
+                   = \ (w1 :: GHC.Prim.Void#)[OneShot] ->
+                     Data.Either.Right
+                       @ GHC.Base.String
+                       @ GHC.Types.Int
+                       (letrec {
+                          $wgo :: [GHC.Types.Char] -> GHC.Prim.Int# -> GHC.Prim.Int#
+                            {- Arity: 2, Strictness: <S,1*U><L,U>, Inline: [0] -}
+                          = \ (w2 :: [GHC.Types.Char]) (ww1 :: GHC.Prim.Int#) ->
+                            case w2 of wild {
+                              [] -> ww1
+                              : y ys
+                              -> case y of wild1 { GHC.Types.C# x ->
+                                 case GHC.Prim.tagToEnum#
+                                        @ GHC.Types.Bool
+                                        (GHC.Prim.eqChar# x ww) of wild2 {
+                                   GHC.Types.False -> $wgo ys ww1
+                                   GHC.Types.True -> $wgo ys (GHC.Prim.+# ww1 1#) } } }
+                        } in
+                        case $wgo w 0# of ww1 { DEFAULT -> GHC.Types.I# ww1 })
+                 } in
+                 case ww of ds {
+                   DEFAULT -> DNA.count1
+                   'A'#
+                   -> case (DNA.count_go w) `cast` (Data.Monoid.N:All[0]) of wild {
+                        GHC.Types.False -> DNA.count1 GHC.Types.True -> $j GHC.Prim.void# }
+                   'C'#
+                   -> case (DNA.count_go w) `cast` (Data.Monoid.N:All[0]) of wild {
+                        GHC.Types.False -> DNA.count1 GHC.Types.True -> $j GHC.Prim.void# }
+                   'G'#
+                   -> case (DNA.count_go w) `cast` (Data.Monoid.N:All[0]) of wild {
+                        GHC.Types.False -> DNA.count1 GHC.Types.True -> $j GHC.Prim.void# }
+                   'T'#
+                   -> case (DNA.count_go w) `cast` (Data.Monoid.N:All[0]) of wild {
+                        GHC.Types.False -> DNA.count1
+                        GHC.Types.True -> $j GHC.Prim.void# } }) -}
+8d82df6ac03ce47464af783dfad4e7f3
+  $wpoly_go10 ::
+    GHC.Prim.Int#
+    -> Data.Map.Base.Map GHC.Types.Char a
+    -> [(GHC.Types.Char, a)]
+    -> Data.Map.Base.Map GHC.Types.Char a
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U>, Inline: [0] -}
+e1458e065fef8d95dbe27751c02295c0
+  count ::
+    GHC.Types.Char
+    -> GHC.Base.String
+    -> Data.Either.Either GHC.Base.String GHC.Types.Int
+  {- Arity: 2, Strictness: <S(S),1*U(U)><L,U>, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Char) (w1 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.C# ww1 -> DNA.$wcount ww1 w1 }) -}
+17b97de20c75ea61c8e5b2c829ecc843
+  count1 :: Data.Either.Either [GHC.Types.Char] GHC.Types.Int
+  {- Strictness: m1,
+     Unfolding: (Data.Either.Left
+                   @ [GHC.Types.Char]
+                   @ GHC.Types.Int
+                   DNA.dnaElementError) -}
+82a64eda60bef8301f547a8b5ad2aacf
+  count_go :: [GHC.Types.Char] -> Data.Monoid.All
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+4074019504d31c38ff37f0494c94b711
+  dnaElementError :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Incorrect dna element"#) -}
+ee7c2e0d7a8a6a17235bb2d9a88ccabd
+  nucleotideCounts ::
+    GHC.Base.String
+    -> Data.Either.Either
+         GHC.Base.String (Data.Map.Base.Map GHC.Types.Char GHC.Types.Int)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (nucleotide :: GHC.Base.String) ->
+                 case (DNA.count_go nucleotide)
+                        `cast`
+                      (Data.Monoid.N:All[0]) of wild {
+                   GHC.Types.False -> DNA.nucleotideCounts2
+                   GHC.Types.True
+                   -> Data.Either.Right
+                        @ GHC.Base.String
+                        @ (Data.Map.Base.Map GHC.Types.Char GHC.Types.Int)
+                        (DNA.$sfromList
+                           @ GHC.Types.Int
+                           (GHC.CString.unpackFoldrCString#
+                              @ [(GHC.Types.Char, GHC.Types.Int)]
+                              "ACGT"#
+                              (\ (x :: GHC.Types.Char)
+                                 (ys :: [(GHC.Types.Char, GHC.Types.Int)])[OneShot] ->
+                               GHC.Types.:
+                                 @ (GHC.Types.Char, GHC.Types.Int)
+                                 (x,
+                                  case x of ww { GHC.Types.C# ww1 ->
+                                  case DNA.$wcount ww1 nucleotide of wild1 {
+                                    Data.Either.Left ds -> DNA.nucleotideCounts1
+                                    Data.Either.Right count2 -> count2 } })
+                                 ys)
+                              (GHC.Types.[] @ (GHC.Types.Char, GHC.Types.Int)))) }) -}
+8dc42d8ac82c02892a1eee1918ba8f45
+  nucleotideCounts1 :: GHC.Types.Int
+  {- Strictness: x -}
+aa8fa63eed24756762635e0a3044cd2f
+  nucleotideCounts2 ::
+    Data.Either.Either
+      [GHC.Types.Char] (Data.Map.Base.Map GHC.Types.Char GHC.Types.Int)
+  {- Strictness: m1,
+     Unfolding: (Data.Either.Left
+                   @ [GHC.Types.Char]
+                   @ (Data.Map.Base.Map GHC.Types.Char GHC.Types.Int)
+                   DNA.dnaElementError) -}
+"SPEC/DNA fromList @ Char _" [ALWAYS] forall @ a
+                                             ($dOrd :: GHC.Classes.Ord GHC.Types.Char)
+  Data.Map.Base.fromList @ GHC.Types.Char @ a $dOrd
+  = DNA.$sfromList @ a
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

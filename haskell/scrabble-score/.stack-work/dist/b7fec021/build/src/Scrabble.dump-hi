@@ -1,0 +1,303 @@
+
+==================== FINAL INTERFACE ====================
+2016-12-29 00:11:00.7357051 UTC
+
+interface scrabble-score-0.0.0-HIvY5XzNISh8W2PQcTDAzu:Scrabble 8001
+  interface hash: 71cff5cc1ceee16649a9ce2e08efa8e9
+  ABI hash: c91673ba9d5e3b2658bc854a8d68cf21
+  export-list hash: fb76f23082d884bb95d4511194a54413
+  orphan hash: 0eaf56cc4f46e9f8ee06fa03c7a75ca9
+  flag hash: 01bffee402c99072b66b5a2d29157711
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Scrabble.scoreLetter
+  Scrabble.scoreWord
+module dependencies:
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.0.0*
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Complex base-4.9.0.0:Data.Either
+                         base-4.9.0.0:Data.Functor.Const base-4.9.0.0:Data.Functor.Identity
+                         base-4.9.0.0:Data.List.NonEmpty base-4.9.0.0:Data.Monoid
+                         base-4.9.0.0:Data.Semigroup base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:Data.Version base-4.9.0.0:Data.Void
+                         base-4.9.0.0:GHC.Exts base-4.9.0.0:GHC.Generics
+                         base-4.9.0.0:GHC.IO.Exception base-4.9.0.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+import  -/  base-4.9.0.0:Data.Char 793b969914b1622fef8ab278ed0a2b7f
+import  -/  base-4.9.0.0:Data.Foldable 3cbed01c922be29649c33015287c82ca
+import  -/  base-4.9.0.0:GHC.Base dd8044a8d640eee51828c17c476a6ba7
+import  -/  base-4.9.0.0:GHC.Unicode 01f7a6469be023f2c0f9e458d1a0270d
+import  -/  base-4.9.0.0:Prelude 2d9cd8b0ec3d728f62b734df888d2e34
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map 59ba4f128d7d19046010538c416f3875
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base d6db6ac95571c976686f97c64548b060
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type bc99d7d6ca3e6f7b722927a29e227674
+aa49c76b7f44fa6493ad2077a0531d75
+  $sfindWithDefault1 ::
+    a -> GHC.Types.Char -> Data.Map.Base.Map GHC.Types.Char a -> a
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,1*U><S,1*U(U)><S,1*U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (w :: a)
+                   (w1 :: GHC.Types.Char)
+                   (w2 :: Data.Map.Base.Map GHC.Types.Char a) ->
+                 case w1 of ww { GHC.Types.C# ww1 ->
+                 Scrabble.$wpoly_go10 @ a w ww1 w2 }) -}
+bf9838c99d33d887c11fd5225c88b896
+  $sfromList ::
+    [(GHC.Types.Char, a)] -> Data.Map.Base.Map GHC.Types.Char a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a (ds :: [(GHC.Types.Char, a)]) ->
+                 case ds of wild {
+                   [] -> Data.Map.Base.Tip @ GHC.Types.Char @ a
+                   : ds1 ds2
+                   -> case ds1 of wild1 { (,) kx x ->
+                      case ds2 of wild2 {
+                        []
+                        -> case kx of dt { GHC.Types.C# ipv ->
+                           Data.Map.Base.Bin
+                             @ GHC.Types.Char
+                             @ a
+                             1#
+                             dt
+                             x
+                             (Data.Map.Base.Tip @ GHC.Types.Char @ a)
+                             (Data.Map.Base.Tip @ GHC.Types.Char @ a) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds3 ->
+                           case kx of wild4 { GHC.Types.C# c1 ->
+                           case ky of wild5 { GHC.Types.C# c2 ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.geChar# c1 c2) of wild6 {
+                             GHC.Types.False
+                             -> Scrabble.$wpoly_go1
+                                  @ a
+                                  1#
+                                  (Data.Map.Base.Bin
+                                     @ GHC.Types.Char
+                                     @ a
+                                     1#
+                                     wild4
+                                     x
+                                     (Data.Map.Base.Tip @ GHC.Types.Char @ a)
+                                     (Data.Map.Base.Tip @ GHC.Types.Char @ a))
+                                  wild2
+                             GHC.Types.True
+                             -> Scrabble.$sfromList1
+                                  @ a
+                                  (Data.Map.Base.Bin
+                                     @ GHC.Types.Char
+                                     @ a
+                                     1#
+                                     wild4
+                                     x
+                                     (Data.Map.Base.Tip @ GHC.Types.Char @ a)
+                                     (Data.Map.Base.Tip @ GHC.Types.Char @ a))
+                                  wild2 } } } } } } }) -}
+c27ed5768cc841dd5a0d291ba1eede24
+  $sfromList1 ::
+    Data.Map.Base.Map GHC.Types.Char a1
+    -> [(GHC.Types.Char, a1)] -> Data.Map.Base.Map GHC.Types.Char a1
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+91fcefc24d3373508b4bc97170f8e903
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Scrabble.$trModule2
+                   Scrabble.$trModule1) -}
+b61044640f75d2c1899352abd81cdbf2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Scrabble"#) -}
+82ce4ff0163f18ddd90224796a41c947
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "scrabble-score-0.0.0-HIvY5XzNISh8W2PQcTDAzu"#) -}
+d16422057d296acf7bd3a42bda7217e5
+  $w$sgo10 ::
+    GHC.Prim.Char#
+    -> a1
+    -> Data.Map.Base.Map GHC.Types.Char a1
+    -> Data.Map.Base.Map GHC.Types.Char a1
+  {- Arity: 3, Strictness: <L,U><L,U><S,1*U>, Inline: [0] -}
+e97cb4a53aa845e7f64760f86222adfb
+  $wpoly_go1 ::
+    GHC.Prim.Int#
+    -> Data.Map.Base.Map GHC.Types.Char a
+    -> [(GHC.Types.Char, a)]
+    -> Data.Map.Base.Map GHC.Types.Char a
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U>, Inline: [0] -}
+77b44a4bc5882acfa4e9de4374fa9aa2
+  $wpoly_go10 ::
+    a -> GHC.Prim.Char# -> Data.Map.Base.Map GHC.Types.Char a -> a
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,1*U><L,U><S,1*U>,
+     Inline: [0] -}
+720ae12219cf05ed6192f97fb7158b9e
+  addLettersValue ::
+    Data.Map.Base.Map GHC.Types.Char GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+    -> GHC.Base.String
+    -> Data.Map.Base.Map GHC.Types.Char GHC.Integer.Type.Integer
+  {- Arity: 3, Strictness: <L,U><L,U><S,1*U>,
+     Unfolding: (\ (letterValues :: Data.Map.Base.Map
+                                      GHC.Types.Char GHC.Integer.Type.Integer)
+                   (val :: GHC.Integer.Type.Integer)
+                   (letters :: GHC.Base.String) ->
+                 letrec {
+                   go :: [GHC.Types.Char]
+                         -> [(GHC.Types.Char, GHC.Integer.Type.Integer)]
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: [GHC.Types.Char]) ->
+                     case ds of wild {
+                       [] -> GHC.Types.[] @ (GHC.Types.Char, GHC.Integer.Type.Integer)
+                       : y ys
+                       -> case y of ww { GHC.Types.C# ww1 ->
+                          GHC.Base.++
+                            @ (GHC.Types.Char, GHC.Integer.Type.Integer)
+                            (Data.Map.Base.toAscList1
+                               @ GHC.Types.Char
+                               @ GHC.Integer.Type.Integer
+                               (GHC.Types.[] @ (GHC.Types.Char, GHC.Integer.Type.Integer))
+                               (Scrabble.$w$sgo10
+                                  @ GHC.Integer.Type.Integer
+                                  ww1
+                                  val
+                                  letterValues))
+                            (go ys) } }
+                 } in
+                 Scrabble.$sfromList @ GHC.Integer.Type.Integer (go letters)) -}
+4746855407262ae9f4fa81f4ac0a5bfb
+  scoreLetter :: GHC.Types.Char -> GHC.Integer.Type.Integer
+  {- Arity: 1, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (letter :: GHC.Types.Char) ->
+                 Scrabble.$sfindWithDefault1
+                   @ GHC.Integer.Type.Integer
+                   Scrabble.scoreLetter22
+                   (GHC.Unicode.toUpper letter)
+                   Scrabble.scoreLetter1) -}
+b2038b8344a97502cb0cba0e62b44644
+  scoreLetter1 ::
+    Data.Map.Base.Map GHC.Types.Char GHC.Integer.Type.Integer
+  {- Unfolding: (Scrabble.addLettersValue
+                   Scrabble.scoreLetter4
+                   Scrabble.scoreLetter3
+                   Scrabble.scoreLetter2) -}
+8af0b5a1ba2fc13b032c8811b78eebb0
+  scoreLetter10 ::
+    Data.Map.Base.Map GHC.Types.Char GHC.Integer.Type.Integer
+  {- Unfolding: (Scrabble.addLettersValue
+                   Scrabble.scoreLetter13
+                   Scrabble.scoreLetter12
+                   Scrabble.scoreLetter11) -}
+4d336ff223b01b7092662eb80a314cc3
+  scoreLetter11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "FHVWY"#) -}
+d185ab294d08b55416ef758b0eb877b6
+  scoreLetter12 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (4) -}
+22f9d3060d5ba90690f3ebac6a747439
+  scoreLetter13 ::
+    Data.Map.Base.Map GHC.Types.Char GHC.Integer.Type.Integer
+  {- Unfolding: (Scrabble.addLettersValue
+                   Scrabble.scoreLetter16
+                   Scrabble.scoreLetter15
+                   Scrabble.scoreLetter14) -}
+7bad3838ca987974a3418f6c793b50f4
+  scoreLetter14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "BCMP"#) -}
+7c2b1fd9be97d20fe504e3fae57e3ef9
+  scoreLetter15 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (3) -}
+c19e8648c6dfe4776c1cf6ab64d1939a
+  scoreLetter16 ::
+    Data.Map.Base.Map GHC.Types.Char GHC.Integer.Type.Integer
+  {- Unfolding: (Scrabble.addLettersValue
+                   Scrabble.scoreLetter19
+                   Scrabble.scoreLetter18
+                   Scrabble.scoreLetter17) -}
+1017510483f76db4ad2172f97284b68e
+  scoreLetter17 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "DG"#) -}
+1467dc260bde408ad06fca481628735f
+  scoreLetter18 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (2) -}
+32969173154cb49812743b0abcfb2f5c
+  scoreLetter19 ::
+    Data.Map.Base.Map GHC.Types.Char GHC.Integer.Type.Integer
+  {- Unfolding: (Scrabble.addLettersValue
+                   (Data.Map.Base.Tip @ GHC.Types.Char @ GHC.Integer.Type.Integer)
+                   Scrabble.scoreLetter21
+                   Scrabble.scoreLetter20) -}
+181c312508a4ced3b691228bfb643e9e
+  scoreLetter2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "QZ"#) -}
+5d164eb54d55d0279fbb4caae586cbd3
+  scoreLetter20 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "AEIOULNRST"#) -}
+87a6981feb7a0f79cffd2dbcfe74f2e2
+  scoreLetter21 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+4e3b25934f034a8235b72057bfb544ef
+  scoreLetter22 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+5f08fa6d4b5818497d84845d20f00dcd
+  scoreLetter3 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (10) -}
+20868e0a5f1715aba2d115a3bae5f69e
+  scoreLetter4 ::
+    Data.Map.Base.Map GHC.Types.Char GHC.Integer.Type.Integer
+  {- Unfolding: (Scrabble.addLettersValue
+                   Scrabble.scoreLetter7
+                   Scrabble.scoreLetter6
+                   Scrabble.scoreLetter5) -}
+01de85c46f1d61e4b7798cb8292d2330
+  scoreLetter5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "JX"#) -}
+5580d93199a6501ecc5770170f35c124
+  scoreLetter6 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (8) -}
+d575a860c414ad4df00dc9256beb1fbb
+  scoreLetter7 ::
+    Data.Map.Base.Map GHC.Types.Char GHC.Integer.Type.Integer
+  {- Unfolding: (Scrabble.addLettersValue
+                   Scrabble.scoreLetter10
+                   Scrabble.scoreLetter9
+                   Scrabble.scoreLetter8) -}
+6bd4cd3b66da4639912eae4c4c54c3d9
+  scoreLetter8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "K"#) -}
+4b3aaa14cb59eb1e9c28f81c02fb1a1f
+  scoreLetter9 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (5) -}
+c7d4d90c483fef1e11151e737003ff7b
+  scoreWord :: GHC.Base.String -> GHC.Integer.Type.Integer
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (wrd :: GHC.Base.String) ->
+                 Scrabble.scoreWord_go wrd Scrabble.scoreLetter22) -}
+34de0ca86ec226b2de093e09cdab6163
+  scoreWord_go ::
+    [GHC.Types.Char]
+    -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+"SPEC/Scrabble fromList @ Char _" [ALWAYS] forall @ a
+                                                  ($dOrd :: GHC.Classes.Ord GHC.Types.Char)
+  Data.Map.Base.fromList @ GHC.Types.Char @ a $dOrd
+  = Scrabble.$sfromList @ a
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
