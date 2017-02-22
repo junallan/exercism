@@ -1,0 +1,146 @@
+
+==================== FINAL INTERFACE ====================
+2017-02-22 05:25:46.7208212 UTC
+
+interface simple-linked-list-0.0.0-36T8kADGebJAGoar8h4whl:LinkedList 8001
+  interface hash: eb48bebdb76ec1757ddc534d0f47c7a1
+  ABI hash: 31d82bfe2df3fb7f6c06366f12513491
+  export-list hash: b85394c07ceb97d7157ca6579e93daa5
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 01bffee402c99072b66b5a2d29157711
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  LinkedList.datum
+  LinkedList.fromList
+  LinkedList.isNil
+  LinkedList.new
+  LinkedList.next
+  LinkedList.nil
+  LinkedList.reverseLinkedList
+  LinkedList.toList
+  LinkedList.LinkedList
+module dependencies:
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:GHC.Base dd8044a8d640eee51828c17c476a6ba7
+import  -/  base-4.9.0.0:GHC.Err 20faef8829fd13c027d0ee2213637534
+import  -/  base-4.9.0.0:GHC.List 47d436dfb7454bb1883fb4d943e3f389
+import  -/  base-4.9.0.0:Prelude 2d9cd8b0ec3d728f62b734df888d2e34
+87a1a41cd651dbb621c57f6b13f71a1a
+  $tc'Cell :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17026095658748098294##
+                   9542737445704553865##
+                   LinkedList.$trModule
+                   LinkedList.$tc'Cell1) -}
+0f83e3f8ce997fd648b6c3ff2118ef64
+  $tc'Cell1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Cell"#) -}
+a004dcfbfca38597f8e9560ba04314cb
+  $tc'EmptyList :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6688693665457034905##
+                   13203515255889311856##
+                   LinkedList.$trModule
+                   LinkedList.$tc'EmptyList1) -}
+bdb09c9015158e3f2b3dbf9500a3c9ec
+  $tc'EmptyList1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'EmptyList"#) -}
+ee6552517c68c73e8d0ea062616635f4
+  $tcLinkedList :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12432682379313795640##
+                   5445091105667273112##
+                   LinkedList.$trModule
+                   LinkedList.$trModule1) -}
+43ab5e3876af3775191e5df69b9aa801
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   LinkedList.$trModule2
+                   LinkedList.$trModule1) -}
+6ce4e5baa98b4ac425159be08642e51a
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "LinkedList"#) -}
+0caa0522ca3a771862656c0ff8308116
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "simple-linked-list-0.0.0-36T8kADGebJAGoar8h4whl"#) -}
+881d151364fe02369a10f5ecf7188bf4
+  data LinkedList a = EmptyList | Cell a (LinkedList.LinkedList a)
+b3beb64b6963e4efe401d61284f3cc69
+  datum :: LinkedList.LinkedList a -> a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: LinkedList.LinkedList a) ->
+                 case ds of wild {
+                   LinkedList.EmptyList -> LinkedList.datum1 @ a
+                   LinkedList.Cell a1 ds1 -> a1 }) -}
+acb02382c086a47086885fd29f218772
+  datum1 :: a
+  {- Strictness: x -}
+54fcf73a554d23ba036835f8450b6b99
+  fromList :: [a] -> LinkedList.LinkedList a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+fcb636b0fc1463336b7ed049e9256242
+  isNil :: LinkedList.LinkedList a -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: LinkedList.LinkedList a) ->
+                 case ds of wild {
+                   LinkedList.EmptyList -> GHC.Types.True
+                   LinkedList.Cell ipv ipv1 -> GHC.Types.False }) -}
+d44060f26e39592d67ca3209ed5d7df8
+  new :: a -> LinkedList.LinkedList a -> LinkedList.LinkedList a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,U>m2,
+     Unfolding: InlineRule (0, True, True) LinkedList.Cell -}
+a6836cbcfd57283ea98689ea817285b3
+  next :: LinkedList.LinkedList a -> LinkedList.LinkedList a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: LinkedList.LinkedList a) ->
+                 case ds of wild {
+                   LinkedList.EmptyList -> LinkedList.EmptyList @ a
+                   LinkedList.Cell ds1 a1 -> a1 }) -}
+c86ec9c00642514d73056267e8f3748c
+  nil :: LinkedList.LinkedList a
+  {- HasNoCafRefs,
+     Unfolding: InlineRule (0, True, True) LinkedList.EmptyList -}
+d773096a73e15f4176289e17e613e72c
+  reverseLinkedList ::
+    LinkedList.LinkedList a -> LinkedList.LinkedList a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (x :: LinkedList.LinkedList a) ->
+                 LinkedList.fromList
+                   @ a
+                   (GHC.List.reverse1
+                      @ a
+                      (LinkedList.toList @ a x)
+                      (GHC.Types.[] @ a))) -}
+6518290e10b6f26bd87c0eff782465c4
+  toList :: LinkedList.LinkedList a -> [a]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
