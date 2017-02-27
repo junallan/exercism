@@ -1,0 +1,90 @@
+
+==================== FINAL INTERFACE ====================
+2017-02-27 03:59:23.0538459 UTC
+
+interface list-ops-0.0.0-Ai8mePA9FkLCGuoZoCGLnx:ListOps 8001
+  interface hash: 7400abd40521d9c169bd1146dd4699e9
+  ABI hash: e48da17b340babd78444360f2ad0cbeb
+  export-list hash: ec10dee2afe3c4d31c5e17184cc87ca0
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 01bffee402c99072b66b5a2d29157711
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  ListOps.++
+  ListOps.concat
+  ListOps.filter
+  ListOps.foldl'
+  ListOps.foldr
+  ListOps.length
+  ListOps.map
+  ListOps.reverse
+module dependencies:
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:GHC.List 47d436dfb7454bb1883fb4d943e3f389
+import  -/  base-4.9.0.0:GHC.Num f0aed3315b3ed1b330b71fc4148a5581
+import  -/  base-4.9.0.0:Prelude 2d9cd8b0ec3d728f62b734df888d2e34
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+6c6426e9c53f06ac11a8c32786500ede
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   ListOps.$trModule2
+                   ListOps.$trModule1) -}
+33189df9baaccf850369c2c6ca88a5ab
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "ListOps"#) -}
+35643501fbcf196d9d84249c7d844f71
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "list-ops-0.0.0-Ai8mePA9FkLCGuoZoCGLnx"#) -}
+ba0b86e2e12b12e615b193a55e2d3806
+  $wlength :: [a] -> GHC.Prim.Int#
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [0] -}
+aef5cec38038be3701a08aecc643fa89
+  (++) :: [a] -> [a] -> [a]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+b18661d8e88e70e86f092a081276b31e
+  concat :: [[a]] -> [a]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+6b2f5dd2a0220ee5aeefab059328eb84
+  filter :: (a -> GHC.Types.Bool) -> [a] -> [a]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U> -}
+b4b19fc69fad629401ac59bf0a61bd6e
+  foldl' :: (b -> a -> b) -> b -> [a] -> b
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,C(C1(U))><L,U><S,1*U> -}
+7ebc7bf55f11360253608d0218902cab
+  foldr :: (a -> b -> b) -> b -> [a] -> b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,C(C1(U))><L,1*U><S,1*U> -}
+93f5d65d6b28783f2ea6a231922a5e39
+  length :: [a] -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (w :: [a]) ->
+                 case ListOps.$wlength @ a w of ww { DEFAULT ->
+                 GHC.Types.I# ww }) -}
+a0901b0e224a262bc3535a3ebd589f3b
+  map :: (a -> b) -> [a] -> [b]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U> -}
+6071149a0096b56058744ce9a780e68a
+  reverse :: [a] -> [a]
+  {- Arity: 1, Strictness: <S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
