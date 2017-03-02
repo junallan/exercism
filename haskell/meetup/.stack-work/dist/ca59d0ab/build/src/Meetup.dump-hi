@@ -1,0 +1,278 @@
+
+==================== FINAL INTERFACE ====================
+2017-03-02 15:02:57.8351586 UTC
+
+interface meetup-0.0.0-333eN4m9p9D6nt2vrQw34D:Meetup 8002
+  interface hash: 5ee2db482dcd23700e90a522a3f9113d
+  ABI hash: d2fce9f65d56d33f9d09940af8e4ee40
+  export-list hash: 5fe5d56093f75728400f60fa760b282c
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 50be09f6ae5701bb586bc6db9bc9ce26
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Meetup.meetupDay
+  Meetup.Schedule{Meetup.First Meetup.Fourth Meetup.Last Meetup.Second Meetup.Teenth Meetup.Third}
+  Meetup.Weekday{Meetup.Friday Meetup.Monday Meetup.Saturday Meetup.Sunday Meetup.Thursday Meetup.Tuesday Meetup.Wednesday}
+module dependencies:
+package dependencies: Win32-2.3.1.1@Win32-2.3.1.1
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.1.0*
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 time-1.6.0.1@time-1.6.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Foldable 254e836c2d813d34e47feb29bb8d40ed
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.List d11eb227c1c6fbfd89bb781d72eaea0d
+import  -/  base-4.9.1.0:GHC.Real b88ae4a48c079652623073a5bbf5c9b0
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 5e60b761569ee353529e98a36b72df11
+import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar 9e8821c28625e15319eae70d62017dee
+import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Days 9349851e6cdca24f6ac75f06157889f3
+import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian adff53b664fd210ba28d296836ab0576
+import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.WeekDate 0736127534f010953d6a45d52dde1dbe
+9535d29739b3c1aefd760d6d46492a56
+  $tc'First :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7620895759755875275##
+                   13810110445761841891##
+                   Meetup.$trModule
+                   Meetup.$tc'First1) -}
+1249e6c1c51a5b6d68510670710c10bf
+  $tc'First1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'First"#) -}
+f11c8d891e1d3c90e1c2c9ce532bfacf
+  $tc'Fourth :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   219443368002784877##
+                   9386373400146247819##
+                   Meetup.$trModule
+                   Meetup.$tc'Fourth1) -}
+72fb7771195d9a13ecf243cf33aa0353
+  $tc'Fourth1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Fourth"#) -}
+8a8d6461d35a7a9ef28ea7c94e8e995f
+  $tc'Friday :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5078482341339230684##
+                   9224250990874870049##
+                   Meetup.$trModule
+                   Meetup.$tc'Friday1) -}
+33062f0e1c4bcc42d645ee438d6e84fb
+  $tc'Friday1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Friday"#) -}
+69120fc8fccfaebe379fa992acc8da50
+  $tc'Last :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2415015635643107592##
+                   968129783292800241##
+                   Meetup.$trModule
+                   Meetup.$tc'Last1) -}
+8862e816d9776a703af3d7686ed456dd
+  $tc'Last1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Last"#) -}
+69de83a212fd930136d30518ed6cb196
+  $tc'Monday :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15670794806885683951##
+                   6396666521446797678##
+                   Meetup.$trModule
+                   Meetup.$tc'Monday1) -}
+eea7137d58aecc25e8d15a09c637f9a4
+  $tc'Monday1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Monday"#) -}
+04f618facf50dbd3e8b1b0e526b27e73
+  $tc'Saturday :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8198528094626440606##
+                   4230349035706357898##
+                   Meetup.$trModule
+                   Meetup.$tc'Saturday1) -}
+08291e5a219c3486a0f75fbb1150478e
+  $tc'Saturday1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Saturday"#) -}
+520fbd326427ce8a89767796f7e9ccb3
+  $tc'Second :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1517647331039555526##
+                   5934684406433439444##
+                   Meetup.$trModule
+                   Meetup.$tc'Second1) -}
+9da6db00729cca83d6fa81bd3cb2b3fb
+  $tc'Second1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Second"#) -}
+00e0436269a7505d0421dcedacd768c3
+  $tc'Sunday :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15714307527195897245##
+                   7158853345058882569##
+                   Meetup.$trModule
+                   Meetup.$tc'Sunday1) -}
+d0ebb5199df54686e600ecd2e6a0dcfd
+  $tc'Sunday1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Sunday"#) -}
+045c241cdc4bd4216c4889fe0a48e086
+  $tc'Teenth :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2984350279628530514##
+                   5938300216722951643##
+                   Meetup.$trModule
+                   Meetup.$tc'Teenth1) -}
+8b7890cd592989626d098028f0735d22
+  $tc'Teenth1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Teenth"#) -}
+e5943c700cdded2a2c7ff48c3558af2c
+  $tc'Third :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15151028922451619382##
+                   15413464767564971766##
+                   Meetup.$trModule
+                   Meetup.$tc'Third1) -}
+75211c106b560b8f6108407a169ceec1
+  $tc'Third1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Third"#) -}
+7ba6f5fe4789c5117a3676649ec06064
+  $tc'Thursday :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4359820432589589426##
+                   3489864723876143946##
+                   Meetup.$trModule
+                   Meetup.$tc'Thursday1) -}
+5dec8398e175c54df7c4e8e6a2f0a96d
+  $tc'Thursday1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Thursday"#) -}
+a265bb5035abbbe85dbf3c29fc870e83
+  $tc'Tuesday :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8883709439210342024##
+                   4152130901525793199##
+                   Meetup.$trModule
+                   Meetup.$tc'Tuesday1) -}
+bbd7c8634bfc5719421fc486a244b918
+  $tc'Tuesday1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Tuesday"#) -}
+d0939aab0b50ee00bedaf2a2f882bc5d
+  $tc'Wednesday :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11801784560392346318##
+                   7655281864730075198##
+                   Meetup.$trModule
+                   Meetup.$tc'Wednesday1) -}
+5c3a7d1e02a3c9cab5ac0dc83d6eb343
+  $tc'Wednesday1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Wednesday"#) -}
+56f3affc0ae9128c590a7a22b5211409
+  $tcSchedule :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3796436744820193165##
+                   4144215646232072604##
+                   Meetup.$trModule
+                   Meetup.$tcSchedule1) -}
+1b1d7f1ad9998ed266c0a2f92fd9f92b
+  $tcSchedule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Schedule"#) -}
+675502ddf678a5c0fcfb316f0e2b9886
+  $tcWeekday :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17683743408120588417##
+                   1006102914321025369##
+                   Meetup.$trModule
+                   Meetup.$tcWeekday1) -}
+270f5776e296abd8c09f8b4102bcb697
+  $tcWeekday1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Weekday"#) -}
+a12273c9bc65fda58d6687a9e8888f92
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Meetup.$trModule2
+                   Meetup.$trModule1) -}
+92045715758f7c7e804fdb981b7f0ae9
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Meetup"#) -}
+04b3365e9d368a6a93b76773ddb739a8
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "meetup-0.0.0-333eN4m9p9D6nt2vrQw34D"#) -}
+a403e945dfd7a5d0d014fc0c0f731e3c
+  data Schedule = First | Second | Third | Fourth | Last | Teenth
+7ee88a9b6d6846b2bbe7e7edf22f4918
+  data Weekday
+    = Monday
+    | Tuesday
+    | Wednesday
+    | Thursday
+    | Friday
+    | Saturday
+    | Sunday
+ebbdb0646e173355103235756848489c
+  meetupDay ::
+    Meetup.Schedule
+    -> Meetup.Weekday
+    -> GHC.Integer.Type.Integer
+    -> GHC.Types.Int
+    -> Data.Time.Calendar.Days.Day
+  {- Arity: 4, Strictness: <L,A><L,A><S,U><S(S),1*U(U)>,
+     Unfolding: InlineRule (4, True, False)
+                (\ (schedule :: Meetup.Schedule)
+                   (weekday :: Meetup.Weekday)
+                   (year :: GHC.Integer.Type.Integer)
+                   (month :: GHC.Types.Int) ->
+                 case month of ww { GHC.Types.I# ww1 ->
+                 case Data.Time.Calendar.MonthDay.$wmonthAndDayToDayOfYear
+                        (Data.Time.Calendar.OrdinalDate.isLeapYear year)
+                        ww1
+                        13# of ww4 { DEFAULT ->
+                 Data.Time.Calendar.OrdinalDate.$wfromOrdinalDate year ww4 } }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
