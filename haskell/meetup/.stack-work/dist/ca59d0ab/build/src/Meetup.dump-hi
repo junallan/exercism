@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2017-03-02 15:02:57.8351586 UTC
+2017-03-06 01:49:38.993456 UTC
 
 interface meetup-0.0.0-333eN4m9p9D6nt2vrQw34D:Meetup 8002
-  interface hash: 5ee2db482dcd23700e90a522a3f9113d
-  ABI hash: d2fce9f65d56d33f9d09940af8e4ee40
+  interface hash: eb22b45ec4f2f12a7a50b863727312ee
+  ABI hash: d1475b22e996a7557e3a80309e9925d7
   export-list hash: 5fe5d56093f75728400f60fa760b282c
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 50be09f6ae5701bb586bc6db9bc9ce26
@@ -35,6 +35,7 @@ family instance modules: base-4.9.1.0:Control.Applicative
 import  -/  base-4.9.1.0:Data.Foldable 254e836c2d813d34e47feb29bb8d40ed
 import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
 import  -/  base-4.9.1.0:GHC.List d11eb227c1c6fbfd89bb781d72eaea0d
+import  -/  base-4.9.1.0:GHC.Num 38b8aac8807c096c7f3ca3c1eff02939
 import  -/  base-4.9.1.0:GHC.Real b88ae4a48c079652623073a5bbf5c9b0
 import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
 import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
@@ -249,25 +250,14 @@ a403e945dfd7a5d0d014fc0c0f731e3c
     | Friday
     | Saturday
     | Sunday
-ebbdb0646e173355103235756848489c
+b9bdc2aa66590fff25a079dbb204b16a
   meetupDay ::
     Meetup.Schedule
     -> Meetup.Weekday
     -> GHC.Integer.Type.Integer
     -> GHC.Types.Int
     -> Data.Time.Calendar.Days.Day
-  {- Arity: 4, Strictness: <L,A><L,A><S,U><S(S),1*U(U)>,
-     Unfolding: InlineRule (4, True, False)
-                (\ (schedule :: Meetup.Schedule)
-                   (weekday :: Meetup.Weekday)
-                   (year :: GHC.Integer.Type.Integer)
-                   (month :: GHC.Types.Int) ->
-                 case month of ww { GHC.Types.I# ww1 ->
-                 case Data.Time.Calendar.MonthDay.$wmonthAndDayToDayOfYear
-                        (Data.Time.Calendar.OrdinalDate.isLeapYear year)
-                        ww1
-                        13# of ww4 { DEFAULT ->
-                 Data.Time.Calendar.OrdinalDate.$wfromOrdinalDate year ww4 } }) -}
+  {- Arity: 4, Strictness: <S,1*U><S,U><L,U><L,U(U)> -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

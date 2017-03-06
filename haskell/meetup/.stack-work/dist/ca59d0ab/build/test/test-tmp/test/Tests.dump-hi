@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2017-02-27 14:54:49.9342916 UTC
+2017-03-06 00:35:40.0444722 UTC
 
 interface main@main:Main 8002
-  interface hash: c40708611311dd9fdbf8a83bf40eb9d9
+  interface hash: c39774755afff4500a3ecb90c250987c
   ABI hash: 17ddd383fd6471f3b80a7d8d52c6eb5c
   export-list hash: bf9292a03cc81022929f1ed9586c616e
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
@@ -78,7 +78,7 @@ import  -/  hspec-core-2.4.1@hspec-core-2.4.1-LJADAc37OY7GoJYIFjwgiV:Test.Hspec.
 import  -/  hspec-core-2.4.1@hspec-core-2.4.1-LJADAc37OY7GoJYIFjwgiV:Test.Hspec.Core.Spec.Monad d268e6d4bffc202590224f00dd459bce
 import  -/  hspec-expectations-0.8.2@hspec-expectations-0.8.2-DujBeQFEMmfJJRLad7XQgd:Test.Hspec.Expectations 3a84a1cb640da0a9a923fc2bfa92c798
 import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 5e60b761569ee353529e98a36b72df11
-import  -/  meetup-0.0.0@meetup-0.0.0-333eN4m9p9D6nt2vrQw34D:Meetup d2fce9f65d56d33f9d09940af8e4ee40
+import  -/  meetup-0.0.0@meetup-0.0.0-333eN4m9p9D6nt2vrQw34D:Meetup d1475b22e996a7557e3a80309e9925d7
 import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar 9e8821c28625e15319eae70d62017dee
 import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian adff53b664fd210ba28d296836ab0576
 8e216c2206cb8f7be813d7cecb9e50d3
