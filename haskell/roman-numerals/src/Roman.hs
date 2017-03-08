@@ -23,25 +23,29 @@ numerals x = let
 romanNumeralLookup :: Int -> Maybe String
 romanNumeralLookup x
   | x > 1 && x < 5        = case x < 4 of
-  	                          True  -> Just (concat $ replicate x "I")
-   	                          False -> Just "IV"
+                              True  -> Just (concat $ replicate x "I")
+                              False -> Just "IV"
   | x > 5 && x < 10       = case x < 9 of
   	                          True  -> Just (concat $ "V" : (replicate (x - 5) "I"))
   	                          False -> Just "IX"
   | x > 10 && x < 50      = case x < 40 of
-                              True  -> Just (concat ((replicate (x `div` 10) "X") ++ [(fromMaybe "" (numerals (toInteger (x `mod` 10))))] ))
-                              False -> Just ("XL" ++ fromMaybe "" (numerals (toInteger (x `mod` 40))))
+                              True  -> numeralLookupLeftSide 10 "X"
+                              False -> numeralLookupRightSide 40 "XL"
+                              --Just ("XL" ++ fromMaybe "" (numerals (toInteger (x `mod` 40))))
   | x > 50 && x < 100     = case x < 90 of
-                              True  -> Just (concat ((replicate (x `div` 50) "L") ++ [(fromMaybe "" (numerals (toInteger (x `mod` 50))))] ))
-                              False -> Just ("XC" ++ fromMaybe "" (numerals (toInteger (x `mod` 90))))
+                              True  -> numeralLookupLeftSide 50 "L"
+                              False -> numeralLookupRightSide 90 "XC"
+                              --Just ("XC" ++ fromMaybe "" (numerals (toInteger (x `mod` 90))))
   | x > 100 && x < 500    = case x < 400 of
-                              True  -> Just (concat ((replicate (x `div` 100) "C") ++ [(fromMaybe "" (numerals (toInteger (x `mod` 100))))] ))
-                              False -> Just ("CD" ++ fromMaybe "" (numerals (toInteger (x `mod` 400))))
+                              True  -> numeralLookupLeftSide 100 "C"
+                              False -> numeralLookupRightSide 400 "CD"
+                              --Just ("CD" ++ fromMaybe "" (numerals (toInteger (x `mod` 400))))
   | x > 500 && x < 1000   = case x < 900 of
-                              True  -> Just (concat ((replicate (x `div` 500) "D") ++ [(fromMaybe "" (numerals (toInteger (x `mod` 500))))] ))
-                              False -> Just ("CM" ++ fromMaybe "" (numerals (toInteger (x `mod` 900))))
-  | x > 1000 && x <= 3000 = Just (concat ((replicate (x `div` 1000) "M") ++ [(fromMaybe "" (numerals (toInteger (x `mod` 1000))))] ))
+                              True  -> numeralLookupLeftSide 500 "D"
+                              False -> numeralLookupRightSide 900 "CM"
+                              --Just ("CM" ++ fromMaybe "" (numerals (toInteger (x `mod` 900))))
+  | x > 1000 && x <= 3000 = numeralLookupLeftSide 1000 "M"
   | otherwise             = Nothing 
- --where findRomanNumeralCombination pattern n =          
---numerals  = error "You need to implement this function."
- 
+  where
+    numeralLookupLeftSide dividedNumber romanNumeral = Just (concat ((replicate (x `div` dividedNumber) romanNumeral) ++ [(fromMaybe "" (numerals (toInteger (x `mod` dividedNumber))))] ))  
+    numeralLookupRightSide modNumber romanNumeral    = Just (romanNumeral ++ fromMaybe "" (numerals (toInteger (x `mod` modNumber))))    
