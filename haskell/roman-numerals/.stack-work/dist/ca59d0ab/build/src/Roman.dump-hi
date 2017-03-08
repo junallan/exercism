@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2017-03-08 14:35:13.9942064 UTC
+2017-03-08 14:54:55.2441126 UTC
 
 interface roman-numerals-0.0.0-2UiEBPGfMVIJG4tfVup4n3:Roman 8002
-  interface hash: 4884b07e493a728b93405d5d8653793e
-  ABI hash: eca954a0072f0480c066d0ba5d5d6288
+  interface hash: a82c491a808e96f3e44cbb21a1f9969b
+  ABI hash: 9a79ffd35e8f7bfd9e8653b904a50c02
   export-list hash: 07a3ff6e1fe3031b3e046c770547597a
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 50be09f6ae5701bb586bc6db9bc9ce26
@@ -44,10 +44,10 @@ fef2d8ed91784b9c29af66b73f8c7ace
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    "roman-numerals-0.0.0-2UiEBPGfMVIJG4tfVup4n3"#) -}
-64cc7c31f0f8fb7e3c47c25b7fac44e8
+37fe49c95bd5355e513e3a57d2254eee
   numerals ::
     GHC.Integer.Type.Integer -> GHC.Base.Maybe GHC.Base.String
-  {- Arity: 1, Strictness: <S,U> -}
+  {- Arity: 1, Strictness: <S,1*U> -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

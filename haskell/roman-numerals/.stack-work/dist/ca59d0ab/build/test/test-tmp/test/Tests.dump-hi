@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2017-03-06 15:06:54.9493261 UTC
+2017-03-08 14:49:19.7648707 UTC
 
 interface main@main:Main 8002
-  interface hash: 31ab9716ef00d1fd34064051de7c5777
+  interface hash: 3be50f7fb2ea5e96b32a99ac5796de80
   ABI hash: f8f7659f31615cff8070b010a854609b
   export-list hash: bbd11017a18f9c2e1d2deac5aab4425e
   orphan hash: 07832d32507509fef413f34cfe33f565
@@ -79,7 +79,7 @@ import  -/  hspec-core-2.4.1@hspec-core-2.4.1-LJADAc37OY7GoJYIFjwgiV:Test.Hspec.
 import  -/  hspec-core-2.4.1@hspec-core-2.4.1-LJADAc37OY7GoJYIFjwgiV:Test.Hspec.Core.Spec.Monad d268e6d4bffc202590224f00dd459bce
 import  -/  hspec-expectations-0.8.2@hspec-expectations-0.8.2-DujBeQFEMmfJJRLad7XQgd:Test.Hspec.Expectations 3a84a1cb640da0a9a923fc2bfa92c798
 import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 5e60b761569ee353529e98a36b72df11
-import  -/  roman-numerals-0.0.0@roman-numerals-0.0.0-2UiEBPGfMVIJG4tfVup4n3:Roman eca954a0072f0480c066d0ba5d5d6288
+import  -/  roman-numerals-0.0.0@roman-numerals-0.0.0-2UiEBPGfMVIJG4tfVup4n3:Roman 9a79ffd35e8f7bfd9e8653b904a50c02
 ebd122be4664a6ccb5d8cfaca81e2c2b
   $s$fEqMaybe :: GHC.Classes.Eq (GHC.Base.Maybe [GHC.Types.Char])
   {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
