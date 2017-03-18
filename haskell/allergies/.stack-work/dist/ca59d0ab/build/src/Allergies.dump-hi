@@ -1,13 +1,13 @@
 
 ==================== FINAL INTERFACE ====================
-2017-03-13 13:19:38.9474143 UTC
+2017-03-16 13:02:36.7505951 UTC
 
 interface allergies-0.0.0-EHvojrwS4EmEXBNo0v70wQ:Allergies 8002
   interface hash: 4b9df5efe8a59fa1750d23f3032a80c1
   ABI hash: 7ffb54bf1acaebeb8f5c04427cb8e2de
   export-list hash: 6a8a5f1b9ca6969b81edbe3c457b6fd4
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
-  flag hash: 50be09f6ae5701bb586bc6db9bc9ce26
+  flag hash: 341ddda8bde27900b26cf81a293ba94c
   sig of: Nothing
   used TH splices: False
   where
