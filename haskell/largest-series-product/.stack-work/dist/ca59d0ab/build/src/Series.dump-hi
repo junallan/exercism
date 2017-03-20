@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2017-03-18 22:22:35.6781012 UTC
+2017-03-20 12:30:49.4541715 UTC
 
 interface largest-series-product-0.0.0-8dkPcGmrMdTDomXKsLc2wM:Series 8002
-  interface hash: 9ed9cf949a485cd40bde117054bb0203
-  ABI hash: 3860c3892943e624bab02590bd7f3284
+  interface hash: 3f6528b6c45af049592c57c12716faca
+  ABI hash: c6b8ef8873cb023e7c3f85746a09c44a
   export-list hash: 92908604f52d7a2ff2d4a0bae16c6ff2
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 50be09f6ae5701bb586bc6db9bc9ce26
@@ -83,7 +83,10 @@ ee97fa2c1b49e6ad5fe96076d4b9bc9b
 fcbfe4fdbbec3cef629385e20496b345
   $wgo1 :: [GHC.Types.Char] -> GHC.Prim.Int# -> GHC.Prim.Int#
   {- Arity: 2, Strictness: <S,1*U><L,U>, Inline: [0] -}
-3a5912c02b71cb7a95df0a9c0e17534a
+c8cd85d6342c58fe51f39d21fd6e4c15
+  $wgo2 :: [GHC.Types.Char] -> GHC.Prim.Int# -> GHC.Prim.Int#
+  {- Arity: 2, Strictness: <S,1*U><L,U>, Inline: [0] -}
+627a64fa06a7c6265893ef72b1366efb
   $wlargestProduct ::
     GHC.Prim.Int#
     -> GHC.Base.String -> GHC.Base.Maybe GHC.Integer.Type.Integer
@@ -106,7 +109,7 @@ fcbfe4fdbbec3cef629385e20496b345
                                        @ GHC.Types.Bool
                                        (GHC.Prim.<# ds 0#) of wild2 {
                                   GHC.Types.False
-                                  -> case Series.$wgo1 wild 0# of ww1 {
+                                  -> case Series.$wgo2 wild 0# of ww1 {
                                        DEFAULT -> GHC.Base.Nothing @ GHC.Integer.Type.Integer
                                        0#
                                        -> GHC.Base.Just
@@ -137,15 +140,12 @@ fcbfe4fdbbec3cef629385e20496b345
                                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Integer.Type.Integer }
                              GHC.Types.True -> GHC.Base.Nothing @ GHC.Integer.Type.Integer } } }
                    0# -> Series.largestProduct1 }) -}
-65b82b4f8383b98ceeaad623eaccdbff
-  $wseriesProduct :: GHC.Base.String -> GHC.Prim.Int#
-  {- Arity: 1, Strictness: <S,1*U>, Inline: [0] -}
 437c818502e8f098a0e28e95e0aa4e45
   getAllSubstrings ::
     GHC.Types.Int
     -> GHC.Base.String -> GHC.Types.Int -> [GHC.Base.String]
   {- Arity: 3, Strictness: <L,U(U)><S,1*U><L,1*U(1*U)> -}
-1dda4ba6f6ab4fc379290b06ec5edc82
+41d2df6e1b05a0a15b82b0c2aac29a2c
   largestProduct ::
     GHC.Types.Int
     -> GHC.Base.String -> GHC.Base.Maybe GHC.Integer.Type.Integer
@@ -163,19 +163,14 @@ fcbfe4fdbbec3cef629385e20496b345
 8181354b3beb138a3796b1ba30608b89
   largestProduct2 :: GHC.Integer.Type.Integer
   {- HasNoCafRefs, Unfolding: (1) -}
-c04a2243a4c4506543e351bbdb04da62
+b9e107f280f750d1828f87df5fc788d9
   largestProduct3 ::
     GHC.Base.String -> (GHC.Types.Int, GHC.Base.String)
-  {- Arity: 1, Strictness: <L,U>m,
-     Unfolding: InlineRule (1, True, False)
-                (\ (x :: GHC.Base.String) -> (Series.seriesProduct x, x)) -}
-4b326339b24f46c3a1a0b8f6cc743a81
-  seriesProduct :: GHC.Base.String -> GHC.Types.Int
-  {- Arity: 1, Strictness: <S,1*U>m, Inline: INLINE[0],
+  {- Arity: 1, Strictness: <L,U>m, Inline: INLINE[0],
      Unfolding: InlineRule (1, True, False)
                 (\ (w :: GHC.Base.String) ->
-                 case Series.$wseriesProduct w of ww { DEFAULT ->
-                 GHC.Types.I# ww }) -}
+                 (case Series.$wgo1 w 1# of ww { DEFAULT -> GHC.Types.I# ww },
+                  w)) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:
