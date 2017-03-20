@@ -22,12 +22,6 @@ getAllSubstrings series digits 1       = getSubstrings series digits
 getAllSubstrings series digits counter = getSubstrings series digits ++ getAllSubstrings series (Prelude.tail digits) (counter - 1)
 
 seriesProduct :: String -> Int
-{-seriesProduct [] = 1
-seriesProduct digits = 
-  let 
-    values = Prelude.map digitToInt digits
-  in
-    Prelude.head values * (seriesProduct $ Prelude.tail digits) -}  
 seriesProduct digits = Prelude.foldl (*) 1 (Prelude.map digitToInt digits)
     
 getSubstrings :: Int -> String -> [String]
