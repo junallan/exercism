@@ -1,24 +1,27 @@
 module Clock (clockHour, clockMin, fromHourMin, toString) where
 
-data Clock = Clock { hours :: Integer, minutes :: Integer} deriving (Show, Eq)
+data Clock = Clock { hours :: Int, minutes :: Int} deriving (Show, Eq)
 
-hoursInDay      = toInteger 24
-secondsInMinute = toInteger 60
+hoursInDay      :: Int
+hoursInDay      = 24
+secondsInMinute :: Int
+secondsInMinute = 60
+minutesInDay    :: Int
 minutesInDay    = secondsInMinute * hoursInDay
 
 instance Num Clock where
-  (Clock h1 m1) + (Clock h2 m2) = fromHourMin (fromInteger $ h1 + h2) (fromInteger $ m1 + m2)
-  fromInteger x = if minutesInDay == x then Clock 0 0 else Clock (x `div` secondsInMinute `mod` hoursInDay) (x `mod` secondsInMinute)
-  negate (Clock hrs mins) = if minutesInDay - (hrs * secondsInMinute + mins) == 0 then 0 else fromInteger (minutesInDay - (hrs * secondsInMinute + mins))
+  (Clock h1 m1) + (Clock h2 m2) = fromHourMin (h1 + h2) (m1 + m2)
+  fromInteger x = if minutesInDay == fromIntegral x then Clock 0 0 else Clock (fromIntegral x `div` secondsInMinute `mod` hoursInDay) (fromIntegral x `mod` secondsInMinute)
+  negate (Clock hrs mins) = if minutesInDay - (hrs * secondsInMinute + mins) == 0 then 0 else fromInteger (toInteger $ minutesInDay - (hrs * secondsInMinute + mins))
 
 clockHour :: Clock -> Int
-clockHour (Clock h _) = fromInteger $ h
+clockHour (Clock h _) = h
 
 clockMin :: Clock -> Int
-clockMin (Clock _ m) = fromInteger $ m
+clockMin (Clock _ m) = m
 
 fromHourMin :: Int -> Int -> Clock
-fromHourMin hour min = fromInteger $ toInteger (hour) * secondsInMinute + toInteger (min)
+fromHourMin hour min = fromInteger $ toInteger (hour * secondsInMinute + min)
 
 toString :: Clock -> String
 toString (Clock hrs mins) =

@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2017-03-23 14:19:01.4134783 UTC
+2017-03-24 12:38:12.1984243 UTC
 
 interface main@main:Main 8002
-  interface hash: 926f1dcae05969361239c1be2f695bf4
+  interface hash: a7e86629a369649794a26b40e1ef6ccf
   ABI hash: 04cd8945df262ea299d96d45dc5a2f14
   export-list hash: fd120ab51eee0d85f645ea1c834f49f9
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
@@ -68,7 +68,7 @@ family instance modules: base-4.9.1.0:Control.Applicative
 import  -/  base-4.9.1.0:Data.Foldable 254e836c2d813d34e47feb29bb8d40ed
 import  -/  base-4.9.1.0:GHC.Num 38b8aac8807c096c7f3ca3c1eff02939
 import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
-import  -/  clock-0.0.0@clock-0.0.0-54SCCZ1Dwk81ErhdhB6NoV:Clock a39b9b1fc637b6ce8cb7e33f4ba45381
+import  -/  clock-0.0.0@clock-0.0.0-54SCCZ1Dwk81ErhdhB6NoV:Clock 98577f286a23e9698f699d459422b7e9
 import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
 import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
 import  -/  hspec-2.4.1@hspec-2.4.1-9tgdpdTuP1CDQPLvlOgDkk:Test.Hspec 950a9f661f4ee9bf2cf5ccd2e3530eb3
