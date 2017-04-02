@@ -30,51 +30,19 @@ thatWokeThePriestAllShavenAndShorn = "that woke the priest all shaven and shorn"
 thatKeptTheRoosterThatCrowedInTheMorn :: String
 thatKeptTheRoosterThatCrowedInTheMorn = "that kept the rooster that crowed in the morn"
 
-thatAteTheMaltThatLayInTheHouseJackBuilt :: String
-thatAteTheMaltThatLayInTheHouseJackBuilt = thatAteTheMalt ++ "\n" ++ thatLayInTheHouseJackBuilt
-
-thatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt :: String
-thatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt = thatKilledTheRat ++ "\n" ++ thatAteTheMaltThatLayInTheHouseJackBuilt
-
-thatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt :: String
-thatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt = thatWorriedTheCat ++ "\n" ++ thatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt 
-
-thatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt :: String
-thatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt  = thatTossedTheDog ++ "\n" ++ thatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt
-
-thatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt :: String
-thatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt = 
-  thatMilkedTheCowWithTheCrumpledHorn ++ "\n" ++ thatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt
-
-thatKissedTheMaidenAllForlornThatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt :: String
-thatKissedTheMaidenAllForlornThatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt =
-  thatKissedTheMaidenAllForlorn ++ "\n" ++ thatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt
-
-thatMarriedTheManAllTatteredAndTornThatKissedTheMaidenAllForlornThatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt :: String
-thatMarriedTheManAllTatteredAndTornThatKissedTheMaidenAllForlornThatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt =
-  thatMarriedTheManAllTatteredAndTorn ++ "\n" ++ thatKissedTheMaidenAllForlornThatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt
-
-thatWokeThePriestAllShavenAndShornThatMarriedTheManAllTatteredAndTornThatKissedTheMaidenAllForlornThatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt :: String
-thatWokeThePriestAllShavenAndShornThatMarriedTheManAllTatteredAndTornThatKissedTheMaidenAllForlornThatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt =
-  thatWokeThePriestAllShavenAndShorn ++ "\n" ++ thatMarriedTheManAllTatteredAndTornThatKissedTheMaidenAllForlornThatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt
-
-thatKeptTheRoosterThatCrowedInTheMornThatWokeThePriestAllShavenAndShornThatMarriedTheManAllTatteredAndTornThatKissedTheMaidenAllForlornThatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt :: String
-thatKeptTheRoosterThatCrowedInTheMornThatWokeThePriestAllShavenAndShornThatMarriedTheManAllTatteredAndTornThatKissedTheMaidenAllForlornThatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt =
-  thatKeptTheRoosterThatCrowedInTheMorn ++ "\n" ++ thatWokeThePriestAllShavenAndShornThatMarriedTheManAllTatteredAndTornThatKissedTheMaidenAllForlornThatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt
-
 thisIsThe :: String -> String
 thisIsThe endSentence = "This is the " ++ endSentence
  
 rhyme :: String
 rhyme = thisIsThe "house that Jack built." ++ "\n\n" ++
         thisIsThe "malt" ++ "\n" ++ thatLayInTheHouseJackBuilt ++ "\n\n" ++
-        thisIsThe "rat" ++ "\n" ++ thatAteTheMaltThatLayInTheHouseJackBuilt ++ "\n\n" ++
-        thisIsThe "cat" ++ "\n" ++ thatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt ++ "\n\n" ++
-        thisIsThe "dog" ++ "\n" ++ thatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt ++ "\n\n" ++
-        thisIsThe "cow with the crumpled horn" ++ "\n" ++ thatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt ++ "\n\n" ++
-        thisIsThe "maiden all forlorn" ++ "\n" ++ thatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt ++ "\n\n" ++
-        thisIsThe "man all tattered and torn" ++ "\n" ++ thatKissedTheMaidenAllForlornThatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt ++ "\n\n" ++
-        thisIsThe "priest all shaven and shorn" ++ "\n" ++ thatMarriedTheManAllTatteredAndTornThatKissedTheMaidenAllForlornThatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt ++ "\n\n" ++
-        thisIsThe "rooster that crowed in the morn" ++ "\n" ++ thatWokeThePriestAllShavenAndShornThatMarriedTheManAllTatteredAndTornThatKissedTheMaidenAllForlornThatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt ++ "\n\n" ++
-        thisIsThe "farmer sowing his corn" ++ "\n" ++ thatKeptTheRoosterThatCrowedInTheMornThatWokeThePriestAllShavenAndShornThatMarriedTheManAllTatteredAndTornThatKissedTheMaidenAllForlornThatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt ++ "\n\n" ++
-        thisIsThe "horse and the hound and the horn" ++ "\n" ++ "that belonged to the farmer sowing his corn\n" ++ thatKeptTheRoosterThatCrowedInTheMornThatWokeThePriestAllShavenAndShornThatMarriedTheManAllTatteredAndTornThatKissedTheMaidenAllForlornThatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt ++ "\n"
+        thisIsThe "rat" ++ "\n" ++ thatAteTheMalt ++ "\n" ++ thatLayInTheHouseJackBuilt ++ "\n\n" ++
+        thisIsThe "cat" ++ "\n" ++ thatKilledTheRat ++ "\n" ++ thatAteTheMalt ++ "\n" ++ thatLayInTheHouseJackBuilt ++ "\n\n" ++
+        thisIsThe "dog" ++ "\n" ++ thatWorriedTheCat ++ "\n" ++ thatKilledTheRat ++ "\n" ++ thatAteTheMalt ++ "\n" ++ thatLayInTheHouseJackBuilt ++ "\n\n" ++
+        thisIsThe "cow with the crumpled horn" ++ "\n" ++ thatTossedTheDog ++ "\n" ++ thatWorriedTheCat ++ "\n" ++ thatKilledTheRat ++ "\n" ++ thatAteTheMalt ++ "\n" ++ thatLayInTheHouseJackBuilt ++ "\n\n" ++
+        thisIsThe "maiden all forlorn" ++ "\n" ++ thatMilkedTheCowWithTheCrumpledHorn ++ "\n" ++ thatTossedTheDog ++ "\n" ++ thatWorriedTheCat ++ "\n" ++ thatKilledTheRat ++ "\n" ++ thatAteTheMalt ++ "\n" ++ thatLayInTheHouseJackBuilt ++ "\n\n" ++
+        thisIsThe "man all tattered and torn" ++ "\n" ++ thatKissedTheMaidenAllForlorn ++ "\n" ++  thatMilkedTheCowWithTheCrumpledHorn ++ "\n" ++ thatTossedTheDog ++ "\n" ++ thatWorriedTheCat ++ "\n" ++ thatKilledTheRat ++ "\n" ++ thatAteTheMalt ++ "\n" ++ thatLayInTheHouseJackBuilt ++ "\n\n" ++
+        thisIsThe "priest all shaven and shorn" ++ "\n" ++ thatMarriedTheManAllTatteredAndTorn ++ "\n" ++ thatKissedTheMaidenAllForlorn ++ "\n" ++  thatMilkedTheCowWithTheCrumpledHorn ++ "\n" ++ thatTossedTheDog ++ "\n" ++ thatWorriedTheCat ++ "\n" ++ thatKilledTheRat ++ "\n" ++ thatAteTheMalt ++ "\n" ++ thatLayInTheHouseJackBuilt ++ "\n\n" ++
+        thisIsThe "rooster that crowed in the morn" ++ "\n" ++ thatWokeThePriestAllShavenAndShorn ++ "\n" ++ thatMarriedTheManAllTatteredAndTorn ++ "\n" ++ thatKissedTheMaidenAllForlorn ++ "\n" ++  thatMilkedTheCowWithTheCrumpledHorn ++ "\n" ++ thatTossedTheDog ++ "\n" ++ thatWorriedTheCat ++ "\n" ++ thatKilledTheRat ++ "\n" ++ thatAteTheMalt ++ "\n" ++ thatLayInTheHouseJackBuilt ++ "\n\n" ++
+        thisIsThe "farmer sowing his corn" ++ "\n" ++ thatKeptTheRoosterThatCrowedInTheMorn ++ "\n" ++ thatWokeThePriestAllShavenAndShorn ++ "\n" ++ thatMarriedTheManAllTatteredAndTorn ++ "\n" ++ thatKissedTheMaidenAllForlorn ++ "\n" ++  thatMilkedTheCowWithTheCrumpledHorn ++ "\n" ++ thatTossedTheDog ++ "\n" ++ thatWorriedTheCat ++ "\n" ++ thatKilledTheRat ++ "\n" ++ thatAteTheMalt ++ "\n" ++ thatLayInTheHouseJackBuilt ++ "\n\n" ++
+        thisIsThe "horse and the hound and the horn" ++ "\n" ++ "that belonged to the farmer sowing his corn\n" ++ thatKeptTheRoosterThatCrowedInTheMorn ++ "\n" ++ thatWokeThePriestAllShavenAndShorn ++ "\n" ++ thatMarriedTheManAllTatteredAndTorn ++ "\n" ++ thatKissedTheMaidenAllForlorn ++ "\n" ++  thatMilkedTheCowWithTheCrumpledHorn ++ "\n" ++ thatTossedTheDog ++ "\n" ++ thatWorriedTheCat ++ "\n" ++ thatKilledTheRat ++ "\n" ++ thatAteTheMalt ++ "\n" ++ thatLayInTheHouseJackBuilt ++ "\n"
