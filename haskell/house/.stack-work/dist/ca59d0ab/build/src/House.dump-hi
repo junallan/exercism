@@ -1,0 +1,296 @@
+
+==================== FINAL INTERFACE ====================
+2017-04-02 22:31:27.4365493 UTC
+
+interface house-0.0.0-DmL9FfNcbvEKh3ag5lgddP:House 8002
+  interface hash: e2433e864cd23d43caaa5aff64767caf
+  ABI hash: f58bc236d0aa805144abd973afd43dd1
+  export-list hash: 5bc3c1abd179b562a11212f0810a3a27
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 50be09f6ae5701bb586bc6db9bc9ce26
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  House.rhyme
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+218037154ce349ff95dc6df2d62888ed
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module House.$trModule2 House.$trModule1) -}
+8e7c191626bf7323610751c5c5feba70
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "House"#) -}
+016880c763b7cf15644e85a198539603
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "house-0.0.0-DmL9FfNcbvEKh3ag5lgddP"#) -}
+e5d95c86389d9d37190942c34a35f6ad
+  rhyme :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "This is the house that Jack built.\n\
+                   \\n\
+                   \This is the malt\n"#
+                   House.rhyme1) -}
+d8a01bd2dba2f35fc81052ab1f8c0058
+  rhyme1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   House.thatLayInTheHouseJackBuilt
+                   House.rhyme2) -}
+c1d490a100c078acea52b27a09428698
+  rhyme10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "\n\
+                   \\n\
+                   \This is the maiden all forlorn\n"#
+                   House.rhyme11) -}
+8297bf8a0d906f06d73d48bad49c5a89
+  rhyme11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   House.thatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt
+                   House.rhyme12) -}
+91a92c982fde79f6ed590afded73f21e
+  rhyme12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "\n\
+                   \\n\
+                   \This is the man all tattered and torn\n"#
+                   House.rhyme13) -}
+9c09a5b9c7a445ad8427b26a8619aefb
+  rhyme13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   House.thatKissedTheMaidenAllForlornThatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt
+                   House.rhyme14) -}
+47db50d659e2b95f6a8c99c4f51ae044
+  rhyme14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "\n\
+                   \\n\
+                   \This is the priest all shaven and shorn\n"#
+                   House.rhyme15) -}
+07eceb917b1fa6b42e40552f4ef357e0
+  rhyme15 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   House.thatMarriedTheManAllTatteredAndTornThatKissedTheMaidenAllForlornThatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt
+                   House.rhyme16) -}
+6c375e7ccf26e296e281401f2aa2a419
+  rhyme16 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "\n\
+                   \\n\
+                   \This is the rooster that crowed in the morn\n"#
+                   House.rhyme17) -}
+1e5897ef9b74940ba1bffc13bbdfc4bb
+  rhyme17 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   House.thatWokeThePriestAllShavenAndShornThatMarriedTheManAllTatteredAndTornThatKissedTheMaidenAllForlornThatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt
+                   House.rhyme18) -}
+073e484916a3d0ea76921928c0676324
+  rhyme18 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "\n\
+                   \\n\
+                   \This is the farmer sowing his corn\n"#
+                   House.rhyme19) -}
+ae8224fe83a2ac3e02acea06424a0b2e
+  rhyme19 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   House.thatKeptTheRoosterThatCrowedInTheMornThatWokeThePriestAllShavenAndShornThatMarriedTheManAllTatteredAndTornThatKissedTheMaidenAllForlornThatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt
+                   House.rhyme20) -}
+9a98a4b1f68043c39a4996bd226df54a
+  rhyme2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "\n\
+                   \\n\
+                   \This is the rat\n"#
+                   House.rhyme3) -}
+34b7b661e79cd7a391075e304b6b32e9
+  rhyme20 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "\n\
+                   \\n\
+                   \This is the horse and the hound and the horn\n\
+                   \that belonged to the farmer sowing his corn\n"#
+                   House.rhyme21) -}
+fe9c94ddd3ce7d3b86cd4f84cbeac222
+  rhyme21 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   House.thatKeptTheRoosterThatCrowedInTheMornThatWokeThePriestAllShavenAndShornThatMarriedTheManAllTatteredAndTornThatKissedTheMaidenAllForlornThatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt
+                   House.rhyme22) -}
+44030a53d0a9c202983ca7e9a562a69b
+  rhyme22 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "\n"#) -}
+fdaa00582cee717c0831eab08cff7d53
+  rhyme23 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "\n"#
+                   House.thatWokeThePriestAllShavenAndShornThatMarriedTheManAllTatteredAndTornThatKissedTheMaidenAllForlornThatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt) -}
+51487f4a3e53594ce50d0bbc56153a48
+  rhyme24 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "\n"#
+                   House.thatMarriedTheManAllTatteredAndTornThatKissedTheMaidenAllForlornThatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt) -}
+76dab20ad2829600c9605330de75df52
+  rhyme25 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "\n"#
+                   House.thatKissedTheMaidenAllForlornThatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt) -}
+0896de9a7dac3970b90aa31f4e4e5879
+  rhyme26 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "\n"#
+                   House.thatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt) -}
+9c04d54c02237e3537f14105b7952fe1
+  rhyme27 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "\n"#
+                   House.thatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt) -}
+2ee0f1758b59599f06e3f1d26a600085
+  rhyme28 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "\n"#
+                   House.thatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt) -}
+9cdd3942ed24176a5237055da4977389
+  rhyme29 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "\n"#
+                   House.thatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt) -}
+9b51f657f71246e64a6571f9fb73dbb6
+  rhyme3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   House.thatAteTheMaltThatLayInTheHouseJackBuilt
+                   House.rhyme4) -}
+bcf3c7c7a0457adc2be775a9726221cf
+  rhyme30 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "\n"#
+                   House.thatAteTheMaltThatLayInTheHouseJackBuilt) -}
+b036df3b5b4d56f3542925414f663e00
+  rhyme31 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "\n"#
+                   House.thatLayInTheHouseJackBuilt) -}
+cfa7a356135426b178f3f19dffae204e
+  rhyme4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "\n\
+                   \\n\
+                   \This is the cat\n"#
+                   House.rhyme5) -}
+db595d8123333755e040f3f93d779d4e
+  rhyme5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   House.thatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt
+                   House.rhyme6) -}
+d5e8b01c7168147bcadc899e2b5d8c06
+  rhyme6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "\n\
+                   \\n\
+                   \This is the dog\n"#
+                   House.rhyme7) -}
+bfa7818ec30848c7b69f9600294bac6e
+  rhyme7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   House.thatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt
+                   House.rhyme8) -}
+62630aeef06cdb1fa128951151d00c40
+  rhyme8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "\n\
+                   \\n\
+                   \This is the cow with the crumpled horn\n"#
+                   House.rhyme9) -}
+c0c43dd85af868cf5ef07756738edd07
+  rhyme9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   House.thatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt
+                   House.rhyme10) -}
+0731dbe9dffec2b0d892ba826983b660
+  thatAteTheMaltThatLayInTheHouseJackBuilt :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "that ate the malt"#
+                   House.rhyme31) -}
+cc214c4760fb1720f5a533a18fcb95d2
+  thatKeptTheRoosterThatCrowedInTheMornThatWokeThePriestAllShavenAndShornThatMarriedTheManAllTatteredAndTornThatKissedTheMaidenAllForlornThatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt ::
+    GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "that kept the rooster that crowed in the morn"#
+                   House.rhyme23) -}
+40d86a9831bd464dfcc2a9de53647ccf
+  thatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt ::
+    GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "that killed the rat"#
+                   House.rhyme30) -}
+92baa9eaebbd79effba58d62cf80f6cf
+  thatKissedTheMaidenAllForlornThatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt ::
+    GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "that kissed the maiden all forlorn"#
+                   House.rhyme26) -}
+5d6e17797f05faf21385e97f01d917da
+  thatLayInTheHouseJackBuilt :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "that lay in the house that Jack built."#) -}
+7950dc7240fc92cb7eaeee93dd0941c4
+  thatMarriedTheManAllTatteredAndTornThatKissedTheMaidenAllForlornThatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt ::
+    GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "that married the man all tattered and torn"#
+                   House.rhyme25) -}
+f1d5cf6dac520091ee9186229444b09c
+  thatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt ::
+    GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "that milked the cow with the crumpled horn"#
+                   House.rhyme27) -}
+eb54114b10a64001e9a411522e59f115
+  thatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt ::
+    GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "that tossed the dog"#
+                   House.rhyme28) -}
+3dff6096098a92a246dfe290a0aac527
+  thatWokeThePriestAllShavenAndShornThatMarriedTheManAllTatteredAndTornThatKissedTheMaidenAllForlornThatMilkedTheCowWithTheCrumpledHornThatTossedTheDogThatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt ::
+    GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "that woke the priest all shaven and shorn"#
+                   House.rhyme24) -}
+8034ba39e1ac3622332f740eacd521d9
+  thatWorriedTheCatThatKilledTheRatThatAteTheMaltThatLayInTheHouseJackBuilt ::
+    GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "that worried the cat"#
+                   House.rhyme29) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
