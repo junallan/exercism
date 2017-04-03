@@ -1,0 +1,63 @@
+
+==================== FINAL INTERFACE ====================
+2017-04-03 13:43:52.5740623 UTC
+
+interface pascals-triangle-0.0.0-5pZ89bZNTbAFbKxqYV1YK0:Triangle 8002
+  interface hash: 0dcc09cd433fc7ef79f8ce9cae7e5a6a
+  ABI hash: 95efa5868c7b293d892b37759259482a
+  export-list hash: 26cacc76b7eee0c1883bc4006efd037a
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 50be09f6ae5701bb586bc6db9bc9ce26
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Triangle.rows
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Foldable 254e836c2d813d34e47feb29bb8d40ed
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.Num 38b8aac8807c096c7f3ca3c1eff02939
+import  -/  base-4.9.1.0:GHC.Real b88ae4a48c079652623073a5bbf5c9b0
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 5e60b761569ee353529e98a36b72df11
+97c0d47b1afefcedee775bada98149be
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Triangle.$trModule2
+                   Triangle.$trModule1) -}
+d74492dbab234c5878283c52cb03b336
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Triangle"#) -}
+b2a6cbec586115f67eaea43f3369a752
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "pascals-triangle-0.0.0-5pZ89bZNTbAFbKxqYV1YK0"#) -}
+a4670cf465283a5c70a7cb4f0ffef770
+  $wrows :: GHC.Prim.Int# -> [[GHC.Integer.Type.Integer]]
+  {- Arity: 1, Strictness: <S,U>, Inline: [0] -}
+51df7b8ec5cd2d2e80ea2e82cf4f32da
+  rows :: GHC.Types.Int -> [[GHC.Integer.Type.Integer]]
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 -> Triangle.$wrows ww1 }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
