@@ -11,6 +11,9 @@ pancake s k numFlips
 patternSequence :: String -> [(Int, Char)]
 patternSequence xs = map (\s -> (length s, s!!0)) (group xs)
 
+patternSequenceSplit :: String -> Int -> [(Int, Char)]
+patternSequenceSplit xs k = concat $ map ((\(a,b) -> splitPatternByK (a,b) k)) (patternSequence xs)
+
 maximumCharacterElement :: [(Int,Char)] -> Char -> ((Int,Char),Int)
 maximumCharacterElement s c = 
   let 
@@ -27,35 +30,47 @@ previousCharacterElement xs index = if index - 1 >= 0 then Just (xs !! (index - 
 nextCharacterElement :: [((Int,Char),Int)] -> Int -> Maybe ((Int,Char),Int)
 nextCharacterElement xs index = if index + 1 < length xs then Just (xs !! (index + 1)) else Nothing
 
-flipPancake :: String -> Integer -> String
-flipPancake s k =
+fromPatternToString :: (Int, Char) -> String
+fromPatternToString (repetition, charPattern) = replicate repetition charPattern
+
+fromStringToPattern :: String -> (Int, Char)
+fromStringToPattern s = (length s, s !! 0)
+
+splitPatternByK :: (Int, Char) -> Int -> [(Int, Char)]
+splitPatternByK (repetition, charPattern) k = 
   let
-    patternSeq                   = patternSequence s
+    numItems = repetition `div` k
+    remItemRepetition = repetition `mod` k
+  in
+    if remItemRepetition > 0
+    then [(remItemRepetition, charPattern)] ++ replicate numItems (k, charPattern)
+    else replicate numItems (k, charPattern)
+
+flipPancake :: String -> Integer -> String
+flipPancake s k
+  | maxRepetionCount == fromInteger k = concat $ map (\((rep,val),_) -> replicate rep val) (map (\((repetion,value),indx) -> if maxIndex == indx then flipElement ((repetion,value),indx) else ((repetion,value),indx)) charElements)
+  | otherwise                         =
+    case isNothing prevCharElement of
+      True  -> ""
+      False -> let
+                  prvCharElement              = fromJust prevCharElement
+                  prevChrElementRepetionCount = fst (fst prvCharElement)
+                  prevChrElement              = snd (fst prvCharElement)
+                  prevIndex                   = snd prvCharElement
+               in
+                  if prevChrElementRepetionCount == fromInteger k - maxRepetionCount
+                  then
+                    concat $ map (\((rep,val),_) -> replicate rep val) (map (\((repetion,value),indx) -> if maxIndex == indx || prevIndex == indx then flipElement ((repetion,value),indx) else ((repetion,value),indx)) charElements)
+                  else
+                    ""
+  where
+    patternSeq                   = patternSequenceSplit s (fromInteger k)
     maxCharElement               = maximumCharacterElement patternSeq '-'
     ((maxRepetionCount,_),maxIndex) = maxCharElement
     charElements                 = characterElements patternSeq
     prevCharElement              = previousCharacterElement charElements  maxIndex
     nextCharElement              = nextCharacterElement charElements maxIndex
-  in
-    if maxRepetionCount == fromInteger k 
-    then 
-      concat $ map (\((rep,val),_) -> replicate rep val) (map (\((repetion,value),indx) -> if maxIndex == indx then flipElement ((repetion,value),indx) else ((repetion,value),indx)) charElements)
-    else
-      case isNothing prevCharElement of
-        True  -> ""
-        False -> let
-                   prvCharElement              = fromJust prevCharElement
-                   prevChrElementRepetionCount = fst (fst prvCharElement)
-                   prevChrElement              = snd (fst prvCharElement)
-                   prevIndex                   = snd prvCharElement
---                   ((prevCharElementRepetionCount, prevCharElement), prevIndex) = prevCharElement
-                 in
-                   if prevChrElementRepetionCount == fromInteger k - maxRepetionCount
-                   then
-                     concat $ map (\((rep,val),_) -> replicate rep val) (map (\((repetion,value),indx) -> if maxIndex == indx || prevIndex == indx then flipElement ((repetion,value),indx) else ((repetion,value),indx)) charElements)
-                   else
-                     ""
-
+      
 flipElement :: ((Int,Char),Int) -> ((Int,Char),Int)
 flipElement ((repetion,value),index) =
   let
