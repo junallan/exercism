@@ -1,0 +1,83 @@
+
+==================== FINAL INTERFACE ====================
+2017-04-14 19:50:51.8874876 UTC
+
+interface saddle-points-0.0.0-EhvvsJD017uHpa0DnQ1QW1:Matrix 8002
+  interface hash: 16a8a66d4d22f248cc098323930192bc
+  ABI hash: 6f7852f10c80c8dbd37f6d4d1088f7b3
+  export-list hash: 2043a94e70e8112c57a54c53cadf5982
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 50be09f6ae5701bb586bc6db9bc9ce26
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Matrix.saddlePoints
+module dependencies:
+package dependencies: array-0.5.1.1@array-0.5.1.1* base-4.9.1.0*
+                      ghc-prim-0.5.0.0 integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  array-0.5.1.1@array-0.5.1.1:Data.Array 01310623526f8acc73d1bb69e9d9530a
+import  -/  base-4.9.1.0:Data.Foldable 254e836c2d813d34e47feb29bb8d40ed
+import  -/  base-4.9.1.0:Data.List 7349774f430841349c90dfd1144aea97
+import  -/  base-4.9.1.0:Data.OldList c9282ee91951bdcbd918d2960562c007
+import  -/  base-4.9.1.0:Data.Tuple b07f695e7ce8fe20cc8a32abf62f60ec
+import  -/  base-4.9.1.0:GHC.Arr 242938743c4804e9f582a7850200c98b
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.List d11eb227c1c6fbfd89bb781d72eaea0d
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+76cb21d2303d17cc6b9f188ac153664c
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Matrix.$trModule2
+                   Matrix.$trModule1) -}
+7ee3bb32d88a0c053ae946fd870e0183
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Matrix"#) -}
+8f2003686a7f81e66fcc22653020782d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "saddle-points-0.0.0-EhvvsJD017uHpa0DnQ1QW1"#) -}
+73c721ab7b62b99b45511e9952ad340b
+  $wsaddlePoints ::
+    GHC.Prim.Int#
+    -> GHC.Types.Int
+    -> GHC.Prim.Int#
+    -> GHC.Types.Int
+    -> GHC.Prim.Array# GHC.Types.Int
+    -> [(GHC.Types.Int, GHC.Types.Int)]
+  {- Arity: 5, Strictness: <S,U><L,U(U)><S,U><L,U(U)><L,U>,
+     Inline: [0] -}
+5ae12c23c47b778f7ce96759e807950b
+  saddlePoints ::
+    GHC.Arr.Array (GHC.Types.Int, GHC.Types.Int) GHC.Types.Int
+    -> [(GHC.Types.Int, GHC.Types.Int)]
+  {- Arity: 1,
+     Strictness: <S(S(S(S)L)S(S(S)L)LL),1*U(U(1*U(U),U(U)),U(1*U(U),U(U)),A,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Arr.Array
+                           (GHC.Types.Int, GHC.Types.Int) GHC.Types.Int) ->
+                 case w of ww { GHC.Arr.Array ww1 ww2 ww3 ww4 ->
+                 case ww1 of ww5 { (,) ww6 ww7 ->
+                 case ww6 of ww8 { GHC.Types.I# ww9 ->
+                 case ww2 of ww10 { (,) ww11 ww12 ->
+                 case ww11 of ww13 { GHC.Types.I# ww14 ->
+                 Matrix.$wsaddlePoints ww9 ww7 ww14 ww12 ww4 } } } } }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
