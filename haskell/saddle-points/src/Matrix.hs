@@ -18,7 +18,7 @@ findPositionsMaxRowsValue matrix =
     maxRowPositionsValues row = filter (\((r,c),v) -> v == maxRowValue r && r == row) matrix 
     positionsMaxRowValue row  = map fst (maxRowPositionsValues row)
   in
-    concat $ map (\r -> positionsMaxRowValue r) rowIndices
+    concat $ map (\rw -> positionsMaxRowValue rw) rowIndices
 
 findPositionsMinColumnsValue :: [((Int,Int),Int)] -> [(Int,Int)]
 findPositionsMinColumnsValue matrix = 
@@ -28,14 +28,4 @@ findPositionsMinColumnsValue matrix =
     minColumnPositionsValues column = filter (\((r,c),v) -> v == minColumnValue c && c == column) matrix
     positionsMinColumnValue column  = map fst (minColumnPositionsValues column)
   in
-    concat $ map (\c -> positionsMinColumnValue c) columnIndices
-{-
-findPositionsMinColumnValue :: Int -> [((Int,Int),Int)] -> [(Int,Int)]
-findPositionsMinColumnValue column matrix = 
-  map fst minColumnPositionsValues
-  where
-    minColumnValue           = minimum $ map snd (filter (\((r,c),v) -> c == column) matrix)
-    minColumnPositionsValues = filter (\((r,c),v) -> v == minColumnValue && c == column) matrix
-
--}
-
+    concat $ map (\col -> positionsMinColumnValue col) columnIndices
