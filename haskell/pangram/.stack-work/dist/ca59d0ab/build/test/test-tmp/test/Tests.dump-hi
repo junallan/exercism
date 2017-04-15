@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2017-04-15 00:47:31.0948189 UTC
+2017-04-15 00:59:59.7325491 UTC
 
 interface main@main:Main 8002
-  interface hash: f985787946395d44a6068faf897bb357
+  interface hash: 41f048a0c6f1dc80d40199a0997c4dc4
   ABI hash: a2ad730a71c31f2b84ab53b0c9b4f8a0
   export-list hash: 667eeada2fc8009d6ee91c67576a7794
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
@@ -77,7 +77,7 @@ import  -/  hspec-core-2.4.1@hspec-core-2.4.1-LJADAc37OY7GoJYIFjwgiV:Test.Hspec.
 import  -/  hspec-core-2.4.1@hspec-core-2.4.1-LJADAc37OY7GoJYIFjwgiV:Test.Hspec.Core.Spec bf3465cef60eaa763574e537829d2032
 import  -/  hspec-core-2.4.1@hspec-core-2.4.1-LJADAc37OY7GoJYIFjwgiV:Test.Hspec.Core.Spec.Monad d268e6d4bffc202590224f00dd459bce
 import  -/  hspec-expectations-0.8.2@hspec-expectations-0.8.2-DujBeQFEMmfJJRLad7XQgd:Test.Hspec.Expectations 3a84a1cb640da0a9a923fc2bfa92c798
-import  -/  pangram-0.0.0@pangram-0.0.0-2EqWrVMydFs9qgNXS3ED5A:Pangram 0fb3fd0297cac1063d82136ba7276491
+import  -/  pangram-0.0.0@pangram-0.0.0-2EqWrVMydFs9qgNXS3ED5A:Pangram a37596bf3edb8e545582fc9e907c43e6
 8e216c2206cb8f7be813d7cecb9e50d3
   $tc'Case :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
