@@ -1,0 +1,169 @@
+
+==================== FINAL INTERFACE ====================
+2017-04-19 14:03:36.4904608 UTC
+
+interface acronym-0.0.0-8s9y351ihsE18kvj1LmTvh:Acronym 8002
+  interface hash: 0dc05ef9d18dc9f449e581e0dc99a341
+  ABI hash: 1deaef758540b46de0a0f9c1ef0a37f9
+  export-list hash: e01cae0864afc15c177060ecf3f26295
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 50be09f6ae5701bb586bc6db9bc9ce26
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Acronym.abbreviate
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Char c49b58282af11503cc838e1052cf6b83
+import  -/  base-4.9.1.0:Data.Foldable 254e836c2d813d34e47feb29bb8d40ed
+import  -/  base-4.9.1.0:Data.OldList c9282ee91951bdcbd918d2960562c007
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.List d11eb227c1c6fbfd89bb781d72eaea0d
+import  -/  base-4.9.1.0:GHC.Unicode 7b64ed854a326c2c5bb224f237ed4a0b
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+b9c31760d91be4955eee7ea059b43437
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Acronym.$trModule2
+                   Acronym.$trModule1) -}
+45ab877b097f5588dc09eff3d68bc58e
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Acronym"#) -}
+75031bfa65104c1dec0168104ad0b137
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "acronym-0.0.0-8s9y351ihsE18kvj1LmTvh"#) -}
+6e079ab8a703d07320d8d4702c40b992
+  abbreviate :: GHC.Base.String -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (xs :: GHC.Base.String) ->
+                 Data.OldList.wordsFB
+                   @ [GHC.Types.Char]
+                   Acronym.abbreviate2
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   (GHC.Base.map
+                      @ GHC.Types.Char
+                      @ GHC.Types.Char
+                      Acronym.abbreviate1
+                      xs)) -}
+48fc723067449885112b0a491ea84b1a
+  abbreviate1 :: GHC.Types.Char -> GHC.Types.Char
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (c :: GHC.Types.Char) ->
+                 case c of wild { GHC.Types.C# x ->
+                 case x of wild1 { DEFAULT -> wild '-'# -> GHC.Types.C# ' '# } }) -}
+1e539c59d8d7c7acc17cb806d007a1f1
+  abbreviate2 ::
+    [GHC.Types.Char] -> [GHC.Types.Char] -> [GHC.Types.Char]
+  {- Arity: 2,
+     Unfolding: (\ (x :: [GHC.Types.Char])
+                   (ys :: [GHC.Types.Char])[OneShot] ->
+                 case x of wild {
+                   [] -> Acronym.abbreviate5
+                   : w ws
+                   -> let {
+                        upperCaseLetters :: [GHC.Types.Char]
+                        = GHC.List.filter @ GHC.Types.Char GHC.Unicode.isUpper wild
+                      } in
+                      case GHC.Base.eqString
+                             upperCaseLetters
+                             (GHC.List.filter
+                                @ GHC.Types.Char
+                                GHC.Unicode.isAlpha
+                                wild) of wild1 {
+                        GHC.Types.False
+                        -> GHC.Base.++
+                             @ GHC.Types.Char
+                             (GHC.Types.:
+                                @ GHC.Types.Char
+                                (case w of ww { GHC.Types.C# ww1 ->
+                                 case {__pkg_ccall base-4.9.1.0 u_towupper GHC.Prim.Int#
+                                                                           -> GHC.Prim.State#
+                                                                                GHC.Prim.RealWorld
+                                                                           -> (# GHC.Prim.State#
+                                                                                   GHC.Prim.RealWorld,
+                                                                                 GHC.Prim.Int# #)}
+                                        (GHC.Prim.ord# ww1)
+                                        GHC.Prim.realWorld# of wild2 { (#,#) ds ds1 ->
+                                 case GHC.Prim.tagToEnum#
+                                        @ GHC.Types.Bool
+                                        (GHC.Prim.leWord#
+                                           (GHC.Prim.int2Word# ds1)
+                                           1114111##) of wild3 {
+                                   GHC.Types.False -> GHC.Char.chr2 ds1
+                                   GHC.Types.True -> GHC.Types.C# (GHC.Prim.chr# ds1) } } })
+                                (GHC.List.filter @ GHC.Types.Char Acronym.abbreviate3 ws))
+                             ys
+                        GHC.Types.True
+                        -> case GHC.List.$wlenAcc
+                                  @ GHC.Types.Char
+                                  upperCaseLetters
+                                  0# of ww2 { DEFAULT ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.># ww2 0#) of wild2 {
+                             GHC.Types.False
+                             -> GHC.Base.++
+                                  @ GHC.Types.Char
+                                  (GHC.Types.:
+                                     @ GHC.Types.Char
+                                     (case w of ww { GHC.Types.C# ww1 ->
+                                      case {__pkg_ccall base-4.9.1.0 u_towupper GHC.Prim.Int#
+                                                                                -> GHC.Prim.State#
+                                                                                     GHC.Prim.RealWorld
+                                                                                -> (# GHC.Prim.State#
+                                                                                        GHC.Prim.RealWorld,
+                                                                                      GHC.Prim.Int# #)}
+                                             (GHC.Prim.ord# ww1)
+                                             GHC.Prim.realWorld# of wild3 { (#,#) ds ds1 ->
+                                      case GHC.Prim.tagToEnum#
+                                             @ GHC.Types.Bool
+                                             (GHC.Prim.leWord#
+                                                (GHC.Prim.int2Word# ds1)
+                                                1114111##) of wild4 {
+                                        GHC.Types.False -> GHC.Char.chr2 ds1
+                                        GHC.Types.True -> GHC.Types.C# (GHC.Prim.chr# ds1) } } })
+                                     (GHC.List.filter @ GHC.Types.Char Acronym.abbreviate3 ws))
+                                  ys
+                             GHC.Types.True
+                             -> GHC.Base.++
+                                  @ GHC.Types.Char
+                                  (GHC.Types.: @ GHC.Types.Char w (GHC.Types.[] @ GHC.Types.Char))
+                                  ys } } } }) -}
+a9d829038a80b6af5134a186900a4c9c
+  abbreviate3 :: GHC.Types.Char -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ws' :: GHC.Types.Char) ->
+                 GHC.List.elem
+                   @ GHC.Types.Char
+                   GHC.Classes.$fEqChar
+                   ws'
+                   Acronym.abbreviate4) -}
+16a03f02ec22f15ad587fa3c40ed4f37
+  abbreviate4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Enum.eftChar 65# 90#) -}
+b9b0c10a4a933878b56fe2ed737f584a
+  abbreviate5 :: [GHC.Types.Char]
+  {- Strictness: x -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
