@@ -1,0 +1,59 @@
+
+==================== FINAL INTERFACE ====================
+2017-05-01 14:15:09.0781601 UTC
+
+interface sieve-0.0.0-HxR3PHlPcGILUAt5llhjd8:Sieve 8002
+  interface hash: 5afba1a0b5e1b457003173eae8cd3c0b
+  ABI hash: 0e74ec724d3136858114754742b36ae7
+  export-list hash: 9639d1412d27717256b94f61f0fc29cc
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 50be09f6ae5701bb586bc6db9bc9ce26
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Sieve.primesUpTo
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Foldable 254e836c2d813d34e47feb29bb8d40ed
+import  -/  base-4.9.1.0:Data.List 7349774f430841349c90dfd1144aea97
+import  -/  base-4.9.1.0:Data.OldList c9282ee91951bdcbd918d2960562c007
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.Float b620368aab866c2bb9d3a0a459566b84
+import  -/  base-4.9.1.0:GHC.Num 38b8aac8807c096c7f3ca3c1eff02939
+import  -/  base-4.9.1.0:GHC.Real b88ae4a48c079652623073a5bbf5c9b0
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 5e60b761569ee353529e98a36b72df11
+d5cc69754a09dcb56526ef61b7085fd1
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Sieve.$trModule2 Sieve.$trModule1) -}
+7be5c4683386feb50448f6f01ceff3c4
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Sieve"#) -}
+54df60c927e014427de02c55318d5948
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "sieve-0.0.0-HxR3PHlPcGILUAt5llhjd8"#) -}
+c679a4c56fd695a48ffad2f62fceb7a3
+  primesUpTo ::
+    GHC.Integer.Type.Integer -> [GHC.Integer.Type.Integer]
+  {- Arity: 1, Strictness: <S,U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
