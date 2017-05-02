@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2017-05-01 14:15:09.0781601 UTC
+2017-05-02 13:06:35.797594 UTC
 
 interface sieve-0.0.0-HxR3PHlPcGILUAt5llhjd8:Sieve 8002
-  interface hash: 5afba1a0b5e1b457003173eae8cd3c0b
+  interface hash: 4759dfc929f5fc8113f4f32ea9db8600
   ABI hash: 0e74ec724d3136858114754742b36ae7
   export-list hash: 9639d1412d27717256b94f61f0fc29cc
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
@@ -30,7 +30,6 @@ import  -/  base-4.9.1.0:GHC.Float b620368aab866c2bb9d3a0a459566b84
 import  -/  base-4.9.1.0:GHC.Num 38b8aac8807c096c7f3ca3c1eff02939
 import  -/  base-4.9.1.0:GHC.Real b88ae4a48c079652623073a5bbf5c9b0
 import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
-import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
 import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 5e60b761569ee353529e98a36b72df11
 d5cc69754a09dcb56526ef61b7085fd1
   $trModule :: GHC.Types.Module

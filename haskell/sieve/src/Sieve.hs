@@ -3,10 +3,7 @@ module Sieve (primesUpTo) where
 import Data.List((\\))
 
 primesUpTo :: Integer -> [Integer]
-primesUpTo n
-  | n <= 1    = []
-  | otherwise = 
-                 let
+primesUpTo n =   let
                    sqrtLimit = (floor . sqrt) (fromIntegral n :: Double)
                    iVal = [i | i <- [2 .. sqrtLimit]]
                    jVal x = [x^2, x^2 + x .. n]
