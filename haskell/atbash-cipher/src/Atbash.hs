@@ -1,15 +1,15 @@
 module Atbash (decode, encode) where
 
-import Data.Char (toLower, isDigit)
+import Data.Char (toLower, isAlphaNum)
 import Data.List.Split (chunksOf)
 
 decode :: String -> String
-decode cipherText = filter (\x -> x /= ' ') (map (characterMapping . toLower) cipherText)
+decode cipherText = filter (\x -> isAlphaNum(x) == True) (map (characterMapping . toLower) cipherText)
 
 encode :: String -> String
 encode plainText = 
   let
-    content = concat $ map (\x -> x ++ " ") (chunksOf 5 (filter (\x -> x /= ' ') (map (characterMapping . toLower) plainText)))
+    content = concat $ map (\x -> x ++ " ") (chunksOf 5 (decode plainText))
   in 
     take (length content- 1) content
 
@@ -41,7 +41,6 @@ characterMapping c
   | c == 'x'  = 'c'
   | c == 'y'  = 'b'
   | c == 'z'  = 'a'
-  | isDigit(c) == True = c
-  | otherwise = ' '
+  | otherwise = c
 
 
