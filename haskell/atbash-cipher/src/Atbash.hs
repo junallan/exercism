@@ -1,46 +1,20 @@
 module Atbash (decode, encode) where
 
-import Data.Char (toLower, isAlphaNum)
+import Data.Char (toLower, isSpace)
 import Data.List.Split (chunksOf)
+import Data.List (dropWhileEnd)
+import Data.Maybe (catMaybes)
 
 decode :: String -> String
-decode cipherText = filter (\x -> isAlphaNum(x) == True) (map (characterMapping . toLower) cipherText)
+decode cipherText = catMaybes $ map (characterMapping . toLower) cipherText
 
 encode :: String -> String
-encode plainText = 
-  let
-    content = concat $ map (\x -> x ++ " ") (chunksOf 5 (decode plainText))
-  in 
-    take (length content- 1) content
-
-characterMapping :: Char -> Char
-characterMapping c
-  | c == 'a'  = 'z'
-  | c == 'b'  = 'y'
-  | c == 'c'  = 'x'
-  | c == 'd'  = 'w'
-  | c == 'e'  = 'v'
-  | c == 'f'  = 'u'
-  | c == 'g'  = 't'
-  | c == 'h'  = 's'
-  | c == 'i'  = 'r'
-  | c == 'j'  = 'q'
-  | c == 'k'  = 'p'
-  | c == 'l'  = 'o'
-  | c == 'm'  = 'n'
-  | c == 'n'  = 'm'
-  | c == 'o'  = 'l'
-  | c == 'p'  = 'k'
-  | c == 'q'  = 'j'
-  | c == 'r'  = 'i'
-  | c == 's'  = 'h'
-  | c == 't'  = 'g'
-  | c == 'u'  = 'f'
-  | c == 'v'  = 'e'
-  | c == 'w'  = 'd'
-  | c == 'x'  = 'c'
-  | c == 'y'  = 'b'
-  | c == 'z'  = 'a'
-  | otherwise = c
-
+encode plainText = dropWhileEnd isSpace (concat $ map (\x -> x ++ " ") (chunksOf 5 (decode plainText)))
+  
+characterMapping :: Char -> Maybe Char
+characterMapping c = lookup c mappings
+                     where 
+                       characters = ['a'..'z']
+                       numbers    = ['1'..'9'] 
+                       mappings   = zip characters (reverse characters) ++ zip numbers numbers
 
