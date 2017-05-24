@@ -1,0 +1,127 @@
+
+==================== FINAL INTERFACE ====================
+2017-05-24 13:25:18.9840077 UTC
+
+interface word-count-1.0.0.3-FsKfMB8FnYl8bSccyuIhe8:WordCount 8002
+  interface hash: 114e1baf72fe8d596af7842fd84a1f49
+  ABI hash: 6ee16fff710b5ab36da85c95e9e18cee
+  export-list hash: 70f911f09132bb281e534089821bf594
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 50be09f6ae5701bb586bc6db9bc9ce26
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  WordCount.wordCount
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+                      split-0.2.3.1@split-0.2.3.1-FWyXC6nhV0H3AfM8IzrEFk
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Char c49b58282af11503cc838e1052cf6b83
+import  -/  base-4.9.1.0:Data.Foldable 254e836c2d813d34e47feb29bb8d40ed
+import  -/  base-4.9.1.0:Data.List 7349774f430841349c90dfd1144aea97
+import  -/  base-4.9.1.0:Data.OldList c9282ee91951bdcbd918d2960562c007
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.List d11eb227c1c6fbfd89bb781d72eaea0d
+import  -/  base-4.9.1.0:GHC.Unicode 7b64ed854a326c2c5bb224f237ed4a0b
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  split-0.2.3.1@split-0.2.3.1-FWyXC6nhV0H3AfM8IzrEFk:Data.List.Split c60198a427bfd51d9fb4562c059ec1d2
+2fe31458577342e6f17bd3c5a508f056
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   WordCount.$trModule2
+                   WordCount.$trModule1) -}
+0b18e2ad321db7bfb24eb6b82c092827
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "WordCount"#) -}
+91c790df0bfacb3b4a65b440115cda79
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "word-count-1.0.0.3-FsKfMB8FnYl8bSccyuIhe8"#) -}
+233f1408f763352124ef3825ae9f3a1e
+  wordCount :: GHC.Base.String -> [(GHC.Base.String, GHC.Types.Int)]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (xs :: GHC.Base.String) ->
+                 GHC.Base.map
+                   @ [GHC.Base.String]
+                   @ (GHC.Base.String, GHC.Types.Int)
+                   WordCount.wordCount3
+                   (Data.OldList.groupBy
+                      @ [GHC.Types.Char]
+                      GHC.Base.eqString
+                      (Data.OldList.sortBy
+                         @ [GHC.Types.Char]
+                         GHC.Classes.$fOrd[]_$s$ccompare1
+                         (Data.OldList.wordsFB
+                            @ [[GHC.Types.Char]]
+                            WordCount.wordCount1
+                            (GHC.Types.[] @ [GHC.Types.Char])
+                            (WordCount.wordCount_go xs))))) -}
+c150b106ba181e199360adf15649d5fa
+  wordCount1 ::
+    [GHC.Types.Char] -> [[GHC.Types.Char]] -> [[GHC.Types.Char]]
+  {- Arity: 2,
+     Unfolding: (\ (x :: [GHC.Types.Char])
+                   (ys :: [[GHC.Types.Char]])[OneShot] ->
+                 GHC.Types.:
+                   @ [GHC.Types.Char]
+                   (case x of wild {
+                      [] -> case GHC.List.badHead ret_ty [GHC.Types.Char] of {}
+                      : x1 ds1
+                      -> case x1 of wild1 { GHC.Types.C# x2 ->
+                         case x2 of wild2 {
+                           DEFAULT -> wild
+                           '\''#
+                           -> case WordCount.wordCount_go1
+                                     wild
+                                     (GHC.List.lastError
+                                        @ GHC.Types.Char) of wild3 { GHC.Types.C# x3 ->
+                              case x3 of wild4 {
+                                DEFAULT -> wild
+                                '\''#
+                                -> GHC.List.filter
+                                     @ GHC.Types.Char
+                                     WordCount.wordCount2
+                                     wild } } } } })
+                   ys) -}
+be1e726431e6f1aa1320ea436a3c1b07
+  wordCount2 :: GHC.Types.Char -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: GHC.Types.Char) ->
+                 case ds of wild { GHC.Types.C# x ->
+                 case x of wild1 {
+                   DEFAULT -> GHC.Types.True '\''# -> GHC.Types.False } }) -}
+8b1dd02a68cc3ff645a69c66b6a61518
+  wordCount3 :: [GHC.Base.String] -> (GHC.Base.String, GHC.Types.Int)
+  {- Arity: 1, Strictness: <L,U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: [GHC.Base.String]) ->
+                 (GHC.List.head @ GHC.Base.String x,
+                  case GHC.List.$wlenAcc @ [GHC.Types.Char] x 0# of ww2 { DEFAULT ->
+                  GHC.Types.I# ww2 })) -}
+11463bc5a43e5fd8f5fa543aab74af1b
+  wordCount_go :: [GHC.Types.Char] -> [GHC.Types.Char]
+  {- Arity: 1, Strictness: <S,1*U> -}
+1d8de52f424b426fc3fd2607eef4fbf4
+  wordCount_go1 ::
+    [GHC.Types.Char] -> GHC.Types.Char -> GHC.Types.Char
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U(U)> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
