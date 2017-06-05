@@ -37,9 +37,6 @@ fromList (x:xs) = insert (last xs) (fromList (x:take (length xs-1) xs))
 
 insert :: Ord a => a -> BST a -> BST a
 insert x EmptyTree = singleton x
-insert x (Node a (EmptyTree) (EmptyTree))
-  | x <= fromJust (Just a) = (Node a (singleton x)(EmptyTree))
-  | x > fromJust (Just a)  = (Node a (EmptyTree) (singleton x))
 insert x (Node a (left) (right))
   | x <= fromJust (Just a) = (Node a (insert x left)(right))
   | x > fromJust (Just a)  = (Node a (left)(insert x right))

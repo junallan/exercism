@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2017-06-05 13:57:51.6841405 UTC
+2017-06-05 14:03:27.6525556 UTC
 
 interface binary-search-tree-0.1.0.2-5qhmX5hcjjM8R5Xizxqo5m:BST 8002
-  interface hash: 98bb3409e5927928b8f5a22f263539eb
-  ABI hash: 82a7b922c4e79a8276cd4c963d1ba44e
+  interface hash: c34b5499103c8645d2ef55d6ceb30761
+  ABI hash: 55eb4fc9d33257a41dc244b7eec94974
   export-list hash: 6376640ed9625bb073bc906d141f2944
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 50be09f6ae5701bb586bc6db9bc9ce26
@@ -152,6 +152,13 @@ aaab1ff306caa86aee014152f001a973
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    "binary-search-tree-0.1.0.2-5qhmX5hcjjM8R5Xizxqo5m"#) -}
+de91602a3fc66a12546fce583acca52a
+  $winsert ::
+    GHC.Classes.Ord a =>
+    a -> BST.BST a -> (# a, BST.BST a, BST.BST a #)
+  {- Arity: 3,
+     Strictness: <L,U(A,A,A,C(C1(U)),C(C1(U)),A,A,A)><L,U><S,1*U>,
+     Inline: [0] -}
 147e6865ea7541f3b7f2d18e04429349
   data BST a = EmptyTree | Node a (BST.BST a) (BST.BST a)
 79740c508a149562c89b7f1930ccdac0
@@ -192,10 +199,15 @@ e81e933dd541cf94f52081e2b7e4242a
   fromList :: GHC.Classes.Ord a => [a] -> BST.BST a
   {- Arity: 2,
      Strictness: <L,U(A,A,A,C(C1(U)),C(C1(U)),A,A,A)><S,1*U> -}
-1d6cc3d24784fdd36e1c7bced56a8f36
+c3f4152daecef828b5b9d154103b339a
   insert :: GHC.Classes.Ord a => a -> BST.BST a -> BST.BST a
   {- Arity: 3,
-     Strictness: <L,U(A,A,A,C(C1(U)),C(C1(U)),A,A,A)><L,U><S,1*U> -}
+     Strictness: <L,U(A,A,A,C(C1(U)),C(C1(U)),A,A,A)><L,U><S,1*U>m2,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a (w :: GHC.Classes.Ord a) (w1 :: a) (w2 :: BST.BST a) ->
+                 case BST.$winsert @ a w w1 w2 of ww { (#,,#) ww1 ww2 ww3 ->
+                 BST.Node @ a ww1 ww2 ww3 }) -}
 f9e86ff0b6e8c4a6b79f39c1ed9b2f7a
   singleton :: a -> BST.BST a
   {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2,
