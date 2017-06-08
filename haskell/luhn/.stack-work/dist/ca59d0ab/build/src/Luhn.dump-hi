@@ -1,0 +1,127 @@
+
+==================== FINAL INTERFACE ====================
+2017-06-08 13:22:30.772908 UTC
+
+interface luhn-1.0.0.2-AF7eQ26vPJJD4Il2NqbagT:Luhn 8002
+  interface hash: 4b83f4722cf0531e1b6bb0ae7e719f60
+  ABI hash: b98e135c3b08a3933d19c96c52e864c5
+  export-list hash: a547b6994738804f6c5984ca7bf3cbcb
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 9ef552c3d5750b67a287ee27c3cf9954
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Luhn.isValid
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Char c49b58282af11503cc838e1052cf6b83
+import  -/  base-4.9.1.0:Data.Foldable 254e836c2d813d34e47feb29bb8d40ed
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.List d11eb227c1c6fbfd89bb781d72eaea0d
+import  -/  base-4.9.1.0:GHC.Num 38b8aac8807c096c7f3ca3c1eff02939
+import  -/  base-4.9.1.0:GHC.Real b88ae4a48c079652623073a5bbf5c9b0
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+f02c2da47115d03b397c663ad02a9a58
+  $seven1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+d9cd1513a30b33a9eaf29cc7fc5f96ee
+  $seven2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (2) -}
+b4fa1705732dea43ce4092568f2e586a
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Luhn.$trModule2 Luhn.$trModule1) -}
+ddb145bca096abf85ec91e37762e1b0a
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Luhn"#) -}
+ad125b5bc1593a262bcc8b8d4aa5498e
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "luhn-1.0.0.2-AF7eQ26vPJJD4Il2NqbagT"#) -}
+2293cae079b1fb1b2786e39ced69e3c6
+  $wgo ::
+    [(GHC.Types.Int, GHC.Integer.Type.Integer)]
+    -> GHC.Prim.Int# -> GHC.Prim.Int#
+  {- Arity: 2, Strictness: <S,1*U><L,U>, Inline: [0] -}
+0ef46a94e29c4e637e2e5099ffb1625a
+  $wgo1 ::
+    [(GHC.Types.Int, GHC.Integer.Type.Integer)]
+    -> GHC.Prim.Int# -> GHC.Prim.Int#
+  {- Arity: 2, Strictness: <S,1*U><L,U>, Inline: [0] -}
+a6c3531e12ddaf6203fb43d4f21fcd2d
+  $wgo2 :: [GHC.Types.Char] -> GHC.Prim.Int# -> GHC.Prim.Int#
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>, Inline: [0] -}
+e9da0ee79f23d717dfdc2dceb8f8802c
+  isValid :: GHC.Base.String -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (n :: GHC.Base.String) ->
+                 case Luhn.$wgo2 n 0# of ww { DEFAULT ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<# ww 2#) of wild {
+                   GHC.Types.False
+                   -> case Luhn.$wgo1
+                             (Luhn.isValid6 (Luhn.isValid5 (Luhn.isValid_go1 n) Luhn.isValid3))
+                             0# of ww1 { DEFAULT ->
+                      case Luhn.$wgo
+                             (Luhn.isValid2 (Luhn.isValid1 (Luhn.isValid_go n) Luhn.isValid3))
+                             0# of ww2 { DEFAULT ->
+                      case GHC.Classes.modInt# (GHC.Prim.+# ww1 ww2) 10# of ww3 {
+                        DEFAULT -> GHC.Types.False 0# -> GHC.Types.True } } }
+                   GHC.Types.True -> GHC.Types.False } }) -}
+2a87957535f58ac6878a6c475c20130d
+  isValid1 ::
+    [GHC.Types.Int]
+    -> [GHC.Integer.Type.Integer]
+    -> [(GHC.Types.Int, GHC.Integer.Type.Integer)]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+ec32f41639ece805000408c241cb0872
+  isValid2 ::
+    [(GHC.Types.Int, GHC.Integer.Type.Integer)]
+    -> [(GHC.Types.Int, GHC.Integer.Type.Integer)]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+8b1fffe07cc5e572d61ffa87eef68392
+  isValid3 :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (case GHC.Enum.$wenumDeltaInteger
+                        Luhn.isValid4
+                        Luhn.isValid4 of ww { (#,#) ww1 ww2 ->
+                 GHC.Types.: @ GHC.Integer.Type.Integer ww1 ww2 }) -}
+3ca2ea3fc60b6a167090faec4c51405b
+  isValid4 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+980c65436b0484b1071183477c147db8
+  isValid5 ::
+    [GHC.Types.Int]
+    -> [GHC.Integer.Type.Integer]
+    -> [(GHC.Types.Int, GHC.Integer.Type.Integer)]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+c4eae6714511383b4c2b8676a47bf79f
+  isValid6 ::
+    [(GHC.Types.Int, GHC.Integer.Type.Integer)]
+    -> [(GHC.Types.Int, GHC.Integer.Type.Integer)]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+88aca997ccf73b17c7e006b4e5c1b31f
+  isValid_go :: [GHC.Types.Char] -> [GHC.Types.Int]
+  {- Arity: 1, Strictness: <S,1*U> -}
+e94be8398af289d4b01d63d15ffc55d7
+  isValid_go1 :: [GHC.Types.Char] -> [GHC.Types.Int]
+  {- Arity: 1, Strictness: <S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
