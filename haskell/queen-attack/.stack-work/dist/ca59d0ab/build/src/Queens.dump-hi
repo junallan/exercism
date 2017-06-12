@@ -1,0 +1,138 @@
+
+==================== FINAL INTERFACE ====================
+2017-06-12 13:15:53.1042401 UTC
+
+interface queen-attack-1.0.0.3-DWpIqPrSxfE8KEVOTl9nde:Queens 8002
+  interface hash: bba94d5e2103ad08c481bc64fee83e65
+  ABI hash: 28f887a99e586cb4c06dc01dcdaf9ea7
+  export-list hash: 2482ded799ac1aa36135652c6ecd1f3a
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 50be09f6ae5701bb586bc6db9bc9ce26
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Queens.boardString
+  Queens.canAttack
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Char c49b58282af11503cc838e1052cf6b83
+import  -/  base-4.9.1.0:Data.Foldable 254e836c2d813d34e47feb29bb8d40ed
+import  -/  base-4.9.1.0:Data.Maybe ecf0c6f81372d9b58b142d5e758ea51b
+import  -/  base-4.9.1.0:Data.OldList c9282ee91951bdcbd918d2960562c007
+import  -/  base-4.9.1.0:Data.Tuple b07f695e7ce8fe20cc8a32abf62f60ec
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.List d11eb227c1c6fbfd89bb781d72eaea0d
+import  -/  base-4.9.1.0:GHC.Num 38b8aac8807c096c7f3ca3c1eff02939
+import  -/  base-4.9.1.0:GHC.Unicode 7b64ed854a326c2c5bb224f237ed4a0b
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+2bf38367c7f62551005e4f85f77f4e80
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Queens.$trModule2
+                   Queens.$trModule1) -}
+b2782984752ff550368a329f76939bd4
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Queens"#) -}
+829486aac63ee8a1aef3e8983aeb50f0
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "queen-attack-1.0.0.3-DWpIqPrSxfE8KEVOTl9nde"#) -}
+711d949a9e3661c6d7cff6f1c3dbd5f5
+  $wcanAttack ::
+    GHC.Prim.Int#
+    -> GHC.Types.Int
+    -> GHC.Prim.Int#
+    -> GHC.Types.Int
+    -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S,U><L,1*U(U)><S,U><L,1*U(U)>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Types.Int)
+                   (ww2 :: GHC.Prim.Int#)
+                   (ww3 :: GHC.Types.Int) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==# ww ww2) of wild {
+                   GHC.Types.False
+                   -> case ww1 of wild1 { GHC.Types.I# x ->
+                      case ww3 of wild2 { GHC.Types.I# y ->
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.==# x y) of wild3 {
+                        GHC.Types.False
+                        -> let {
+                             x1 :: GHC.Prim.Int# = GHC.Prim.-# ww2 ww
+                           } in
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.>=# x1 0#) of wild4 {
+                             GHC.Types.False
+                             -> let {
+                                  x2 :: GHC.Prim.Int# = GHC.Prim.-# y x
+                                } in
+                                case GHC.Prim.tagToEnum#
+                                       @ GHC.Types.Bool
+                                       (GHC.Prim.>=# x2 0#) of wild5 {
+                                  GHC.Types.False
+                                  -> case GHC.Prim.-#
+                                            (GHC.Prim.negateInt# x1)
+                                            (GHC.Prim.negateInt# x2) of wild6 {
+                                       DEFAULT -> GHC.Types.False 0# -> GHC.Types.True }
+                                  GHC.Types.True
+                                  -> case GHC.Prim.-# (GHC.Prim.negateInt# x1) x2 of wild6 {
+                                       DEFAULT -> GHC.Types.False 0# -> GHC.Types.True } }
+                             GHC.Types.True
+                             -> let {
+                                  x2 :: GHC.Prim.Int# = GHC.Prim.-# y x
+                                } in
+                                case GHC.Prim.tagToEnum#
+                                       @ GHC.Types.Bool
+                                       (GHC.Prim.>=# x2 0#) of wild5 {
+                                  GHC.Types.False
+                                  -> case GHC.Prim.-# x1 (GHC.Prim.negateInt# x2) of wild6 {
+                                       DEFAULT -> GHC.Types.False 0# -> GHC.Types.True }
+                                  GHC.Types.True
+                                  -> case GHC.Prim.-# x1 x2 of wild6 {
+                                       DEFAULT -> GHC.Types.False 0# -> GHC.Types.True } } }
+                        GHC.Types.True -> GHC.Types.True } } }
+                   GHC.Types.True -> GHC.Types.True }) -}
+81f90e569dd90fa3fa42aaac3065aad3
+  boardString ::
+    GHC.Base.Maybe (GHC.Types.Int, GHC.Types.Int)
+    -> GHC.Base.Maybe (GHC.Types.Int, GHC.Types.Int) -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,U><S,U> -}
+7a963b0d3a494e3b3488c6759d215b07
+  canAttack ::
+    (GHC.Types.Int, GHC.Types.Int)
+    -> (GHC.Types.Int, GHC.Types.Int) -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)L),1*U(1*U(U),1*U(U))><S(S(S)L),1*U(1*U(U),1*U(U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: (GHC.Types.Int, GHC.Types.Int))
+                   (w1 :: (GHC.Types.Int, GHC.Types.Int)) ->
+                 case w of ww { (,) ww1 ww2 ->
+                 case ww1 of ww3 { GHC.Types.I# ww4 ->
+                 case w1 of ww5 { (,) ww6 ww7 ->
+                 case ww6 of ww8 { GHC.Types.I# ww9 ->
+                 Queens.$wcanAttack ww4 ww2 ww9 ww7 } } } }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
