@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2017-06-08 13:22:33.4192003 UTC
+2017-06-12 13:35:45.5942669 UTC
 
 interface main@main:Main 8002
-  interface hash: a6a097fe24f335d42df7b06685054239
+  interface hash: 892211c0d9992ce8c427fc0b05c44710
   ABI hash: 667a38c5e20b1faaadd0e6c733df5e6d
   export-list hash: 5623a6f33b4df9207511452fffee49fc
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
@@ -77,7 +77,7 @@ import  -/  hspec-core-2.4.1@hspec-core-2.4.1-LJADAc37OY7GoJYIFjwgiV:Test.Hspec.
 import  -/  hspec-core-2.4.1@hspec-core-2.4.1-LJADAc37OY7GoJYIFjwgiV:Test.Hspec.Core.Spec bf3465cef60eaa763574e537829d2032
 import  -/  hspec-core-2.4.1@hspec-core-2.4.1-LJADAc37OY7GoJYIFjwgiV:Test.Hspec.Core.Spec.Monad d268e6d4bffc202590224f00dd459bce
 import  -/  hspec-expectations-0.8.2@hspec-expectations-0.8.2-DujBeQFEMmfJJRLad7XQgd:Test.Hspec.Expectations 3a84a1cb640da0a9a923fc2bfa92c798
-import  -/  luhn-1.0.0.2@luhn-1.0.0.2-AF7eQ26vPJJD4Il2NqbagT:Luhn b98e135c3b08a3933d19c96c52e864c5
+import  -/  luhn-1.0.0.2@luhn-1.0.0.2-AF7eQ26vPJJD4Il2NqbagT:Luhn d135777828b9ee0a7e5c687fa333a684
 8e216c2206cb8f7be813d7cecb9e50d3
   $tc'Case :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,

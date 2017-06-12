@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2017-06-08 13:22:30.772908 UTC
+2017-06-12 13:35:04.8068191 UTC
 
 interface luhn-1.0.0.2-AF7eQ26vPJJD4Il2NqbagT:Luhn 8002
-  interface hash: 4b83f4722cf0531e1b6bb0ae7e719f60
-  ABI hash: b98e135c3b08a3933d19c96c52e864c5
+  interface hash: 01ff23273d69ecb19dd2d8e5154f224d
+  ABI hash: d135777828b9ee0a7e5c687fa333a684
   export-list hash: a547b6994738804f6c5984ca7bf3cbcb
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 9ef552c3d5750b67a287ee27c3cf9954
@@ -62,7 +62,7 @@ ad125b5bc1593a262bcc8b8d4aa5498e
 a6c3531e12ddaf6203fb43d4f21fcd2d
   $wgo2 :: [GHC.Types.Char] -> GHC.Prim.Int# -> GHC.Prim.Int#
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>, Inline: [0] -}
-e9da0ee79f23d717dfdc2dceb8f8802c
+2380d562901fb2a498d637f5a807f4fb
   isValid :: GHC.Base.String -> GHC.Types.Bool
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: (\ (n :: GHC.Base.String) ->
@@ -72,10 +72,24 @@ e9da0ee79f23d717dfdc2dceb8f8802c
                         (GHC.Prim.<# ww 2#) of wild {
                    GHC.Types.False
                    -> case Luhn.$wgo1
-                             (Luhn.isValid6 (Luhn.isValid5 (Luhn.isValid_go1 n) Luhn.isValid3))
+                             (Luhn.isValid6
+                                (Luhn.isValid5
+                                   (Luhn.isValid_go1
+                                      (GHC.List.reverse1
+                                         @ GHC.Types.Char
+                                         n
+                                         (GHC.Types.[] @ GHC.Types.Char)))
+                                   Luhn.isValid3))
                              0# of ww1 { DEFAULT ->
                       case Luhn.$wgo
-                             (Luhn.isValid2 (Luhn.isValid1 (Luhn.isValid_go n) Luhn.isValid3))
+                             (Luhn.isValid2
+                                (Luhn.isValid1
+                                   (Luhn.isValid_go
+                                      (GHC.List.reverse1
+                                         @ GHC.Types.Char
+                                         n
+                                         (GHC.Types.[] @ GHC.Types.Char)))
+                                   Luhn.isValid3))
                              0# of ww2 { DEFAULT ->
                       case GHC.Classes.modInt# (GHC.Prim.+# ww1 ww2) 10# of ww3 {
                         DEFAULT -> GHC.Types.False 0# -> GHC.Types.True } } }

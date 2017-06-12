@@ -7,9 +7,9 @@ import Data.Char(digitToInt)
 isValid :: String -> Bool
 isValid n = 
   case length (stringToIntList n) < 2 of True  -> False 
-                                         False -> let 
-                                                    oddSum = foldl (+) 0 (first (stringToIntList n)) 
-                                                    evenSum = foldl (+) 0 (second (stringToIntList n))
+                                         False -> let
+                                                    oddSum = foldl (+) 0 (first (stringToIntList (reverse n))) 
+                                                    evenSum = foldl (+) 0 (second (stringToIntList (reverse n))) 
                                                   in
                                                     (evenSum + oddSum) `mod` 10 == 0 
                                                     

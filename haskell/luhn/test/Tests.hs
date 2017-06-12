@@ -32,10 +32,10 @@ cases = [ Case { description = "single digit strings can not be valid"
                , input       = "059"
                , expected    = True
                }
-       {- , Case { description = "a simple valid SIN that becomes invalid if reversed"
+        , Case { description = "a simple valid SIN that becomes invalid if reversed"
                , input       = "59"
                , expected    = True
-               }-}
+               }
         , Case { description = "a valid Canadian SIN"
                , input       = "055 444 285"
                , expected    = True
