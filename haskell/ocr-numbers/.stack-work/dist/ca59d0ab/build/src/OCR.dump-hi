@@ -1,0 +1,93 @@
+
+==================== FINAL INTERFACE ====================
+2017-06-16 13:26:35.0515246 UTC
+
+interface ocr-numbers-1.0.0.3-BHDd6OWLyWi8owwmHC37PG:OCR 8002
+  interface hash: b46f3b6a5fdf0d8fa74999f431a11e6c
+  ABI hash: 0a045fa221b8e999274ab4b112585e6f
+  export-list hash: 72e2dada7449f72cd29d95a75de9d610
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 50be09f6ae5701bb586bc6db9bc9ce26
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  OCR.convert
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+                      split-0.2.3.1@split-0.2.3.1-FWyXC6nhV0H3AfM8IzrEFk
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Foldable 254e836c2d813d34e47feb29bb8d40ed
+import  -/  base-4.9.1.0:Data.OldList c9282ee91951bdcbd918d2960562c007
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.List d11eb227c1c6fbfd89bb781d72eaea0d
+import  -/  base-4.9.1.0:GHC.Num 38b8aac8807c096c7f3ca3c1eff02939
+import  -/  base-4.9.1.0:GHC.Real b88ae4a48c079652623073a5bbf5c9b0
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  split-0.2.3.1@split-0.2.3.1-FWyXC6nhV0H3AfM8IzrEFk:Data.List.Split c60198a427bfd51d9fb4562c059ec1d2
+import  -/  split-0.2.3.1@split-0.2.3.1-FWyXC6nhV0H3AfM8IzrEFk:Data.List.Split.Internals 84db683b1ee25db1d6015fdde5c02e7c
+8404f10809777b3036600fb0a8ffe66e
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module OCR.$trModule2 OCR.$trModule1) -}
+1ab2a222e9930f5a9939791865baa7a8
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "OCR"#) -}
+f9a795fe69fe1926953a934703a5a3d0
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "ocr-numbers-1.0.0.3-BHDd6OWLyWi8owwmHC37PG"#) -}
+55508542292934f0e094e0e386f59582
+  convert :: GHC.Base.String -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (xs :: GHC.Base.String) ->
+                 let {
+                   lns :: [GHC.Base.String] = Data.OldList.lines xs
+                 } in
+                 case GHC.List.$wlenAcc
+                        @ [GHC.Types.Char]
+                        lns
+                        0# of ww2 { DEFAULT ->
+                 case GHC.Classes.modInt# ww2 4# of ww1 {
+                   DEFAULT -> OCR.convert2
+                   0#
+                   -> case (OCR.convert_go1 lns)
+                             `cast`
+                           (Data.Monoid.N:All[0]) of wild {
+                        GHC.Types.False -> OCR.convert2
+                        GHC.Types.True
+                        -> case OCR.convert_go
+                                  (Data.List.Split.Internals.chunksOf
+                                     @ GHC.Base.String
+                                     OCR.convert1
+                                     lns) of wild1 {
+                             [] -> GHC.List.scanl2 @ GHC.Types.Char : ds1 xs1 -> xs1 } } } }) -}
+e454c00f70b09bc1ab047d62e6007fa7
+  convert1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 4#) -}
+51f55489081d6e17509e5a861040a7e9
+  convert2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "?"#) -}
+d8ee945973e394d8ccc94774e58e8253
+  convert_go :: [[[GHC.Types.Char]]] -> [GHC.Types.Char]
+  {- Arity: 1, Strictness: <S,1*U> -}
+75eff15b81e279ef02ec546a635a27c7
+  convert_go1 :: [[GHC.Types.Char]] -> Data.Monoid.All
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
