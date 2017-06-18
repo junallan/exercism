@@ -1,0 +1,491 @@
+
+==================== FINAL INTERFACE ====================
+2017-06-18 02:10:27.3395772 UTC
+
+interface food-chain-0.1.0.2-JLcRfeNJ0Lw1xImoMvezOy:FoodChain 8002
+  interface hash: c0fb2c578ac01b25228c6796280dc5b0
+  ABI hash: 7c4996388f0a5a778360e193679e477f
+  export-list hash: f64b67d04e5ea3171fc94ab81c8734d3
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 50be09f6ae5701bb586bc6db9bc9ce26
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  FoodChain.song
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.List d11eb227c1c6fbfd89bb781d72eaea0d
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+a2218acc6f14aede2db22b4c45e6f15b
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   FoodChain.$trModule2
+                   FoodChain.$trModule1) -}
+41b2c171fdfb85561e62f2202086a69b
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "FoodChain"#) -}
+4b18a6acfa95fe3d5d0b9edeb3db9c7f
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "food-chain-0.1.0.2-JLcRfeNJ0Lw1xImoMvezOy"#) -}
+0bbe7ce1f62b1d95c6d171c5c54fad48
+  iDontKnowWhySheSwallowedTheFlyPerhapsShellDie :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "I don't know why she swallowed the fly. Perhaps she'll die.\n\
+                   \\n"#) -}
+b131d825cca927ef7e2affb88f41e1a8
+  iKnowAnOldLadyWhoSwallowedA :: GHC.Base.String -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,1*U>,
+     Unfolding: (\ (swallowedObject :: GHC.Base.String) ->
+                 GHC.CString.unpackAppendCString#
+                   "I know an old lady who swallowed a "#
+                   (GHC.Base.++ @ GHC.Types.Char swallowedObject FoodChain.song59)) -}
+f39f259260f7a1bc5fbff3fdbc74c562
+  sheSwallowedTheBirdToCatchTheSpiderThatWriggledAndJiggledAndTickledInsideHer ::
+    [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.\n"#) -}
+4fec03ff767b0fb6dbfd4ac06ecbaa53
+  sheSwallowedTheCatToCatchTheBird :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "She swallowed the cat to catch the bird.\n"#) -}
+b6f07e120ab1286e2c49dc0175a7cbb6
+  sheSwallowedTheDogToCatchTheCat :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "She swallowed the dog to catch the cat.\n"#) -}
+37e82e8107fc19b3cdfb694fefdb6d74
+  sheSwallowedTheGoatToCatchTheDog :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "She swallowed the goat to catch the dog.\n"#) -}
+aa3a8ec44cdf277da0b17957ddf4724a
+  sheSwallowedTheSpiderToCatchTheFly :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "She swallowed the spider to catch the fly.\n"#) -}
+6caf9e3da54cea013150933c0f14c335
+  song :: GHC.Base.String
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.song72
+                   FoodChain.song1) -}
+e7e4a628ca5ff5c806e53133d37e39bd
+  song1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.iDontKnowWhySheSwallowedTheFlyPerhapsShellDie
+                   FoodChain.song2) -}
+cbc72ed2814c670e67eb8b28156c77cb
+  song10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.iDontKnowWhySheSwallowedTheFlyPerhapsShellDie
+                   FoodChain.song11) -}
+6cc70c7e3cc2fe22b83d2db131519e51
+  song11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.song66
+                   FoodChain.song12) -}
+1adf807827108a5177a198569dd94df5
+  song12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "Imagine that, to swallow a cat!\n"#
+                   FoodChain.song13) -}
+6284ab8bd0b286a5eae64ee088f691e5
+  song13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.sheSwallowedTheCatToCatchTheBird
+                   FoodChain.song14) -}
+99e949b4f2a46753f24b2aba24d5e61c
+  song14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.sheSwallowedTheBirdToCatchTheSpiderThatWriggledAndJiggledAndTickledInsideHer
+                   FoodChain.song15) -}
+641ddd5d23578a11ee42fdcb7bdafa45
+  song15 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.sheSwallowedTheSpiderToCatchTheFly
+                   FoodChain.song16) -}
+b3f56e76ad2cc3f6f12fbaa4821395c0
+  song16 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.iDontKnowWhySheSwallowedTheFlyPerhapsShellDie
+                   FoodChain.song17) -}
+2bdebe5bbcabfd9d207cc82ce0a26d22
+  song17 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.song64
+                   FoodChain.song18) -}
+4b449010be49f3db4acd5ee796cc732f
+  song18 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "What a hog, to swallow a dog!\n"#
+                   FoodChain.song19) -}
+f1b81b2fbcb11f55de92e3646c7e7b5b
+  song19 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.sheSwallowedTheDogToCatchTheCat
+                   FoodChain.song20) -}
+a4e1d8822145e3f27c693433cc9f5f0d
+  song2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.song70
+                   FoodChain.song3) -}
+c87451baa58f12de0706c579944f26a9
+  song20 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.sheSwallowedTheCatToCatchTheBird
+                   FoodChain.song21) -}
+a545c817617603a10ee2ae97577bf8a8
+  song21 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.sheSwallowedTheBirdToCatchTheSpiderThatWriggledAndJiggledAndTickledInsideHer
+                   FoodChain.song22) -}
+ba52f6ea7704ec004ba298b6d0f1aa8e
+  song22 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.sheSwallowedTheSpiderToCatchTheFly
+                   FoodChain.song23) -}
+aee798acc65aaeb7e946784a1378954f
+  song23 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.iDontKnowWhySheSwallowedTheFlyPerhapsShellDie
+                   FoodChain.song24) -}
+10e2a0772c4c8749d90609a74c482ec0
+  song24 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.song62
+                   FoodChain.song25) -}
+1128f8bc73625ec8c45ce3cfbcdc9525
+  song25 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "Just opened her throat and swallowed a goat!\n"#
+                   FoodChain.song26) -}
+394e06e4961264cbf493ef92512015d7
+  song26 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.sheSwallowedTheGoatToCatchTheDog
+                   FoodChain.song27) -}
+762102989a09dd6d55e6a0b585c13ead
+  song27 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.sheSwallowedTheDogToCatchTheCat
+                   FoodChain.song28) -}
+9eab4739b7ff7e184b46d9a09671cb96
+  song28 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.sheSwallowedTheCatToCatchTheBird
+                   FoodChain.song29) -}
+e8493426b0aae28d80cd3e35cdd346ba
+  song29 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.sheSwallowedTheBirdToCatchTheSpiderThatWriggledAndJiggledAndTickledInsideHer
+                   FoodChain.song30) -}
+d8ea2ebe4ff05c46fdc7a2ccc13cdc55
+  song3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "It wriggled and jiggled and tickled inside her.\n"#
+                   FoodChain.song4) -}
+d0763ca6960910cad146e213fe154c22
+  song30 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.sheSwallowedTheSpiderToCatchTheFly
+                   FoodChain.song31) -}
+08dbca9b8696b1a40407034ae283d4b7
+  song31 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.iDontKnowWhySheSwallowedTheFlyPerhapsShellDie
+                   FoodChain.song32) -}
+b2b0febb47ed924a5ad02687549b1478
+  song32 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.song60
+                   FoodChain.song33) -}
+4d136577212f1fab48c788fe8c78b6a9
+  song33 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "I don't know how she swallowed a cow!\n\
+                   \She swallowed the cow to catch the goat.\n"#
+                   FoodChain.song34) -}
+00219f6851f7fe3f9b439c9c76078a1e
+  song34 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.sheSwallowedTheGoatToCatchTheDog
+                   FoodChain.song35) -}
+b42dbdf511722c2427429d45611b79b1
+  song35 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.sheSwallowedTheDogToCatchTheCat
+                   FoodChain.song36) -}
+c7948a00cd82dc1979c2f0a05cbc99c7
+  song36 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.sheSwallowedTheCatToCatchTheBird
+                   FoodChain.song37) -}
+aacd2fb4b176b513b39536f7effaadd3
+  song37 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.sheSwallowedTheBirdToCatchTheSpiderThatWriggledAndJiggledAndTickledInsideHer
+                   FoodChain.song38) -}
+3e530a4ad982578b315736edb0ddba29
+  song38 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.sheSwallowedTheSpiderToCatchTheFly
+                   FoodChain.song39) -}
+5a5f3d36dfe15aa27861577700d14343
+  song39 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.iDontKnowWhySheSwallowedTheFlyPerhapsShellDie
+                   FoodChain.song40) -}
+dcfd45f063fb22bfc80787e0195052da
+  song4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.sheSwallowedTheSpiderToCatchTheFly
+                   FoodChain.song5) -}
+e653f799ff83fd069271d3a2cf21a35d
+  song40 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.song42
+                   FoodChain.song41) -}
+15e5f7de1df38f89ea82b014d289811c
+  song41 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "She's dead, of course!\n"#) -}
+50b0d59f1b1ecd078635a8fb0b392ec5
+  song42 :: GHC.Base.String
+  {- Unfolding: (FoodChain.iKnowAnOldLadyWhoSwallowedA
+                   FoodChain.song43) -}
+297196c98bacfc959fedd5969fe411e9
+  song43 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.List.$w!!
+                   @ [GHC.Types.Char]
+                   FoodChain.swallowedObjects
+                   7#) -}
+586e093c7aac23b25a0cc4af5d811237
+  song44 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   FoodChain.song57
+                   FoodChain.song45) -}
+79a17053406892099d0ce34b7d464796
+  song45 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   FoodChain.song56
+                   FoodChain.song46) -}
+e9c5aa62ebafa0f002a325de3732a47a
+  song46 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   FoodChain.song55
+                   FoodChain.song47) -}
+94da0f117e41b959755fe08f81e6b546
+  song47 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   FoodChain.song54
+                   FoodChain.song48) -}
+c8c3443da674cb8bfa3a936d1f43d46f
+  song48 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   FoodChain.song53
+                   FoodChain.song49) -}
+396d5ea8606eb5339d52f3743073ba37
+  song49 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   FoodChain.song52
+                   FoodChain.song50) -}
+a04a26b7b2c143c371e9c690c842226a
+  song5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.iDontKnowWhySheSwallowedTheFlyPerhapsShellDie
+                   FoodChain.song6) -}
+f40f4e6672614def5c8bc51de6abe81e
+  song50 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   FoodChain.song51
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+10f4b5f5b5f6e364addd9f2f2ec5c8f2
+  song51 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "horse"#) -}
+337fab50f9d89eeb00e32741f64e949c
+  song52 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "cow"#) -}
+1a7238dc9fadddd4885ae4853a10ba11
+  song53 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "goat"#) -}
+07498174d3178c0c9bcd02729a584862
+  song54 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "dog"#) -}
+035dc4e3c657c258f1ae88a72b828926
+  song55 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "cat"#) -}
+c6d53fd4b330be5a1805cfd28a006dc1
+  song56 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "bird"#) -}
+e312d808a0d15ac2ac291efbe8814a6c
+  song57 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "spider"#) -}
+6ee0e9b656fb3097b95dfc2b1140e7af
+  song58 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "fly"#) -}
+9bdad00b26ec8270d7a15b8e9cd710c8
+  song59 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ".\n"#) -}
+4fb005fe177676af6b92eb54e57e0702
+  song6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.song68
+                   FoodChain.song7) -}
+88cdc1afcffe7808f05b799cae37823e
+  song60 :: GHC.Base.String
+  {- Unfolding: (FoodChain.iKnowAnOldLadyWhoSwallowedA
+                   FoodChain.song61) -}
+a90752062cc6af59c976a35fffc56d35
+  song61 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.List.$w!!
+                   @ [GHC.Types.Char]
+                   FoodChain.swallowedObjects
+                   6#) -}
+0ca05d41aab114045f8b123e027db5f2
+  song62 :: GHC.Base.String
+  {- Unfolding: (FoodChain.iKnowAnOldLadyWhoSwallowedA
+                   FoodChain.song63) -}
+a679d82d2ab65fa04813039890fbf00b
+  song63 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.List.$w!!
+                   @ [GHC.Types.Char]
+                   FoodChain.swallowedObjects
+                   5#) -}
+6f333c0cdc05e8fef51fe879396f5249
+  song64 :: GHC.Base.String
+  {- Unfolding: (FoodChain.iKnowAnOldLadyWhoSwallowedA
+                   FoodChain.song65) -}
+19f2e0e5a2f7cb17815790d0dab257b7
+  song65 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.List.$w!!
+                   @ [GHC.Types.Char]
+                   FoodChain.swallowedObjects
+                   4#) -}
+1cb9edff320c6fa0306001c88201a8e6
+  song66 :: GHC.Base.String
+  {- Unfolding: (FoodChain.iKnowAnOldLadyWhoSwallowedA
+                   FoodChain.song67) -}
+adaec1149b4f2d8382f072dfb1fac88d
+  song67 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.List.$w!!
+                   @ [GHC.Types.Char]
+                   FoodChain.swallowedObjects
+                   3#) -}
+db6c1a0e1ef6b67aeca9cafd0a74a716
+  song68 :: GHC.Base.String
+  {- Unfolding: (FoodChain.iKnowAnOldLadyWhoSwallowedA
+                   FoodChain.song69) -}
+a64639b8f6dace6f68bfe1a14a128a95
+  song69 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.List.$w!!
+                   @ [GHC.Types.Char]
+                   FoodChain.swallowedObjects
+                   2#) -}
+1e95076f460914e2b7d70c6ce2cf4d33
+  song7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "How absurd to swallow a bird!\n"#
+                   FoodChain.song8) -}
+d9e16d1777ef7f2dc11440aee8119b91
+  song70 :: GHC.Base.String
+  {- Unfolding: (FoodChain.iKnowAnOldLadyWhoSwallowedA
+                   FoodChain.song71) -}
+834688cb72ae71450b8205077c98b5ed
+  song71 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.List.$w!!
+                   @ [GHC.Types.Char]
+                   FoodChain.swallowedObjects
+                   1#) -}
+66fe2166a93d93fbba668d1e6b854caa
+  song72 :: GHC.Base.String
+  {- Unfolding: (FoodChain.iKnowAnOldLadyWhoSwallowedA
+                   FoodChain.song73) -}
+5ffdef8a380d39c18c3bf006a2fbddb0
+  song73 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.List.$w!!
+                   @ [GHC.Types.Char]
+                   FoodChain.swallowedObjects
+                   0#) -}
+06e7796e7015240cb381ebe6fdb673df
+  song8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.sheSwallowedTheBirdToCatchTheSpiderThatWriggledAndJiggledAndTickledInsideHer
+                   FoodChain.song9) -}
+519fa11d9c5807aaa398bc6faecc58a8
+  song9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   FoodChain.sheSwallowedTheSpiderToCatchTheFly
+                   FoodChain.song10) -}
+51c02ceb8014904e7adc7a0f93ef257c
+  swallowedObjects :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   FoodChain.song58
+                   FoodChain.song44) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
