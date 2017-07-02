@@ -1,0 +1,617 @@
+
+==================== FINAL INTERFACE ====================
+2017-06-19 12:56:25.7400487 UTC
+
+interface custom-set-1.0.1.3-6xIZlkiF9PE72Wq5noTf24:Paths_custom_set 8002
+  interface hash: f37973b271c9139cb1fe0753b72df668
+  ABI hash: e085de372dd29b7ae77384af401ae5a7
+  export-list hash: a795cff1ff9fb3a25932a3dda7f145a8
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 07cf26e3c0c7878b65d9fcc240367851
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Paths_custom_set.getBinDir
+  Paths_custom_set.getDataDir
+  Paths_custom_set.getDataFileName
+  Paths_custom_set.getDynLibDir
+  Paths_custom_set.getLibDir
+  Paths_custom_set.getLibexecDir
+  Paths_custom_set.getSysconfDir
+  Paths_custom_set.version
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Control.Exception 292fff19f09f7eea1a1573871191d564
+import  -/  base-4.9.1.0:Control.Exception.Base f4debb4f4369b99523a6b8027855f0db
+import  -/  base-4.9.1.0:Data.Version c04981f8d25b831fbbf4576f2cf1abac
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.IO 4d461f9283683225c61e68db403481ad
+import  -/  base-4.9.1.0:GHC.IO.Exception 349c350331ac44a0eaf797a7dc219e08
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  base-4.9.1.0:System.Environment 438c0b0bc0f94461b9c946d062a7eab9
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+addDependentFile "C:\Users\Jun\AppData\Local\Programs\stack\x86_64-windows\ghc-8.0.2\lib\include\ghcversion.h"
+addDependentFile ".stack-work\dist\ca59d0ab\build\autogen\cabal_macros.h"
+bf20a9f6ce2a684243d4b3cea4c3babf
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Paths_custom_set.$trModule2
+                   Paths_custom_set.$trModule1) -}
+e5070b5fe5067ef912ee116bc9e7291c
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Paths_custom_set"#) -}
+a5d69d56042af873efa11bf3aca67c8d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "custom-set-1.0.1.3-6xIZlkiF9PE72Wq5noTf24"#) -}
+e1d6b04ab26d443a9c4a740ba946bafd
+  bindir :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "C:\\Users\\Jun\\exercism\\haskell\\custom-set\\.stack-work\\install\\02136e14\\bin"#) -}
+67a7cc19574b47576d16fd3295c974e6
+  datadir :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "C:\\Users\\Jun\\exercism\\haskell\\custom-set\\.stack-work\\install\\02136e14\\share\\x86_64-windows-ghc-8.0.2\\custom-set-1.0.1.3"#) -}
+3231bbf1257a0f414f9c8da8c496aba0
+  dynlibdir :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "C:\\Users\\Jun\\exercism\\haskell\\custom-set\\.stack-work\\install\\02136e14\\lib\\x86_64-windows-ghc-8.0.2"#) -}
+7f041d3cddcd2eff249a43212e6fc435
+  getBinDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_custom_set.getBinDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+a303be645f9c77645507dcec1d70fbc8
+  getBinDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_custom_set.getBinDir3
+                     `cast`
+                   (GHC.Types.N:IO[0] <GHC.Base.String>_R)
+                   Paths_custom_set.getBinDir2
+                   eta) -}
+c813ebefc4d77436f84b4a1c7c06120f
+  getBinDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e100 $dException1 e2 ->
+                 case (GHC.Exception.$p1Exception @ e100 $dException1)
+                        `cast`
+                      (Data.Typeable.Internal.N:Typeable[0] <*>_N <e100>_N)
+                        (GHC.Prim.proxy#
+                           @ *
+                           @ e100) of wild1 { Data.Typeable.Internal.TypeRep dt dt1 ds2 ds3 ds4 ->
+                 case GHC.IO.Exception.$fExceptionIOException3 of wild2 { Data.Typeable.Internal.TypeRep dt2 dt3 ds5 ds6 ds7 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.eqWord# dt dt2) of wild3 {
+                   GHC.Types.False
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Types.True
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.eqWord# dt1 dt3) of wild4 {
+                        GHC.Types.False
+                        -> GHC.Prim.raiseIO#
+                             @ GHC.Exception.SomeException
+                             @ GHC.Base.String
+                             wild
+                             eta
+                        GHC.Types.True -> (# eta, Paths_custom_set.bindir #) } } } } }) -}
+48bab194039bdcf0c433e272e695dab7
+  getBinDir3 :: GHC.Types.IO GHC.Base.String
+  {- Unfolding: (GHC.Magic.lazy
+                   @ (GHC.Types.IO GHC.Base.String)
+                   Paths_custom_set.getBinDir4
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))) -}
+eb1a13a0c410bfa5ea378abd2d7c0966
+  getBinDir4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1,
+     Unfolding: (System.Environment.getEnv1
+                   Paths_custom_set.getBinDir5) -}
+e10f13ffd914b0f1a9bf894e99866bcc
+  getBinDir5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "custom_set_bindir"#) -}
+d6ad16207715aff15bb921ce91481d1f
+  getDataDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_custom_set.getDataDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+fffda31039ac077c3c18708efac2b6ae
+  getDataDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_custom_set.getDataDir3
+                     `cast`
+                   (GHC.Types.N:IO[0] <GHC.Base.String>_R)
+                   Paths_custom_set.getDataDir2
+                   eta) -}
+469f027cdc50ef27141aeb3bab1bc3cc
+  getDataDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e100 $dException1 e2 ->
+                 case (GHC.Exception.$p1Exception @ e100 $dException1)
+                        `cast`
+                      (Data.Typeable.Internal.N:Typeable[0] <*>_N <e100>_N)
+                        (GHC.Prim.proxy#
+                           @ *
+                           @ e100) of wild1 { Data.Typeable.Internal.TypeRep dt dt1 ds2 ds3 ds4 ->
+                 case GHC.IO.Exception.$fExceptionIOException3 of wild2 { Data.Typeable.Internal.TypeRep dt2 dt3 ds5 ds6 ds7 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.eqWord# dt dt2) of wild3 {
+                   GHC.Types.False
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Types.True
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.eqWord# dt1 dt3) of wild4 {
+                        GHC.Types.False
+                        -> GHC.Prim.raiseIO#
+                             @ GHC.Exception.SomeException
+                             @ GHC.Base.String
+                             wild
+                             eta
+                        GHC.Types.True -> (# eta, Paths_custom_set.datadir #) } } } } }) -}
+d7ed886b81d9255cea20456b378de7eb
+  getDataDir3 :: GHC.Types.IO GHC.Base.String
+  {- Unfolding: (GHC.Magic.lazy
+                   @ (GHC.Types.IO GHC.Base.String)
+                   Paths_custom_set.getDataDir4
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))) -}
+60b56f61ff2940ce55bf3dcee3b1c495
+  getDataDir4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1,
+     Unfolding: (System.Environment.getEnv1
+                   Paths_custom_set.getDataDir5) -}
+dfab4900bb4cd121cd1a38c3f956ca81
+  getDataDir5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "custom_set_datadir"#) -}
+6902da93d68c54d7260ec7911165477c
+  getDataFileName :: GHC.IO.FilePath -> GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_custom_set.getDataFileName1
+                  `cast`
+                (<GHC.IO.FilePath>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.IO.FilePath>_R)) -}
+7789d0dafa38b8940ed1d9b9f9872f2c
+  getDataFileName1 ::
+    GHC.IO.FilePath
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.IO.FilePath #)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: (\ (name :: GHC.IO.FilePath)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.catch#
+                        @ GHC.Base.String
+                        @ GHC.Exception.SomeException
+                        Paths_custom_set.getDataDir3
+                          `cast`
+                        (GHC.Types.N:IO[0] <GHC.Base.String>_R)
+                        Paths_custom_set.getDataDir2
+                        eta of ds1 { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    GHC.Base.++
+                      @ GHC.Types.Char
+                      ipv1
+                      (GHC.CString.unpackAppendCString# "\\"# name) #) }) -}
+90044669b1f9114e4dbed4efa6b326be
+  getDynLibDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_custom_set.getDynLibDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+b4a6be18a1753de8bdab8fa25ca26759
+  getDynLibDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_custom_set.getDynLibDir3
+                     `cast`
+                   (GHC.Types.N:IO[0] <GHC.Base.String>_R)
+                   Paths_custom_set.getDynLibDir2
+                   eta) -}
+f6f55cbb9e3dfe17704002f4d000ef62
+  getDynLibDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e100 $dException1 e2 ->
+                 case (GHC.Exception.$p1Exception @ e100 $dException1)
+                        `cast`
+                      (Data.Typeable.Internal.N:Typeable[0] <*>_N <e100>_N)
+                        (GHC.Prim.proxy#
+                           @ *
+                           @ e100) of wild1 { Data.Typeable.Internal.TypeRep dt dt1 ds2 ds3 ds4 ->
+                 case GHC.IO.Exception.$fExceptionIOException3 of wild2 { Data.Typeable.Internal.TypeRep dt2 dt3 ds5 ds6 ds7 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.eqWord# dt dt2) of wild3 {
+                   GHC.Types.False
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Types.True
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.eqWord# dt1 dt3) of wild4 {
+                        GHC.Types.False
+                        -> GHC.Prim.raiseIO#
+                             @ GHC.Exception.SomeException
+                             @ GHC.Base.String
+                             wild
+                             eta
+                        GHC.Types.True
+                        -> (# eta, Paths_custom_set.dynlibdir #) } } } } }) -}
+141dcf4bbeb2ccc176fec67397409323
+  getDynLibDir3 :: GHC.Types.IO GHC.Base.String
+  {- Unfolding: (GHC.Magic.lazy
+                   @ (GHC.Types.IO GHC.Base.String)
+                   Paths_custom_set.getDynLibDir4
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))) -}
+3bb9b08788bbee4d83f84c79e62c7ba1
+  getDynLibDir4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1,
+     Unfolding: (System.Environment.getEnv1
+                   Paths_custom_set.getDynLibDir5) -}
+85b3420a3c7ce78fe585a276a5a1aeee
+  getDynLibDir5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "custom_set_dynlibdir"#) -}
+0005ba7d3867c156739ee2d3b5188382
+  getLibDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_custom_set.getLibDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+b83d801010427152961227713b5fe7af
+  getLibDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_custom_set.getLibDir3
+                     `cast`
+                   (GHC.Types.N:IO[0] <GHC.Base.String>_R)
+                   Paths_custom_set.getLibDir2
+                   eta) -}
+97d16604a37a3cb4c326e5a1a13375bd
+  getLibDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e100 $dException1 e2 ->
+                 case (GHC.Exception.$p1Exception @ e100 $dException1)
+                        `cast`
+                      (Data.Typeable.Internal.N:Typeable[0] <*>_N <e100>_N)
+                        (GHC.Prim.proxy#
+                           @ *
+                           @ e100) of wild1 { Data.Typeable.Internal.TypeRep dt dt1 ds2 ds3 ds4 ->
+                 case GHC.IO.Exception.$fExceptionIOException3 of wild2 { Data.Typeable.Internal.TypeRep dt2 dt3 ds5 ds6 ds7 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.eqWord# dt dt2) of wild3 {
+                   GHC.Types.False
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Types.True
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.eqWord# dt1 dt3) of wild4 {
+                        GHC.Types.False
+                        -> GHC.Prim.raiseIO#
+                             @ GHC.Exception.SomeException
+                             @ GHC.Base.String
+                             wild
+                             eta
+                        GHC.Types.True -> (# eta, Paths_custom_set.libdir #) } } } } }) -}
+cc172ea4fbdb4cd76e63f865c9e66092
+  getLibDir3 :: GHC.Types.IO GHC.Base.String
+  {- Unfolding: (GHC.Magic.lazy
+                   @ (GHC.Types.IO GHC.Base.String)
+                   Paths_custom_set.getLibDir4
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))) -}
+896133d4ed37b497cdbd93899ce2f246
+  getLibDir4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1,
+     Unfolding: (System.Environment.getEnv1
+                   Paths_custom_set.getLibDir5) -}
+51b7422e1723fba825a8a09b33a02f42
+  getLibDir5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "custom_set_libdir"#) -}
+df418d4b45a21c13b95c81e3d9c68112
+  getLibexecDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_custom_set.getLibexecDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+c8e3d69502ed8ffbaad2e37c01b67984
+  getLibexecDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_custom_set.getLibexecDir3
+                     `cast`
+                   (GHC.Types.N:IO[0] <GHC.Base.String>_R)
+                   Paths_custom_set.getLibexecDir2
+                   eta) -}
+27e4404a472b9a96fe76d20bfed72fd9
+  getLibexecDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e100 $dException1 e2 ->
+                 case (GHC.Exception.$p1Exception @ e100 $dException1)
+                        `cast`
+                      (Data.Typeable.Internal.N:Typeable[0] <*>_N <e100>_N)
+                        (GHC.Prim.proxy#
+                           @ *
+                           @ e100) of wild1 { Data.Typeable.Internal.TypeRep dt dt1 ds2 ds3 ds4 ->
+                 case GHC.IO.Exception.$fExceptionIOException3 of wild2 { Data.Typeable.Internal.TypeRep dt2 dt3 ds5 ds6 ds7 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.eqWord# dt dt2) of wild3 {
+                   GHC.Types.False
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Types.True
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.eqWord# dt1 dt3) of wild4 {
+                        GHC.Types.False
+                        -> GHC.Prim.raiseIO#
+                             @ GHC.Exception.SomeException
+                             @ GHC.Base.String
+                             wild
+                             eta
+                        GHC.Types.True
+                        -> (# eta, Paths_custom_set.libexecdir #) } } } } }) -}
+a560819ffe677be58b3105263b75a48c
+  getLibexecDir3 :: GHC.Types.IO GHC.Base.String
+  {- Unfolding: (GHC.Magic.lazy
+                   @ (GHC.Types.IO GHC.Base.String)
+                   Paths_custom_set.getLibexecDir4
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))) -}
+259bb0f4d7c648eb9a0d3ba64f7f9091
+  getLibexecDir4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1,
+     Unfolding: (System.Environment.getEnv1
+                   Paths_custom_set.getLibexecDir5) -}
+57abb91a25f4b69da15719226b2629cd
+  getLibexecDir5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "custom_set_libexecdir"#) -}
+7c8fd222251cd616fa3ebf32a6cde31f
+  getSysconfDir :: GHC.Types.IO GHC.IO.FilePath
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Paths_custom_set.getSysconfDir1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+0fb1692001e783f8ab2d4512b27d23cc
+  getSysconfDir1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.Prim.catch#
+                   @ GHC.Base.String
+                   @ GHC.Exception.SomeException
+                   Paths_custom_set.getSysconfDir3
+                     `cast`
+                   (GHC.Types.N:IO[0] <GHC.Base.String>_R)
+                   Paths_custom_set.getSysconfDir2
+                   eta) -}
+676b1563b2c0a92c5830c774abb8a960
+  getSysconfDir2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e100 $dException1 e2 ->
+                 case (GHC.Exception.$p1Exception @ e100 $dException1)
+                        `cast`
+                      (Data.Typeable.Internal.N:Typeable[0] <*>_N <e100>_N)
+                        (GHC.Prim.proxy#
+                           @ *
+                           @ e100) of wild1 { Data.Typeable.Internal.TypeRep dt dt1 ds2 ds3 ds4 ->
+                 case GHC.IO.Exception.$fExceptionIOException3 of wild2 { Data.Typeable.Internal.TypeRep dt2 dt3 ds5 ds6 ds7 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.eqWord# dt dt2) of wild3 {
+                   GHC.Types.False
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ GHC.Base.String
+                        wild
+                        eta
+                   GHC.Types.True
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.eqWord# dt1 dt3) of wild4 {
+                        GHC.Types.False
+                        -> GHC.Prim.raiseIO#
+                             @ GHC.Exception.SomeException
+                             @ GHC.Base.String
+                             wild
+                             eta
+                        GHC.Types.True
+                        -> (# eta, Paths_custom_set.sysconfdir #) } } } } }) -}
+0c6c2aafb2c3974fdd38f0b86b472dc3
+  getSysconfDir3 :: GHC.Types.IO GHC.Base.String
+  {- Unfolding: (GHC.Magic.lazy
+                   @ (GHC.Types.IO GHC.Base.String)
+                   Paths_custom_set.getSysconfDir4
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))) -}
+07aea02836946b1991fbeef483574338
+  getSysconfDir4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1,
+     Unfolding: (System.Environment.getEnv1
+                   Paths_custom_set.getSysconfDir5) -}
+079834e7e82614c25818ecd041d2aa37
+  getSysconfDir5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "custom_set_sysconfdir"#) -}
+1c11310d3dd5168237a9ab8f6579bde2
+  libdir :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "C:\\Users\\Jun\\exercism\\haskell\\custom-set\\.stack-work\\install\\02136e14\\lib\\x86_64-windows-ghc-8.0.2\\custom-set-1.0.1.3-6xIZlkiF9PE72Wq5noTf24"#) -}
+d0c3b895f9424ce3997a6c669e09b349
+  libexecdir :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "C:\\Users\\Jun\\exercism\\haskell\\custom-set\\.stack-work\\install\\02136e14\\libexec"#) -}
+94827247c19562ebd9602889d5bc292d
+  sysconfdir :: GHC.IO.FilePath
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "C:\\Users\\Jun\\exercism\\haskell\\custom-set\\.stack-work\\install\\02136e14\\etc"#) -}
+bb2c83ed7a887b818a0f3e0abe49df74
+  version :: Data.Version.Version
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Data.Version.Version
+                   Paths_custom_set.version1
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+160911a8e8338b19a8017ac17099b0de
+  version1 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_custom_set.version6
+                   Paths_custom_set.version2) -}
+5aa9db63c5efcd26ae11b98e1bc061ef
+  version2 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_custom_set.version7
+                   Paths_custom_set.version3) -}
+5c024f26c934fc32fe3d348013dd31f1
+  version3 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_custom_set.version6
+                   Paths_custom_set.version4) -}
+4a7f23421492c4c76a95f1e669b777dc
+  version4 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Paths_custom_set.version5
+                   (GHC.Types.[] @ GHC.Types.Int)) -}
+349b55938b44f3a5dd6e25b3c2dfdf7d
+  version5 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 3#) -}
+0545afff5ca1542ae83a057b33db31b7
+  version6 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+28feb86e8fb940c26f0ac4196d5ba47e
+  version7 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
