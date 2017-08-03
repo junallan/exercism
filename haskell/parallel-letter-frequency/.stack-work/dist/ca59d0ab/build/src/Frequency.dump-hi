@@ -1,0 +1,200 @@
+
+==================== FINAL INTERFACE ====================
+2017-07-30 21:54:35.80938 UTC
+
+interface parallel-letter-frequency-0.1.0.3-4zZ2HSCKLn7kwAFhsuHCt:Frequency 8002
+  interface hash: 436c9f32a6f458e86f13e09c92d91114
+  ABI hash: 0f5ed915ef671ddab4e4f85a2ea945a1
+  export-list hash: f149b209a943a474cd5417da09b90582
+  orphan hash: 754448bcc421509d84d7f6af2af324d0
+  flag hash: be3ff1d7d90188bde7eb11f46867ede6
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Frequency.frequency
+module dependencies:
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0*
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+                      text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR*
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Show
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text
+import  -/  base-4.9.1.0:Data.Char c49b58282af11503cc838e1052cf6b83
+import  -/  base-4.9.1.0:Data.Foldable 254e836c2d813d34e47feb29bb8d40ed
+import  -/  base-4.9.1.0:Data.List 7349774f430841349c90dfd1144aea97
+import  -/  base-4.9.1.0:Data.OldList c9282ee91951bdcbd918d2960562c007
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.List d11eb227c1c6fbfd89bb781d72eaea0d
+import  -/  base-4.9.1.0:GHC.Unicode 7b64ed854a326c2c5bb224f237ed4a0b
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map 6c2364c30285a1caa610caab304974c4
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base dfcca0a6b3fe956067f7db6df4d400c2
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text 35f976519564888082d42815342d42ed
+import  -/  text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Internal 43a9166170aaf8c9b180c2d3ce2cfa3c
+import  -/  text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Show 638a81be9b7b5c261b714430eaada4e0
+8a97da575ad786c7a51d754ec75cd43a
+  $sfromList ::
+    [(GHC.Types.Char, a)] -> Data.Map.Base.Map GHC.Types.Char a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a (ds :: [(GHC.Types.Char, a)]) ->
+                 case ds of wild {
+                   [] -> Data.Map.Base.Tip @ GHC.Types.Char @ a
+                   : ds1 ds2
+                   -> case ds1 of wild1 { (,) kx x ->
+                      case ds2 of wild2 {
+                        []
+                        -> case kx of dt { GHC.Types.C# ipv ->
+                           Data.Map.Base.Bin
+                             @ GHC.Types.Char
+                             @ a
+                             1#
+                             dt
+                             x
+                             (Data.Map.Base.Tip @ GHC.Types.Char @ a)
+                             (Data.Map.Base.Tip @ GHC.Types.Char @ a) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds3 ->
+                           case kx of wild4 { GHC.Types.C# c1 ->
+                           case ky of wild5 { GHC.Types.C# c2 ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.geChar# c1 c2) of wild6 {
+                             GHC.Types.False
+                             -> Frequency.$wpoly_go10
+                                  @ a
+                                  1#
+                                  (Data.Map.Base.Bin
+                                     @ GHC.Types.Char
+                                     @ a
+                                     1#
+                                     wild4
+                                     x
+                                     (Data.Map.Base.Tip @ GHC.Types.Char @ a)
+                                     (Data.Map.Base.Tip @ GHC.Types.Char @ a))
+                                  wild2
+                             GHC.Types.True
+                             -> Frequency.$sfromList1
+                                  @ a
+                                  (Data.Map.Base.Bin
+                                     @ GHC.Types.Char
+                                     @ a
+                                     1#
+                                     wild4
+                                     x
+                                     (Data.Map.Base.Tip @ GHC.Types.Char @ a)
+                                     (Data.Map.Base.Tip @ GHC.Types.Char @ a))
+                                  wild2 } } } } } } }) -}
+9c5c60546b8c91605009fa75be5034ba
+  $sfromList1 ::
+    Data.Map.Base.Map GHC.Types.Char a1
+    -> [(GHC.Types.Char, a1)] -> Data.Map.Base.Map GHC.Types.Char a1
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+039af58edb2aa7012708ec7254433b52
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Frequency.$trModule2
+                   Frequency.$trModule1) -}
+7c52ddf4c9630faae20a7abbab2f67f3
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Frequency"#) -}
+1486f4bd51f329483d13a595036468b5
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "parallel-letter-frequency-0.1.0.3-4zZ2HSCKLn7kwAFhsuHCt"#) -}
+949dcdb595f342361a6e6916cd3cd506
+  $w$sgo10 ::
+    GHC.Prim.Char#
+    -> a1
+    -> Data.Map.Base.Map GHC.Types.Char a1
+    -> Data.Map.Base.Map GHC.Types.Char a1
+  {- Arity: 3, Strictness: <L,U><L,U><S,1*U>, Inline: [0] -}
+f1053d44f28fc4783c52d0c228e39090
+  $wfrequency ::
+    [Data.Text.Internal.Text]
+    -> Data.Map.Base.Map GHC.Types.Char GHC.Types.Int
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [0],
+     Unfolding: (\ (w :: [Data.Text.Internal.Text]) ->
+                 case Frequency.frequency_go w of wild {
+                   [] -> Data.Map.Base.Tip @ GHC.Types.Char @ GHC.Types.Int
+                   : ds1 ds2
+                   -> Frequency.$sfromList
+                        @ GHC.Types.Int
+                        (GHC.Base.map
+                           @ [GHC.Types.Char]
+                           @ (GHC.Types.Char, GHC.Types.Int)
+                           Frequency.frequency1
+                           (Data.OldList.groupBy
+                              @ GHC.Types.Char
+                              GHC.Classes.eqChar
+                              (Data.OldList.sortBy
+                                 @ GHC.Types.Char
+                                 GHC.Classes.$fOrdChar_$ccompare
+                                 (GHC.Base.map
+                                    @ GHC.Types.Char
+                                    @ GHC.Types.Char
+                                    GHC.Unicode.toLower
+                                    wild)))) }) -}
+7b68ce9a6920140055a9acf0f1aebf5e
+  $wpoly_go10 ::
+    GHC.Prim.Int#
+    -> Data.Map.Base.Map GHC.Types.Char a
+    -> [(GHC.Types.Char, a)]
+    -> Data.Map.Base.Map GHC.Types.Char a
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U>, Inline: [0] -}
+4ebd96de0196c7bc16e19dff3cf73ddb
+  frequency ::
+    GHC.Types.Int
+    -> [Data.Text.Internal.Text]
+    -> Data.Map.Base.Map GHC.Types.Char GHC.Types.Int
+  {- Arity: 2, Strictness: <L,A><S,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, True)
+                (\ (w :: GHC.Types.Int) (w1 :: [Data.Text.Internal.Text]) ->
+                 Frequency.$wfrequency w1) -}
+08cb0a2c810dec8e65c25e32369ebcc3
+  frequency1 :: [GHC.Types.Char] -> (GHC.Types.Char, GHC.Types.Int)
+  {- Arity: 1, Strictness: <L,U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: [GHC.Types.Char]) ->
+                 (GHC.List.head @ GHC.Types.Char x,
+                  case GHC.List.$wlenAcc @ GHC.Types.Char x 0# of ww2 { DEFAULT ->
+                  GHC.Types.I# ww2 })) -}
+a755ae30dc34da7d909a4714a32ef181
+  frequency_go :: [Data.Text.Internal.Text] -> [GHC.Types.Char]
+  {- Arity: 1, Strictness: <S,1*U> -}
+"SPEC/Frequency fromList @ Char _" [ALWAYS] forall @ a
+                                                   ($dOrd :: GHC.Classes.Ord GHC.Types.Char)
+  Data.Map.Base.fromList @ GHC.Types.Char @ a $dOrd
+  = Frequency.$sfromList @ a
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
