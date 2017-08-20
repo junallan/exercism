@@ -1,0 +1,179 @@
+
+==================== FINAL INTERFACE ====================
+2017-08-20 21:35:31.7902697 UTC
+
+interface palindrome-products-0.1.0.2-8GL9ovWWNPb8nMwjQEXAYS:Palindromes 8002
+  interface hash: 2cfe65f1f946dfcacbd615353ad1a2cf
+  ABI hash: de267b4e92ce8e13501aeabd3254d2b4
+  export-list hash: 424d37e95b01e66c507fd61cff7d6190
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 50be09f6ae5701bb586bc6db9bc9ce26
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Palindromes.largestPalindrome
+  Palindromes.smallestPalindrome
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Tuple b07f695e7ce8fe20cc8a32abf62f60ec
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.List d11eb227c1c6fbfd89bb781d72eaea0d
+import  -/  base-4.9.1.0:GHC.Num 38b8aac8807c096c7f3ca3c1eff02939
+import  -/  base-4.9.1.0:GHC.Show eca5834daba3b6a2bbbe64ab52056707
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 5e60b761569ee353529e98a36b72df11
+4a5094c66e498b294029ef6ffb683467
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Palindromes.$trModule2
+                   Palindromes.$trModule1) -}
+490f1e88e37fc7ba98ee9b0c4c29189e
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Palindromes"#) -}
+25b022ab1530a8a0e2adcf7c4029f825
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "palindrome-products-0.1.0.2-8GL9ovWWNPb8nMwjQEXAYS"#) -}
+baf21454752c41458158aad0534dce88
+  $wlargestPalindrome ::
+    GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+    -> (# GHC.Integer.Type.Integer,
+          [(GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)] #)
+  {- Arity: 2, Strictness: <L,U><L,U>, Inline: [0],
+     Unfolding: (\ (w :: GHC.Integer.Type.Integer)
+                   (w1 :: GHC.Integer.Type.Integer) ->
+                 let {
+                   largestProduct :: GHC.Integer.Type.Integer
+                   = Palindromes.getLargestProduct
+                       w
+                       w1
+                       w1
+                       w1
+                       Palindromes.largestPalindrome1
+                 } in
+                 (# largestProduct,
+                    GHC.Base.map
+                      @ (GHC.Integer.Type.Integer,
+                         (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer))
+                      @ (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+                      (Data.Tuple.snd
+                         @ GHC.Integer.Type.Integer
+                         @ (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer))
+                      (Palindromes.getLargestProductPairs
+                         w
+                         w1
+                         w1
+                         w1
+                         largestProduct) #)) -}
+04fa834c23da4494a938d2b84bcac2ab
+  $wsmallestPalindrome ::
+    GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+    -> (# GHC.Integer.Type.Integer,
+          [(GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)] #)
+  {- Arity: 2, Strictness: <L,U><L,U>, Inline: [0],
+     Unfolding: (\ (w :: GHC.Integer.Type.Integer)
+                   (w1 :: GHC.Integer.Type.Integer) ->
+                 let {
+                   smallestProduct :: GHC.Integer.Type.Integer
+                   = Palindromes.getSmallestProduct w w1 w w
+                 } in
+                 (# smallestProduct,
+                    GHC.Base.map
+                      @ (GHC.Integer.Type.Integer,
+                         (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer))
+                      @ (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+                      (Data.Tuple.snd
+                         @ GHC.Integer.Type.Integer
+                         @ (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer))
+                      (Palindromes.getSmallestProductPairs
+                         w
+                         w1
+                         w
+                         w
+                         smallestProduct) #)) -}
+f33f1e926306874326c8d17bf602b541
+  getLargestProduct ::
+    GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+  {- Arity: 5, Strictness: <S,U><L,U><S,U><S,U><S,U> -}
+51048ee9b187ae111f605af54c675277
+  getLargestProductPairs ::
+    GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+    -> [(GHC.Integer.Type.Integer,
+         (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer))]
+  {- Arity: 5, Strictness: <L,U><S,U><S,U><S,U><S,U> -}
+a301fceea1777b210542b431846173e7
+  getSmallestProduct ::
+    GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+  {- Arity: 4, Strictness: <L,U><L,U><S,U><S,U> -}
+e85d51f56e6307a5b0c07b721f4828ea
+  getSmallestProductPairs ::
+    GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+    -> [(GHC.Integer.Type.Integer,
+         (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer))]
+  {- Arity: 5, Strictness: <S,U><L,U><S,U><S,U><S,U> -}
+cc1465753ca747f98476f07529622dba
+  largestPalindrome ::
+    GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+    -> (GHC.Integer.Type.Integer,
+        [(GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)])
+  {- Arity: 2, Strictness: <L,U><L,U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Integer.Type.Integer)
+                   (w1 :: GHC.Integer.Type.Integer) ->
+                 case Palindromes.$wlargestPalindrome w w1 of ww { (#,#) ww1 ww2 ->
+                 (ww1, ww2) }) -}
+7811be496fe797bd68c22e0150028c09
+  largestPalindrome1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+8ef553969dfefc7b15f37ee52d490d25
+  smallestPalindrome ::
+    GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer
+    -> (GHC.Integer.Type.Integer,
+        [(GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)])
+  {- Arity: 2, Strictness: <L,U><L,U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Integer.Type.Integer)
+                   (w1 :: GHC.Integer.Type.Integer) ->
+                 case Palindromes.$wsmallestPalindrome w w1 of ww { (#,#) ww1 ww2 ->
+                 (ww1, ww2) }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
