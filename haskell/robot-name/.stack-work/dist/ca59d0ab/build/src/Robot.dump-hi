@@ -1,0 +1,282 @@
+
+==================== FINAL INTERFACE ====================
+2017-09-02 22:45:52.3564579 UTC
+
+interface robot-name-0.1.0.2-4oqFRvTljHy1YDQXO2hcG9:Robot 8002
+  interface hash: 911c98c537ac3a96015fff6852c08e41
+  ABI hash: eacde09f29fa2366be4721ed0472e838
+  export-list hash: 9d7f8a737ed5f1bff5d63487813fb58d
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 50be09f6ae5701bb586bc6db9bc9ce26
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Robot.mkRobot
+  Robot.resetName
+  Robot.robotName
+  Robot.Robot
+module dependencies:
+package dependencies: Win32-2.3.1.1@Win32-2.3.1.1
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.1.0*
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog*
+                      time-1.6.0.1@time-1.6.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.IORef c73d02c54df09a5b747108a87da60f73
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.IORef b977a2a1741af520d9defa4a879c1ccf
+import  -/  base-4.9.1.0:GHC.List d11eb227c1c6fbfd89bb781d72eaea0d
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog:System.Random 4c90117f915e12291e0c5f588320bf66
+75a1c7b0818ab2113be34dd67db5dc5b
+  $tc'Robot :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5824045061187778282##
+                   1172469192894794411##
+                   Robot.$trModule
+                   Robot.$tc'Robot1) -}
+853f142a91d63dc7b46c8455cbdeeabe
+  $tc'Robot1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Robot"#) -}
+4c91a04a68d55b0c2517c37f814e1f3a
+  $tcRobot :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15623750915795355899##
+                   3823092713328605533##
+                   Robot.$trModule
+                   Robot.$trModule1) -}
+d35b484cc3ceb680df67ed73cbc007b1
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Robot.$trModule2 Robot.$trModule1) -}
+a75c2f79af34b36b5b4ca10807dfe803
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Robot"#) -}
+c8a8d91170735f7d88c7881644267484
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "robot-name-0.1.0.2-4oqFRvTljHy1YDQXO2hcG9"#) -}
+dfc2d3b428f3f7f4e3b66fca3fbf361b
+  $wgo :: System.Random.StdGen -> GHC.Prim.Int# -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <L,U><S,1*U>, Inline: [0] -}
+18efaef16bb591fc03ec3783d5a29813
+  $wgo1 :: System.Random.StdGen -> GHC.Prim.Int# -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <L,U><S,1*U>, Inline: [0] -}
+ff05c59308c52fc570d90f538d231afa
+  $wresetName ::
+    GHC.Prim.MutVar# GHC.Prim.RealWorld GHC.Base.String
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <S,U><S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.MutVar#
+                            GHC.Prim.RealWorld GHC.Base.String)
+                   (w :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case System.Random.theStdGen
+                        `cast`
+                      (GHC.IORef.N:IORef[0] <System.Random.StdGen>_N) of wild { GHC.STRef.STRef r# ->
+                 case GHC.Prim.atomicModifyMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ System.Random.StdGen
+                        @ (System.Random.StdGen, System.Random.StdGen)
+                        @ System.Random.StdGen
+                        r#
+                        System.Random.newStdGen2
+                        w of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of b1 { System.Random.StdGen ipv2 ipv3 ->
+                 case GHC.Prim.writeMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ GHC.Base.String
+                        ww
+                        (let {
+                           n :: [GHC.Types.Char] = Robot.$wgo1 b1 3#
+                         } in
+                         letrec {
+                           $wgo2 :: System.Random.StdGen -> GHC.Prim.Int# -> [GHC.Types.Char]
+                             {- Arity: 2, Strictness: <L,U><S,1*U>, Inline: [0] -}
+                           = \ (w1 :: System.Random.StdGen) (ww1 :: GHC.Prim.Int#) ->
+                             case System.Random.$wrandomIvalInteger
+                                    @ System.Random.StdGen
+                                    @ GHC.Types.Int
+                                    System.Random.$fRandomGenStdGen
+                                    GHC.Num.$fNumInt
+                                    Robot.mkRobot3
+                                    Robot.mkRobot2
+                                    w1 of ww7 { (#,#) ww8 ww9 ->
+                             case ww8 of wild1 { GHC.Types.I# i# ->
+                             case GHC.Prim.tagToEnum#
+                                    @ GHC.Types.Bool
+                                    (GHC.Prim.leWord# (GHC.Prim.int2Word# i#) 1114111##) of wild2 {
+                               GHC.Types.False
+                               -> case GHC.Char.chr2 i# ret_ty [GHC.Types.Char] of {}
+                               GHC.Types.True
+                               -> case ww1 of ds2 {
+                                    DEFAULT
+                                    -> GHC.Types.:
+                                         @ GHC.Types.Char
+                                         (GHC.Types.C# (GHC.Prim.chr# i#))
+                                         ($wgo2 ww9 (GHC.Prim.-# ds2 1#))
+                                    1#
+                                    -> GHC.Types.:
+                                         @ GHC.Types.Char
+                                         (GHC.Types.C# (GHC.Prim.chr# i#))
+                                         n } } } }
+                         } in
+                         $wgo2 b1 2#)
+                        ipv of s2# { DEFAULT ->
+                 (# s2#, GHC.Tuple.() #) } } } }) -}
+28ff1f08442644ef49e14b6abddb8635
+  data Robot = Robot {name :: GHC.IORef.IORef GHC.Base.String}
+0404d6d6a51b3dd9ee5926551be3164a
+  mkRobot :: GHC.Types.IO Robot.Robot
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Robot.mkRobot1 `cast` (Sym (GHC.Types.N:IO[0] <Robot.Robot>_R)) -}
+88f90ce0825331ff8da3f484f4d71cfc
+  mkRobot1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, Robot.Robot #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case System.Random.theStdGen
+                        `cast`
+                      (GHC.IORef.N:IORef[0] <System.Random.StdGen>_N) of wild { GHC.STRef.STRef r# ->
+                 case GHC.Prim.atomicModifyMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ System.Random.StdGen
+                        @ (System.Random.StdGen, System.Random.StdGen)
+                        @ System.Random.StdGen
+                        r#
+                        System.Random.newStdGen2
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of b1 { System.Random.StdGen ipv2 ipv3 ->
+                 case GHC.Prim.newMutVar#
+                        @ [GHC.Types.Char]
+                        @ GHC.Prim.RealWorld
+                        (let {
+                           n :: [GHC.Types.Char] = Robot.$wgo b1 3#
+                         } in
+                         letrec {
+                           $wgo2 :: System.Random.StdGen -> GHC.Prim.Int# -> [GHC.Types.Char]
+                             {- Arity: 2, Strictness: <L,U><S,1*U>, Inline: [0] -}
+                           = \ (w :: System.Random.StdGen) (ww :: GHC.Prim.Int#) ->
+                             case System.Random.$wrandomIvalInteger
+                                    @ System.Random.StdGen
+                                    @ GHC.Types.Int
+                                    System.Random.$fRandomGenStdGen
+                                    GHC.Num.$fNumInt
+                                    Robot.mkRobot3
+                                    Robot.mkRobot2
+                                    w of ww7 { (#,#) ww8 ww9 ->
+                             case ww8 of wild1 { GHC.Types.I# i# ->
+                             case GHC.Prim.tagToEnum#
+                                    @ GHC.Types.Bool
+                                    (GHC.Prim.leWord# (GHC.Prim.int2Word# i#) 1114111##) of wild2 {
+                               GHC.Types.False
+                               -> case GHC.Char.chr2 i# ret_ty [GHC.Types.Char] of {}
+                               GHC.Types.True
+                               -> case ww of ds2 {
+                                    DEFAULT
+                                    -> GHC.Types.:
+                                         @ GHC.Types.Char
+                                         (GHC.Types.C# (GHC.Prim.chr# i#))
+                                         ($wgo2 ww9 (GHC.Prim.-# ds2 1#))
+                                    1#
+                                    -> GHC.Types.:
+                                         @ GHC.Types.Char
+                                         (GHC.Types.C# (GHC.Prim.chr# i#))
+                                         n } } } }
+                         } in
+                         $wgo2 b1 2#)
+                        ipv of ds { (#,#) ipv4 ipv5 ->
+                 (# ipv4,
+                    Robot.Robot
+                      (GHC.STRef.STRef @ GHC.Prim.RealWorld @ [GHC.Types.Char] ipv5)
+                        `cast`
+                      (Sym (GHC.IORef.N:IORef[0]) <[GHC.Types.Char]>_N) #) } } } }) -}
+7414c1b3c6cdc2c121738a412c469b03
+  mkRobot2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (90) -}
+da8faef2af9f09372c86d400f529f518
+  mkRobot3 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (65) -}
+7a510159ee146cb05091e3fa2b6fc57a
+  name :: Robot.Robot -> GHC.IORef.IORef GHC.Base.String
+  RecSel Left Robot.Robot
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(1*U(U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Robot.Robot) ->
+                 case ds of wild { Robot.Robot ds1 -> ds1 }) -}
+d45b2c90bbf4e8805ad6d51e93a1d968
+  resetName :: Robot.Robot -> GHC.Types.IO ()
+  {- Arity: 2, Strictness: <S(S(S)),1*U(1*U(U))><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Robot.resetName1
+                  `cast`
+                (<Robot.Robot>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+9e984aee5c6afe35b87b114ca3e8935d
+  resetName1 ::
+    Robot.Robot
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <S(S(S)),1*U(1*U(U))><S,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Robot.Robot)
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case w of ww { Robot.Robot ww1 ->
+                 case ww1
+                        `cast`
+                      (GHC.IORef.N:IORef[0] <GHC.Base.String>_N) of ww2 { GHC.STRef.STRef ww3 ->
+                 Robot.$wresetName ww3 w1 } }) -}
+10f4be72fa729f6268494d6a2f1cb2a8
+  robotName :: Robot.Robot -> GHC.Types.IO GHC.Base.String
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S(S)),1*U(1*U(U))><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Robot.robotName1
+                  `cast`
+                (<Robot.Robot>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+bab8742e816454adf5fad86c66f0fc7e
+  robotName1 ::
+    Robot.Robot
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S(S)),1*U(1*U(U))><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (robot :: Robot.Robot)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case robot of wild { Robot.Robot ds ->
+                 case ds
+                        `cast`
+                      (GHC.IORef.N:IORef[0] <GHC.Base.String>_N) of wild1 { GHC.STRef.STRef var# ->
+                 GHC.Prim.readMutVar#
+                   @ GHC.Prim.RealWorld
+                   @ GHC.Base.String
+                   var#
+                   eta } }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
