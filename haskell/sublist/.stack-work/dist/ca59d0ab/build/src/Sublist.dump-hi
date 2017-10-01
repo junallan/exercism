@@ -1,0 +1,377 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-01 01:30:56.6389375 UTC
+
+interface sublist-1.0.0.3-4OediPgpc8z5IM4rmtjmmV:Sublist 8002
+  interface hash: d7e94e43f6a4d7b290df509bba9970a0
+  ABI hash: 5a52ab2a2dbc22697c0c8569465b595e
+  export-list hash: 975373e7da566acf5b58d5876e15932b
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 50be09f6ae5701bb586bc6db9bc9ce26
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Sublist.sublist
+  Sublist.Sublist{Sublist.Equal Sublist.Sublist Sublist.Superlist Sublist.Unequal}
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+                      split-0.2.3.2@split-0.2.3.2-CJl40zTyCIV16Pr60nb7CT
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Foldable 254e836c2d813d34e47feb29bb8d40ed
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.List d11eb227c1c6fbfd89bb781d72eaea0d
+import  -/  base-4.9.1.0:GHC.Num 38b8aac8807c096c7f3ca3c1eff02939
+import  -/  base-4.9.1.0:GHC.Show eca5834daba3b6a2bbbe64ab52056707
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  split-0.2.3.2@split-0.2.3.2-CJl40zTyCIV16Pr60nb7CT:Data.List.Split 272c5cfa667e04d85d90f02a3d135474
+import  -/  split-0.2.3.2@split-0.2.3.2-CJl40zTyCIV16Pr60nb7CT:Data.List.Split.Internals 0d2d4848ca60317e9a83da501ccf16c9
+a2ce117ee5bee744e2e6e5252245492f
+  $fEqSublist :: GHC.Classes.Eq Sublist.Sublist
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Sublist.Sublist
+                  Sublist.$fEqSublist_$c==
+                  Sublist.$fEqSublist_$c/= -}
+a2ce117ee5bee744e2e6e5252245492f
+  $fEqSublist_$c/= ::
+    Sublist.Sublist -> Sublist.Sublist -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Sublist.Sublist) (b :: Sublist.Sublist) ->
+                 case a of wild {
+                   Sublist.Equal
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Sublist.Equal -> GHC.Types.False }
+                   Sublist.Sublist
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Sublist.Sublist -> GHC.Types.False }
+                   Sublist.Superlist
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Sublist.Superlist -> GHC.Types.False }
+                   Sublist.Unequal
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Sublist.Unequal -> GHC.Types.False } }) -}
+a2ce117ee5bee744e2e6e5252245492f
+  $fEqSublist_$c== ::
+    Sublist.Sublist -> Sublist.Sublist -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Sublist.Sublist) (ds1 :: Sublist.Sublist) ->
+                 case ds of wild {
+                   Sublist.Equal
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Sublist.Equal -> GHC.Types.True }
+                   Sublist.Sublist
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Sublist.Sublist -> GHC.Types.True }
+                   Sublist.Superlist
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Sublist.Superlist -> GHC.Types.True }
+                   Sublist.Unequal
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Sublist.Unequal -> GHC.Types.True } }) -}
+a2ce117ee5bee744e2e6e5252245492f
+  $fShowSublist :: GHC.Show.Show Sublist.Sublist
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Sublist.Sublist
+                  Sublist.$fShowSublist_$cshowsPrec
+                  Sublist.$fShowSublist_$cshow
+                  Sublist.$fShowSublist_$cshowList -}
+0223c2a813cbb3f213b4f6a20cc5f7ad
+  $fShowSublist1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Unequal"#) -}
+39a223cea3344ff07d40e0e40956e944
+  $fShowSublist2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Superlist"#) -}
+eddd95e7ba65633e0c33cf168f086f3d
+  $fShowSublist3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Sublist"#) -}
+62a58223c3bb12d3350872e0a6b0ecf1
+  $fShowSublist4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Equal"#) -}
+a2ce117ee5bee744e2e6e5252245492f
+  $fShowSublist_$cshow :: Sublist.Sublist -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Sublist.Sublist) ->
+                 Sublist.$fShowSublist_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+a2ce117ee5bee744e2e6e5252245492f
+  $fShowSublist_$cshowList :: [Sublist.Sublist] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Sublist.Sublist
+                   Sublist.$w$cshowsPrec) -}
+a2ce117ee5bee744e2e6e5252245492f
+  $fShowSublist_$cshowsPrec ::
+    GHC.Types.Int -> Sublist.Sublist -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Sublist.Sublist)
+                   (w2 :: GHC.Base.String) ->
+                 Sublist.$w$cshowsPrec w1 w2) -}
+a853e0af10634ee533e9a88421fd0503
+  $tc'Equal :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9357441579566741135##
+                   13567681478280011341##
+                   Sublist.$trModule
+                   Sublist.$tc'Equal1) -}
+449d0ec2d2f9170f26c2621dbbe4bd96
+  $tc'Equal1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Equal"#) -}
+26f214621c091668eb17c0acc45d0f0f
+  $tc'Sublist :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   243654248340647612##
+                   16640348783034011831##
+                   Sublist.$trModule
+                   Sublist.$tc'Sublist1) -}
+7ef56e99bf62b75dc23291d8e71a0b67
+  $tc'Sublist1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Sublist"#) -}
+0bf489c89cc23cb844942652fe558822
+  $tc'Superlist :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1459487646675913549##
+                   2807358461815813288##
+                   Sublist.$trModule
+                   Sublist.$tc'Superlist1) -}
+0b7e4b7bb3eb739d3d4247355701cdcd
+  $tc'Superlist1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Superlist"#) -}
+a4a1500230b773c2c98213131cccc528
+  $tc'Unequal :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1604882032333429474##
+                   7535894872694596926##
+                   Sublist.$trModule
+                   Sublist.$tc'Unequal1) -}
+e23b4478a59544a56ce3800aef76f331
+  $tc'Unequal1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Unequal"#) -}
+6061238451151d4d301000a71a87828a
+  $tcSublist :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12947169821949555147##
+                   2940659316541529151##
+                   Sublist.$trModule
+                   Sublist.$trModule1) -}
+c765c041cd7a61833045018b8fa93d37
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Sublist.$trModule2
+                   Sublist.$trModule1) -}
+85f1fd2943607262dfd9403336cdf3c8
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Sublist"#) -}
+590ddbbe175fc5826657ece0f1d6e6b7
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "sublist-1.0.0.3-4OediPgpc8z5IM4rmtjmmV"#) -}
+a2ce117ee5bee744e2e6e5252245492f
+  $w$cshowsPrec ::
+    Sublist.Sublist -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Sublist.Sublist) (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Sublist.Equal
+                   -> GHC.Base.++ @ GHC.Types.Char Sublist.$fShowSublist4 w1
+                   Sublist.Sublist
+                   -> GHC.Base.++ @ GHC.Types.Char Sublist.$fShowSublist3 w1
+                   Sublist.Superlist
+                   -> GHC.Base.++ @ GHC.Types.Char Sublist.$fShowSublist2 w1
+                   Sublist.Unequal
+                   -> GHC.Base.++ @ GHC.Types.Char Sublist.$fShowSublist1 w1 }) -}
+044ce0216a7263ebd8a5f59d55500747
+  $wunsafeDrop :: GHC.Prim.Int# -> [a1] -> [a1]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U><S,1*U>,
+     Inline: [0] -}
+a2ce117ee5bee744e2e6e5252245492f
+  data Sublist = Equal | Sublist | Superlist | Unequal
+9828f7490f13310ea91ccb0ee22befe8
+  isContainedInList ::
+    GHC.Classes.Eq a => [a] -> [a] -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U(C(C1(U)),A)><S,U><S,U>,
+     Unfolding: (\ @ a
+                   ($dEq :: GHC.Classes.Eq a)
+                   (smallList :: [a])
+                   (largeList :: [a]) ->
+                 case GHC.List.$wlenAcc @ a largeList 0# of ww2 { DEFAULT ->
+                 case GHC.List.$wlenAcc @ a smallList 0# of ww1 { DEFAULT ->
+                 let {
+                   x :: GHC.Prim.Int# = GHC.Prim.-# ww2 ww1
+                 } in
+                 let {
+                   $j :: GHC.Prim.Int# -> Data.Monoid.Any
+                     {- Arity: 1, Strictness: <S,U> -}
+                   = \ (y :: GHC.Prim.Int#)[OneShot] ->
+                     case GHC.Prim.tagToEnum#
+                            @ GHC.Types.Bool
+                            (GHC.Prim.># 0# y) of wild {
+                       GHC.Types.False
+                       -> let {
+                            lvl :: GHC.Types.Int = GHC.Types.I# ww1
+                          } in
+                          let {
+                            lvl1 :: [[a]]
+                            = Data.List.Split.Internals.chunksOf @ a lvl largeList
+                          } in
+                          letrec {
+                            go :: GHC.Prim.Int# -> Data.Monoid.Any
+                              {- Arity: 1, Strictness: <S,U> -}
+                            = \ (x1 :: GHC.Prim.Int#) ->
+                              let {
+                                ys :: Data.Monoid.Any
+                                = case GHC.Prim.tagToEnum#
+                                         @ GHC.Types.Bool
+                                         (GHC.Prim.==# x1 y) of wild1 {
+                                    GHC.Types.False -> go (GHC.Prim.+# x1 1#)
+                                    GHC.Types.True
+                                    -> GHC.Types.False `cast` (Sym (Data.Monoid.N:Any[0])) }
+                              } in
+                              letrec {
+                                go1 :: [[a]] -> Data.Monoid.Any {- Arity: 1, Strictness: <S,1*U> -}
+                                = \ (ds :: [[a]]) ->
+                                  case ds of wild1 {
+                                    [] -> ys
+                                    : y1 ys1
+                                    -> case GHC.Classes.$fEq[]_$c== @ a $dEq y1 smallList of wild2 {
+                                         GHC.Types.False -> go1 ys1
+                                         GHC.Types.True
+                                         -> GHC.Types.True `cast` (Sym (Data.Monoid.N:Any[0])) } }
+                              } in
+                              case GHC.Prim.tagToEnum#
+                                     @ GHC.Types.Bool
+                                     (GHC.Prim.<=# x1 0#) of wild1 {
+                                GHC.Types.False
+                                -> go1
+                                     (Data.List.Split.Internals.chunksOf
+                                        @ a
+                                        lvl
+                                        (Sublist.$wunsafeDrop @ a x1 largeList))
+                                GHC.Types.True -> go1 lvl1 }
+                          } in
+                          go 0#
+                       GHC.Types.True
+                       -> GHC.Types.False `cast` (Sym (Data.Monoid.N:Any[0])) }
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<# x ww1) of wild {
+                   GHC.Types.False
+                   -> ($j (GHC.Prim.-# ww1 1#)) `cast` (Data.Monoid.N:Any[0])
+                   GHC.Types.True
+                   -> ($j (GHC.Prim.-# x 1#)) `cast` (Data.Monoid.N:Any[0]) } } }) -}
+3a507e2b266e9604f12a08b0678601fb
+  sublist :: GHC.Classes.Eq a => [a] -> [a] -> Sublist.Sublist
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U(C(C1(U)),A)><S,U><S,U>,
+     Unfolding: (\ @ a
+                   ($dEq :: GHC.Classes.Eq a)
+                   (xs :: [a])
+                   (ys :: [a]) ->
+                 case GHC.Classes.$fEq[]_$c== @ a $dEq xs ys of wild {
+                   GHC.Types.False
+                   -> case xs of wild1 {
+                        [] -> Sublist.Sublist
+                        : ds1 ds2
+                        -> case ys of wild2 {
+                             [] -> Sublist.Superlist
+                             : ds4 ds5
+                             -> case GHC.List.$wlenAcc @ a wild1 0# of ww2 { DEFAULT ->
+                                case GHC.List.$wlenAcc @ a wild2 0# of ww1 { DEFAULT ->
+                                let {
+                                  $j :: GHC.Prim.Void# -> Sublist.Sublist
+                                    {- Arity: 1, Strictness: <L,A> -}
+                                  = \ (w :: GHC.Prim.Void#)[OneShot] ->
+                                    let {
+                                      firstListSmallerThanSecond :: GHC.Types.Bool
+                                      = GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.<# ww2 ww1)
+                                    } in
+                                    let {
+                                      $j1 :: GHC.Prim.Void# -> Sublist.Sublist
+                                        {- Arity: 1, Strictness: <L,A> -}
+                                      = \ (w1 :: GHC.Prim.Void#)[OneShot] ->
+                                        case firstListSmallerThanSecond of wild3 {
+                                          GHC.Types.False
+                                          -> case Sublist.isContainedInList
+                                                    @ a
+                                                    $dEq
+                                                    wild2
+                                                    wild1 of wild4 {
+                                               GHC.Types.False -> Sublist.Unequal
+                                               GHC.Types.True -> Sublist.Superlist }
+                                          GHC.Types.True
+                                          -> case Sublist.isContainedInList
+                                                    @ a
+                                                    $dEq
+                                                    wild1
+                                                    wild2 of wild4 {
+                                               GHC.Types.False -> Sublist.Unequal
+                                               GHC.Types.True
+                                               -> case Sublist.isContainedInList
+                                                         @ a
+                                                         $dEq
+                                                         wild2
+                                                         wild1 of wild5 {
+                                                    GHC.Types.False -> Sublist.Unequal
+                                                    GHC.Types.True -> Sublist.Superlist } } }
+                                    } in
+                                    case firstListSmallerThanSecond of wild3 {
+                                      GHC.Types.False -> $j1 GHC.Prim.void#
+                                      GHC.Types.True
+                                      -> case Sublist.isContainedInList
+                                                @ a
+                                                $dEq
+                                                wild1
+                                                wild2 of wild4 {
+                                           GHC.Types.False -> $j1 GHC.Prim.void#
+                                           GHC.Types.True -> Sublist.Sublist } }
+                                } in
+                                case GHC.Prim.tagToEnum#
+                                       @ GHC.Types.Bool
+                                       (GHC.Prim.==# ww2 ww1) of wild3 {
+                                  GHC.Types.False -> $j GHC.Prim.void#
+                                  GHC.Types.True
+                                  -> case Sublist.isContainedInList @ a $dEq wild1 wild2 of wild4 {
+                                       GHC.Types.False -> Sublist.Unequal
+                                       GHC.Types.True -> $j GHC.Prim.void# } } } } } }
+                   GHC.Types.True -> Sublist.Equal }) -}
+instance [safe] GHC.Classes.Eq [Sublist.Sublist]
+  = Sublist.$fEqSublist
+instance [safe] GHC.Show.Show [Sublist.Sublist]
+  = Sublist.$fShowSublist
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
