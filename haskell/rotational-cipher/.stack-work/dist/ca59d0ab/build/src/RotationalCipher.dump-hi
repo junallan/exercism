@@ -1,0 +1,141 @@
+
+==================== FINAL INTERFACE ====================
+2017-11-01 01:21:22.4957794 UTC
+
+interface rotational-cipher-1.1.0.1-9go241enq9zGHpA7gJ72tT:RotationalCipher 8002
+  interface hash: 55d75d5ee1b1cc6214cb7b3da2c18c9c
+  ABI hash: 75660d12621a9a1b1ebc0e7d2f5cea2e
+  export-list hash: 589a0ffd423f6ff241847ed78586e68b
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 50be09f6ae5701bb586bc6db9bc9ce26
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  RotationalCipher.rotate
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Char c49b58282af11503cc838e1052cf6b83
+import  -/  base-4.9.1.0:Data.List 7349774f430841349c90dfd1144aea97
+import  -/  base-4.9.1.0:Data.Maybe ecf0c6f81372d9b58b142d5e758ea51b
+import  -/  base-4.9.1.0:Data.OldList c9282ee91951bdcbd918d2960562c007
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.List d11eb227c1c6fbfd89bb781d72eaea0d
+import  -/  base-4.9.1.0:GHC.Num 38b8aac8807c096c7f3ca3c1eff02939
+import  -/  base-4.9.1.0:GHC.Real b88ae4a48c079652623073a5bbf5c9b0
+import  -/  base-4.9.1.0:GHC.Unicode 7b64ed854a326c2c5bb224f237ed4a0b
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+071197e701a1bb481c53099101aa0c2f
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   RotationalCipher.$trModule2
+                   RotationalCipher.$trModule1) -}
+bc26f4e2273e0ec5bbf859a83143f9ee
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "RotationalCipher"#) -}
+4d4eef834bbc09f4faaf530ff6935b20
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "rotational-cipher-1.1.0.1-9go241enq9zGHpA7gJ72tT"#) -}
+ca35153f01e4505a6901f3c2f8ff5da8
+  rotate :: GHC.Types.Int -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U(U)><S,1*U>,
+     Unfolding: (\ (number :: GHC.Types.Int)
+                   (eta :: [GHC.Types.Char]) ->
+                 let {
+                   letterLookup :: GHC.Types.Char -> GHC.Types.Char
+                     {- Arity: 1, Strictness: <L,1*U(U)> -}
+                   = \ (letter :: GHC.Types.Char) ->
+                     case GHC.List.lookup
+                            @ GHC.Types.Int
+                            @ GHC.Types.Char
+                            GHC.Classes.$fEqInt
+                            (case number of wild { GHC.Types.I# x ->
+                             case Data.OldList.findIndex
+                                    @ GHC.Types.Char
+                                    (GHC.Classes.eqChar (GHC.Unicode.toLower letter))
+                                    RotationalCipher.rotate2 of wild1 {
+                               GHC.Base.Nothing
+                               -> case Data.Maybe.fromJust1 ret_ty GHC.Types.Int of {}
+                               GHC.Base.Just x1
+                               -> case x1 of wild2 { GHC.Types.I# y ->
+                                  case GHC.Classes.modInt# (GHC.Prim.+# x y) 26# of ww2 { DEFAULT ->
+                                  GHC.Types.I# ww2 } } } })
+                            RotationalCipher.rotate1 of wild {
+                       GHC.Base.Nothing -> Data.Maybe.fromJust1 @ GHC.Types.Char
+                       GHC.Base.Just x -> x }
+                 } in
+                 GHC.Base.map
+                   @ GHC.Types.Char
+                   @ GHC.Types.Char
+                   (\ (c :: GHC.Types.Char) ->
+                    case c of ww { GHC.Types.C# ww1 ->
+                    let {
+                      $j :: GHC.Prim.Void# -> GHC.Types.Char
+                        {- Arity: 1, Strictness: <L,A> -}
+                      = \ (w :: GHC.Prim.Void#)[OneShot] ->
+                        case {__pkg_ccall base-4.9.1.0 u_iswupper GHC.Prim.Int#
+                                                                  -> GHC.Prim.State#
+                                                                       GHC.Prim.RealWorld
+                                                                  -> (# GHC.Prim.State#
+                                                                          GHC.Prim.RealWorld,
+                                                                        GHC.Prim.Int# #)}
+                               (GHC.Prim.ord# ww1)
+                               GHC.Prim.realWorld# of wild1 { (#,#) ds ds1 ->
+                        case ds1 of wild2 {
+                          DEFAULT
+                          -> case letterLookup ww of ww2 { GHC.Types.C# ww3 ->
+                             case {__pkg_ccall base-4.9.1.0 u_towupper GHC.Prim.Int#
+                                                                       -> GHC.Prim.State#
+                                                                            GHC.Prim.RealWorld
+                                                                       -> (# GHC.Prim.State#
+                                                                               GHC.Prim.RealWorld,
+                                                                             GHC.Prim.Int# #)}
+                                    (GHC.Prim.ord# ww3)
+                                    GHC.Prim.realWorld# of wild { (#,#) ds2 ds3 ->
+                             case GHC.Prim.tagToEnum#
+                                    @ GHC.Types.Bool
+                                    (GHC.Prim.leWord# (GHC.Prim.int2Word# ds3) 1114111##) of wild4 {
+                               GHC.Types.False -> GHC.Char.chr2 ds3
+                               GHC.Types.True -> GHC.Types.C# (GHC.Prim.chr# ds3) } } }
+                          0# -> letterLookup ww } }
+                    } in
+                    case GHC.Unicode.$wgeneralCategory ww1 of wild {
+                      DEFAULT -> ww
+                      GHC.Unicode.UppercaseLetter -> $j GHC.Prim.void#
+                      GHC.Unicode.LowercaseLetter -> $j GHC.Prim.void#
+                      GHC.Unicode.TitlecaseLetter -> $j GHC.Prim.void#
+                      GHC.Unicode.ModifierLetter -> $j GHC.Prim.void#
+                      GHC.Unicode.OtherLetter -> $j GHC.Prim.void# } })
+                   eta) -}
+eca8a3de1c562a4ef52254234b646dae
+  rotate1 :: [(GHC.Types.Int, GHC.Types.Char)]
+  {- Unfolding: (RotationalCipher.rotate_go
+                   0#
+                   RotationalCipher.rotate2) -}
+c1568a4ad3c4b0c481047f4fbb8d9148
+  rotate2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Enum.eftChar 97# 122#) -}
+aae57e3a1a9516e0ae07c2ea0560c1f3
+  rotate_go ::
+    GHC.Prim.Int#
+    -> [GHC.Types.Char] -> [(GHC.Types.Int, GHC.Types.Char)]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
