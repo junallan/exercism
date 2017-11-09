@@ -1,0 +1,401 @@
+
+==================== FINAL INTERFACE ====================
+2017-11-09 02:23:22.6391542 UTC
+
+interface main@main:Main 8002
+  interface hash: 5c1de256ffca1586a87fe54ea84b5c09
+  ABI hash: c34b7ec69dc54fcfab88f7b31428673e
+  export-list hash: dbcebf828f4e88c3caadb252e753262e
+  orphan hash: 35dab2c0943d38fbec15ccdeeea96d53
+  flag hash: a3291f1376c6eb51cb22ed0ee4667256
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.main
+module dependencies:
+package dependencies: HUnit-1.5.0.0@HUnit-1.5.0.0-DvjF79OHhCC7SzfeEty4OI
+                      QuickCheck-2.9.2@QuickCheck-2.9.2-LvlomhGMxrFBkX1zwiWpQu
+                      Win32-2.3.1.1@Win32-2.3.1.1
+                      ansi-terminal-0.6.3.1@ansi-terminal-0.6.3.1-CdiTOvx5ZEQ2RerUYIP05k
+                      array-0.5.1.1@array-0.5.1.1
+                      async-2.1.1.1@async-2.1.1.1-8yywY4inVGRLJSCg60gBXj base-4.9.1.0
+                      base-compat-0.9.3@base-compat-0.9.3-m1TEyTenyr5nJN40TpHVj
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      call-stack-0.1.0@call-stack-0.1.0-FYVrCPXGP9EGAuTW32963O
+                      complex-numbers-1.0.0.1@complex-numbers-1.0.0.1-8JgwOyf8WhxGBuOr0SRUpi
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 directory-1.3.0.0@directory-1.3.0.0
+                      filepath-1.4.1.1@filepath-1.4.1.1
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      hspec-2.4.4@hspec-2.4.4-Hslmpj3KhpX5qiq42ca2Yq
+                      hspec-core-2.4.4@hspec-core-2.4.4-HfxBR0YrMu77yIMWFmbbw5
+                      hspec-expectations-0.8.2@hspec-expectations-0.8.2-DujBeQFEMmfJJRLad7XQgd
+                      integer-gmp-1.0.0.1 pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      quickcheck-io-0.2.0@quickcheck-io-0.2.0-4pLO1WRxoBW9gt8EnME0zS
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      setenv-0.1.1.3@setenv-0.1.1.3-7zMwpxt4EEAPEd1ZS7C4A
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      template-haskell-2.11.1.0
+                      tf-random-0.5@tf-random-0.5-CJZw1ZWS5MOJlR60HqKEZL
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         quickcheck-io-0.2.0@quickcheck-io-0.2.0-4pLO1WRxoBW9gt8EnME0zS:Test.QuickCheck.IO
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         hspec-core-2.4.4@hspec-core-2.4.4-HfxBR0YrMu77yIMWFmbbw5:Test.Hspec.Core.Example
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+import  -/  base-4.9.1.0:Data.Foldable 254e836c2d813d34e47feb29bb8d40ed
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  complex-numbers-1.0.0.1@complex-numbers-1.0.0.1-8JgwOyf8WhxGBuOr0SRUpi:ComplexNumbers 9bedb6455d9c78ccb145640ea320256b
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  hspec-2.4.4@hspec-2.4.4-Hslmpj3KhpX5qiq42ca2Yq:Test.Hspec 499c6a596aa128c1477be30a668b4c98
+import  -/  hspec-2.4.4@hspec-2.4.4-Hslmpj3KhpX5qiq42ca2Yq:Test.Hspec.Runner 17a51cad6baaf6bd018add345aca936d
+import  -/  hspec-core-2.4.4@hspec-core-2.4.4-HfxBR0YrMu77yIMWFmbbw5:Test.Hspec.Core.Options 32565dfcf0ec2fd87083b644e7b2b077
+import  -/  hspec-core-2.4.4@hspec-core-2.4.4-HfxBR0YrMu77yIMWFmbbw5:Test.Hspec.Core.Runner 18e5a6faf123e68c40e163a3e6b4210d
+import  -/  hspec-core-2.4.4@hspec-core-2.4.4-HfxBR0YrMu77yIMWFmbbw5:Test.Hspec.Core.Spec ce2d114b7307f9292d18e6ab0e86643d
+import  -/  hspec-core-2.4.4@hspec-core-2.4.4-HfxBR0YrMu77yIMWFmbbw5:Test.Hspec.Core.Spec.Monad b72dafa0adc546b1329d7a14347695d2
+import  -/  hspec-expectations-0.8.2@hspec-expectations-0.8.2-DujBeQFEMmfJJRLad7XQgd:Test.Hspec.Expectations 3a84a1cb640da0a9a923fc2bfa92c798
+2fcfad01c9ef4d1eca01fffd77a5e11e
+  $s$fEqComplex ::
+    GHC.Classes.Eq (ComplexNumbers.Complex GHC.Types.Float)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (ComplexNumbers.Complex GHC.Types.Float)
+                  Main.$s$fEqComplex_$s$fEqComplex_$c==
+                  (ComplexNumbers.$fEqComplex_$c/=
+                     @ GHC.Types.Float
+                     GHC.Classes.$fEqFloat) -}
+6a9c38f606989ebca8ea3c1a9f8d6ff0
+  $s$fEqComplex_$s$fEqComplex_$c== ::
+    ComplexNumbers.Complex GHC.Types.Float
+    -> ComplexNumbers.Complex GHC.Types.Float -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S(S)L)),1*U(1*U(1*U(U),1*U(U)))><S(S(S(S)L)),1*U(1*U(1*U(U),1*U(U)))>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: ComplexNumbers.Complex GHC.Types.Float)
+                   (ds1 :: ComplexNumbers.Complex GHC.Types.Float) ->
+                 case ds of wild { ComplexNumbers.Complex a1 ->
+                 case ds1 of wild1 { ComplexNumbers.Complex b1 ->
+                 GHC.Classes.$fEq(,)_$c==
+                   @ GHC.Types.Float
+                   @ GHC.Types.Float
+                   GHC.Classes.$fEqFloat
+                   GHC.Classes.$fEqFloat
+                   a1
+                   b1 } }) -}
+6a61bbac5b0df4155ebf40a6a6b81d1b
+  $s$fShowComplex ::
+    GHC.Show.Show (ComplexNumbers.Complex GHC.Types.Float)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (ComplexNumbers.Complex GHC.Types.Float)
+                  (ComplexNumbers.$fShowComplex_$cshowsPrec
+                     @ GHC.Types.Float
+                     GHC.Float.$fShowFloat)
+                  (ComplexNumbers.$fShowComplex_$cshow
+                     @ GHC.Types.Float
+                     GHC.Float.$fShowFloat)
+                  Main.$s$fShowComplex_$s$fShowComplex_$cshowList -}
+9e26a234e958c340eb9484df2cd204da
+  $s$fShowComplex_$s$fShowComplex_$cshowList ::
+    [ComplexNumbers.Complex GHC.Types.Float] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [ComplexNumbers.Complex GHC.Types.Float])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (ComplexNumbers.Complex GHC.Types.Float)
+                   (ComplexNumbers.$fShowComplex_$cshowsPrec
+                      @ GHC.Types.Float
+                      GHC.Float.$fShowFloat
+                      ComplexNumbers.$fShowComplex1)
+                   eta
+                   eta1) -}
+20100819edf96f4960714a27ec847326
+  $tc'CaseA :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11348877159658914748##
+                   14149683560592121597##
+                   Main.$trModule
+                   Main.$tc'CaseA1) -}
+d8add45fef0192f60fc3267985b6da85
+  $tc'CaseA1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'CaseA"#) -}
+4d4b0462d8bb9d04a9f3807578bd5058
+  $tc'CaseB :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17008752419107966641##
+                   757206951373664328##
+                   Main.$trModule
+                   Main.$tc'CaseB1) -}
+a2e05d989ee4349e929a27cd1f003742
+  $tc'CaseB1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'CaseB"#) -}
+fecd8c7d705eb6b9fe0144c91c120e55
+  $tc'CaseC :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4987846528388238579##
+                   5111255234256329980##
+                   Main.$trModule
+                   Main.$tc'CaseC1) -}
+307cb7471a9e3121d54946dd8ed87be8
+  $tc'CaseC1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'CaseC"#) -}
+ba214cd87c2322858f6005763b8241a1
+  $tcCaseA :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8313999882613976676##
+                   8232866217988173558##
+                   Main.$trModule
+                   Main.$tcCaseA1) -}
+7df80cac41742bc1a406d834ea11e89b
+  $tcCaseA1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "CaseA"#) -}
+a7a607dd69977b1fd368309e0dcf4c67
+  $tcCaseB :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13730229932413082370##
+                   5095747637781811627##
+                   Main.$trModule
+                   Main.$tcCaseB1) -}
+6da90c6a0393566db7a90364413ee3f3
+  $tcCaseB1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "CaseB"#) -}
+1049fe80ef9f3092944e2a0602648a2c
+  $tcCaseC :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1361522956468076098##
+                   5602195041376790694##
+                   Main.$trModule
+                   Main.$tcCaseC1) -}
+582fe7cd25d9578b3d82e113b002cf01
+  $tcCaseC1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "CaseC"#) -}
+d6831ef04cb9301b090dfae6f7bb7ec7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule2 Main.$trModule1) -}
+847d9fc3b8e6f0b424199f36b4999bb2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Main"#) -}
+24ef6042833e75ffd7aa98b83ecca98d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+a3c4c5ef12d5c58d2a9f492df3b08334
+  data CaseA
+    = CaseA {descriptionA :: GHC.Base.String,
+             number1A :: (GHC.Types.Float, GHC.Types.Float),
+             number2A :: (GHC.Types.Float, GHC.Types.Float),
+             expectedA :: (GHC.Types.Float, GHC.Types.Float)}
+ee00efcbb5baec006631b6571baf489b
+  data CaseB
+    = CaseB {descriptionB :: GHC.Base.String,
+             number1B :: (GHC.Types.Float, GHC.Types.Float),
+             expectedB :: (GHC.Types.Float, GHC.Types.Float)}
+9daf5cb9141cc965000ec8010fbec558
+  data CaseC
+    = CaseC {descriptionC :: GHC.Base.String,
+             number1C :: (GHC.Types.Float, GHC.Types.Float),
+             expectedC :: GHC.Types.Float}
+6144776615721789ecc3b5ac9a8b74ff
+  descriptionA :: Main.CaseA -> GHC.Base.String
+  RecSel Left Main.CaseA
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLLL),1*U(1*U,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Main.CaseA) ->
+                 case ds of wild { Main.CaseA ds1 ds2 ds3 ds4 -> ds1 }) -}
+40a397fc70070883913c52d6c7d5ab30
+  descriptionB :: Main.CaseB -> GHC.Base.String
+  RecSel Left Main.CaseB
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Main.CaseB) ->
+                 case ds of wild { Main.CaseB ds1 ds2 ds3 -> ds1 }) -}
+ed037e858b8504062e93d3d8f84fcfb2
+  descriptionC :: Main.CaseC -> GHC.Base.String
+  RecSel Left Main.CaseC
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Main.CaseC) ->
+                 case ds of wild { Main.CaseC ds1 ds2 ds3 -> ds1 }) -}
+acbea6c9dccb38855c4fe74a16da733c
+  expectedA :: Main.CaseA -> (GHC.Types.Float, GHC.Types.Float)
+  RecSel Left Main.CaseA
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLS),1*U(A,A,A,1*U(U,U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Main.CaseA) ->
+                 case ds of wild { Main.CaseA ds1 ds2 ds3 ds4 -> ds4 }) -}
+474845fa7a689ec5fbe060c5f71259b8
+  expectedB :: Main.CaseB -> (GHC.Types.Float, GHC.Types.Float)
+  RecSel Left Main.CaseB
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,1*U(U,U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Main.CaseB) ->
+                 case ds of wild { Main.CaseB ds1 ds2 ds3 -> ds3 }) -}
+e3dc2ea3c6212e73a1d648d6ab9b1c36
+  expectedC :: Main.CaseC -> GHC.Types.Float
+  RecSel Left Main.CaseC
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,1*U(U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Main.CaseC) ->
+                 case ds of wild { Main.CaseC ds1 ds2 ds3 -> ds3 }) -}
+a8193d58556e0fd806ae8ccef78ec53d
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+ae5455f94cb484eff57a1842604de3a6
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Hspec.Core.Runner.hspec2
+                        Main.main3
+                        Main.main2
+                          `cast`
+                        (Trans
+                             (Sym (GHC.Types.N:IO[0]
+                                       <((), [Test.Hspec.Core.Tree.SpecTree ()])>_R))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.Writer.Lazy.N:WriterT[0]
+                                            <[Test.Hspec.Core.Tree.SpecTree ()]>_N
+                                            <GHC.Types.IO>_R
+                                            <()>_N))
+                                  (Sym (Test.Hspec.Core.Spec.Monad.N:SpecM[0] <()>_N) <()>_N)))
+                        eta of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild { Test.Hspec.Core.Runner.Summary ds ds2 ->
+                 case ds2 of wild1 { GHC.Types.I# x ->
+                 case x of wild2 {
+                   DEFAULT -> System.Exit.die2 @ () ipv
+                   0# -> (# ipv, GHC.Tuple.() #) } } } }) -}
+c8913208e49c68179c6cd5bac50f93f9
+  main2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          ((), [Test.Hspec.Core.Tree.SpecTree ()]) #)
+  {- Arity: 1 -}
+43372413c578128dab95d35f680751ce
+  main3 :: Test.Hspec.Core.Options.Config
+  {- Unfolding: (Test.Hspec.Core.Options.Config
+                   GHC.Types.False
+                   GHC.Types.False
+                   GHC.Types.False
+                   GHC.Types.True
+                   (GHC.Base.Nothing @ GHC.IO.FilePath)
+                   GHC.Types.False
+                   GHC.Types.False
+                   (GHC.Base.Nothing @ (Test.Hspec.Core.Util.Path -> GHC.Types.Bool))
+                   (GHC.Base.Nothing @ (Test.Hspec.Core.Util.Path -> GHC.Types.Bool))
+                   (GHC.Base.Nothing @ GHC.Integer.Type.Integer)
+                   (GHC.Base.Nothing @ GHC.Types.Int)
+                   (GHC.Base.Nothing @ GHC.Types.Int)
+                   (GHC.Base.Nothing @ GHC.Types.Int)
+                   Test.Hspec.Core.Example.defaultParams1
+                   Test.Hspec.Core.Options.ColorAuto
+                   GHC.Types.True
+                   (GHC.Base.Nothing @ Test.Hspec.Core.Formatters.Monad.Formatter)
+                   GHC.Types.False
+                   Test.Hspec.Core.Options.defaultConfig1
+                   (GHC.Base.Nothing @ GHC.Types.Int)) -}
+bc33b19b77962644bd60ab474c755e56
+  main4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+471c48eb3591c842055dcbb882a4dfda
+  number1A :: Main.CaseA -> (GHC.Types.Float, GHC.Types.Float)
+  RecSel Left Main.CaseA
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLL),1*U(A,1*U(U,U),A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Main.CaseA) ->
+                 case ds of wild { Main.CaseA ds1 ds2 ds3 ds4 -> ds2 }) -}
+d165413cb7c435e4e09bddf80933e45f
+  number1B :: Main.CaseB -> (GHC.Types.Float, GHC.Types.Float)
+  RecSel Left Main.CaseB
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,1*U(U,U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Main.CaseB) ->
+                 case ds of wild { Main.CaseB ds1 ds2 ds3 -> ds2 }) -}
+0987c9f8262c3d04914fb1a2bca732cb
+  number1C :: Main.CaseC -> (GHC.Types.Float, GHC.Types.Float)
+  RecSel Left Main.CaseC
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,1*U(U,U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Main.CaseC) ->
+                 case ds of wild { Main.CaseC ds1 ds2 ds3 -> ds2 }) -}
+f5f4a33dd4cbe927836e9014455993f0
+  number2A :: Main.CaseA -> (GHC.Types.Float, GHC.Types.Float)
+  RecSel Left Main.CaseA
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSL),1*U(A,A,1*U(U,U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Main.CaseA) ->
+                 case ds of wild { Main.CaseA ds1 ds2 ds3 ds4 -> ds3 }) -}
+"SPEC/Main $fEqComplex @ Float" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                           GHC.Types.Float)
+  ComplexNumbers.$fEqComplex @ GHC.Types.Float $dEq
+  = Main.$s$fEqComplex
+"SPEC/Main $fEqComplex_$c== @ Float" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                GHC.Types.Float)
+  ComplexNumbers.$fEqComplex_$c== @ GHC.Types.Float $dEq
+  = Main.$s$fEqComplex_$s$fEqComplex_$c==
+"SPEC/Main $fShowComplex @ Float" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                               GHC.Types.Float)
+  ComplexNumbers.$fShowComplex @ GHC.Types.Float $dShow
+  = Main.$s$fShowComplex
+"SPEC/Main $fShowComplex_$cshowList @ Float" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                          GHC.Types.Float)
+  ComplexNumbers.$fShowComplex_$cshowList @ GHC.Types.Float $dShow
+  = Main.$s$fShowComplex_$s$fShowComplex_$cshowList
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
